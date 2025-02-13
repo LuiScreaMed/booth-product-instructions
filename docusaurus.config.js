@@ -101,7 +101,7 @@ const config = {
         links: [
           {
             label: 'GitHub',
-            href: '/',
+            href: 'https://github.com/LuiScreaMed/booth-product-instructions',
           },
           {
             label: 'Booth Store',
