@@ -1,0 +1,14 @@
+{
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to /"
+  },
+  "link.item.label.Booth Store": {
+    "message": "Booth 商店",
+    "description": "The label of footer link with label=Booth Store linking to https://luistudio.booth.pm/"
+  },
+  "copyright": {
+    "message": "Copyright © 2025 LuiScreaMed. Built with Docusaurus.",
+    "description": "The footer copyright"
+  }
+}

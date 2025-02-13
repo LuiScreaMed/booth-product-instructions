@@ -1,0 +1,131 @@
+:root {
+  --homepage-product-link-color: #000;
+  --homepage-product-link-hover-color: #292929;
+  --homepage-product-background: #fff;
+}
+
+[data-theme='dark'] {
+  --homepage-product-background: #eeeeee;
+}
+
+@keyframes productReveal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes productImageReveal {
+  0% {
+    transform: scale(0.6);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.productContent {
+  position: relative;
+  animation: productReveal 0.25s;
+  opacity: 1;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.productItem:hover .productImage {
+  transform: scale(0.8);
+  filter: brightness(0.2);
+}
+
+.productItem:hover .productShift {
+  right: 0%;
+}
+
+.productItem {
+  background-color: rgba(255, 209, 157, 0.5);
+  transition: background-color 0.5s;
+  width: 100%;
+  position: relative;
+  aspect-ratio: 1 / 1;
+}
+
+.transparentBackground {
+  background-color: rgba(255, 209, 157, 0);
+}
+
+.productImage {
+  width: 100%;
+  display: block;
+  animation: productImageReveal 0.4s;
+  transition: transform 0.3s, filter 0.3s;
+  transform: scale(1);
+  filter: brightness(1);
+}
+
+.placeholderImage {
+  width: 100%;
+  display: block;
+}
+
+.productShift {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  transition: right 0.3s;
+  padding: 16px;
+  background-color: var(--ifm-color-primary-dark);
+}
+
+.productName {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  font-size: 36px;
+}
+
+.productDocLink {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.productBoothLink {
+  width: 20%;
+  display: block;
+  position: absolute;
+  z-index: 11;
+  right: 0;
+  bottom: 0;
+  background-color: #FC4D50;
+  background-image: url(/static/img/booth_logo.svg);
+  background-size: 60%;
+  background-position: 50% 60%;
+  aspect-ratio: 1 / 1;
+  background-repeat: no-repeat;
+  transition: background-color 0.2s;
+}
+
+.productBoothLink:hover {
+  background-color: #e04a4d;
+}
+
+@media (max-width: 768px) {
+  .productName {
+    font-size: 1.5rem;
+  }
+}

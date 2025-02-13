@@ -1,0 +1,16 @@
+.productImageWrapper {
+  position: relative;
+  width: 16%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.25rem;
+  overflow: hidden;
+  margin-right: 0.5rem;
+}
+
+.productImage {
+  width: 100%;
+  display: block;
+}
