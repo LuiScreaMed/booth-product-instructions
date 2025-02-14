@@ -55,6 +55,7 @@ sidebar_label: LED Mask
 ### Dependencies
 
 This gimmick relies on the following Unity plugins / shaders. Make sure you have installed them before you install this gimmick.
+
 - Modular Avatar (1.9.13 or higher): https://modular-avatar.nadena.dev/
 - lilToon (1.7.3 or higher): https://lilxyzw.github.io/lilToon/#/
 - Gesture Manager (3.9 or higher): https://github.com/BlackStartx/VRC-Gesture-Manager
@@ -67,7 +68,7 @@ This gimmick relies on the following Unity plugins / shaders. Make sure you have
 
 Drag `LED Mask.unitypackage` into `Project` window, click the `Import` button on the dialog to import the package to your avatar project:
 
-![Import](./Assets/Import.png)
+![Import](./assets/Import.png)
 
 <sub>Importing Unity Package end</sub>
 

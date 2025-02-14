@@ -68,7 +68,7 @@ sidebar_label: LED 口罩
 
 将 `LED Mask.unitypackage` 拖入 Unity 的 `Project` 窗口中，点击提示窗中的 `Import`，将资源包导入到 Avatar 项目中：
 
-![Import](./Assets/Import.png)
+![Import](./assets/Import.png)
 
 <sub>资源包导入结束</sub>
 

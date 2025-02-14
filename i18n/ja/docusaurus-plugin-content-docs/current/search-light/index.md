@@ -50,7 +50,7 @@ sidebar_label: サーチライト
 
 `Search Light.unitypackage` を Unity の `Project` ウィンドウにドラッグし、プロンプトが表示されたら `Import` をクリックして、アセットパッケージをAvatarプロジェクトにインポートします。
 
-![Import](./Assets/Import.png)
+![Import](./assets/Import.png)
 
 <sub>アセットパッケージのインポート完了</sub>
 

@@ -72,7 +72,7 @@ sidebar_label: LED マスク
 
 `LED Mask.unitypackage` を Unity の `Project` ウィンドウにドラッグし、プロンプトが表示されたら `Import` をクリックして、アセットパッケージを Avatar プロジェクトにインポートします。
 
-![Import](./Assets/Import.png)
+![Import](./assets/Import.png)
 
 <sub>アセットパッケージのインポート完了</sub>
 

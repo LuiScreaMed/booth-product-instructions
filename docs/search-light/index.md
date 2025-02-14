@@ -46,7 +46,7 @@ This gimmick relies on the following Unity plugins / shaders. Make sure you have
 
 Drag `Search Light.unitypackage` into `Project` window, click the `Import` button on the dialog to import the package to your avatar project:
 
-![Import](./Assets/Import.png)
+![Import](./assets/Import.png)
 
 <sub>Importing Unity Package end</sub>
 
