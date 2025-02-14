@@ -1,13 +1,13 @@
 [[headers]]
-  for = "/**/assets/images/*"
+  for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=2678400"
 [[headers]]
-  for = "/**/assets/css/*"
+  for = "/ja/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=2678400"
 [[headers]]
-  for = "/**/assets/js/*"
+  for = "/zh-Hans/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=2678400"
 [[headers]]
