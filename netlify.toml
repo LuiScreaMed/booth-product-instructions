@@ -11,7 +11,7 @@
   [headers.values]
     Cache-Control = "public, max-age=2678400"
 [[headers]]
-  for = "/**/img/*"
+  for = "/instruction-assets/*"
   [headers.values]
     Cache-Control = "public, max-age=2678400"
 [[headers]]
