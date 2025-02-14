@@ -14,7 +14,7 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
 function ProductContent(info, shiftColor) {
     return (
         <div className={styles.productContent}>
-            <img src={`/booth-product-instructions/img/products/${info.name}.webp`} className={styles.productImage} />
+            <img src={`/img/products/${info.name}.webp`} className={styles.productImage} />
             <div className={styles.productShift} style={shiftColor && { backgroundColor: shiftColor.avgColor, color: shiftColor.textColor }}>
                 <p className={styles.productName}>
                     {info.displayName}
@@ -103,7 +103,7 @@ export default function ProductItem(info) {
     // 是否进入视图，如果进入视图，则加载图片，加载完成后显示商品
     useEffect(() => {
         if (inView) {
-            getAverageColor(`/booth-product-instructions/img/products/${info.name}.webp`).then(result => {
+            getAverageColor(`/img/products/${info.name}.webp`).then(result => {
                 setProductShiftColor(result);
                 setIsVisible(true);
             });
