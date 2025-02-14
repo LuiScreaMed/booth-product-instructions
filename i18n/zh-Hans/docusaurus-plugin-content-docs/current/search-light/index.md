@@ -67,7 +67,7 @@ sidebar_label: 探照灯
 
 将 `Assets/LuiStudio/Search Light` 中的对应 Prefab 拖入 Avatar 中，拖入后 Prefab 与 Avatar 的关系如下（以 Search Light (eyes) 为例）：
 
-![Prefab](./Assets/Prefab.png)
+![Prefab](./assets/Prefab.png)
 
 #### 2. 调整位置
 
@@ -77,11 +77,11 @@ Prefab 中包含了一个青色的位置指示模型，这个模型在编译上�
 
 在 Hierarchy 中，选中 Prefab 中的 `Armature_Search_Light`<sup>[1]</sup>，使用 Unity 的 `移动、旋转` 工具<sup>[2]</sup>，调整探照灯的整体位置：
 
-![Adjust_Position](./Assets/Adjust_Position.png)
+![Adjust_Position](./assets/Adjust_Position.png)
 
 调整到眼睛正前方，如下图：
 
-![Adjust_Position_Finished](./Assets/Adjust_Position_Finished.png)
+![Adjust_Position_Finished](./assets/Adjust_Position_Finished.png)
 
 ##### 2. 调整双眼位置
 

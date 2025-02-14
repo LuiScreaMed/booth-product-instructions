@@ -71,7 +71,7 @@ sidebar_label: サーチライト
 
 `Assets/LuiStudio/Search Light` の対応する Prefab を Avatar にドラッグし、ドラッグ後の Prefab と Avatar の関係は以下のようになります（ Search Light (eyes) を例にしています）：
 
-![Prefab](./Assets/Prefab.png)
+![Prefab](./assets/Prefab.png)
 
 #### 2. 位置の調整
 
@@ -81,11 +81,11 @@ Prefab には位置を指示するモデルが含まれています。このモ�
 
 Hierarchy 内で Prefab の `Armature_Search_Light`<sup>[1]</sup> を選択し、Unity の `移動、回転` ツール<sup>[2]</sup>を使用して、サーチライトの全体の位置を調整します：
 
-![Adjust_Position](./Assets/Adjust_Position.png)
+![Adjust_Position](./assets/Adjust_Position.png)
 
 目の正面に調整したら、以下のようになります：
 
-![Adjust_Position_Finished](./Assets/Adjust_Position_Finished.png)
+![Adjust_Position_Finished](./assets/Adjust_Position_Finished.png)
 
 ##### 2. 両目の位置を調整
 

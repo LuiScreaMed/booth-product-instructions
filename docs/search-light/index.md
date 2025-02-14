@@ -67,7 +67,7 @@ Check your avatar to make sure if it contains eye bones to add the currect prefa
 
 Drag the satisfied prefab from `Assets/LuiStudio/Search Light` to your avatar. Hierarchy should be like:
 
-![Prefab](./Assets/Prefab.png)
+![Prefab](./assets/Prefab.png)
 
 #### 2. Reposition
 
@@ -77,11 +77,11 @@ There's a position indicator model for better experience, the model will be auto
 
 Select `Armature_Search_Light`<sup>[1]</sup> under the added prefab, use the `Move Tool` and `Rotate Tool`<sup>[2]</sup> and move the Search Light in front of avatar's eyes:
 
-![Adjust_Position](./Assets/Adjust_Position.png)
+![Adjust_Position](./assets/Adjust_Position.png)
 
 It should look like this after the movement:
 
-![Adjust_Position_Finished](./Assets/Adjust_Position_Finished.png)
+![Adjust_Position_Finished](./assets/Adjust_Position_Finished.png)
 
 ##### 2. Adjust Search Lights for Both Eyes
 
