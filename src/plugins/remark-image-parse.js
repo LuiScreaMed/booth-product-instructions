@@ -1,8 +1,9 @@
 import { visit } from "unist-util-visit";
+import path from "path";
 
 export default function () {
     return async (ast, vfile) => {
-        const pathArr = vfile.path.split('\\')
+        const pathArr = vfile.path.split(path.sep);
         const docid = pathArr[pathArr.length - 2];
 
         visit(ast, "image", (node, index, parent) => {
