@@ -9,6 +9,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 import remarkIgnoreText from './src/plugins/remark-ignore-text';
 import remarkRemoveToc from './src/plugins/remark-remove-toc';
 import remarkWarningParse from './src/plugins/remark-warning-parse';
+import remarkImageParse from './src/plugins/remark-image-parse';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
@@ -54,7 +55,7 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          beforeDefaultRemarkPlugins: [remarkWarningParse, remarkIgnoreText, remarkRemoveToc],
+          beforeDefaultRemarkPlugins: [remarkWarningParse, remarkIgnoreText, remarkRemoveToc, remarkImageParse],
           remarkPlugins: [],
         },
         blog: false,
