@@ -14,3 +14,11 @@
   for = "/img/*"
   [headers.values]
     Cache-Control = "public, max-age=2678400"
+[[headers]]
+  for = "/**/lunr-index*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=2678400"
+[[headers]]
+  for = "/**/search-doc*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=2678400"
