@@ -5,7 +5,7 @@ function ProductSideBarItemImage({ docid }) {
     return (
         <div className={styles.productImageWrapper}>
             <div className={styles.productImageInnerWrapper}>
-                <img src={`img/products/${image}.webp`} className={styles.productImage} />
+                <img src={`/img/products/${image}.webp`} className={styles.productImage} />
             </div>
         </div>
     );
