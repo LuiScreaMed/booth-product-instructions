@@ -92,7 +92,7 @@ sidebar_label: LED マスク
 
 この Prefab をアバターにドラッグします。ドラッグ後の Prefab とアバターの関係は次のようになります：
 
-![Prefab_In_Avatar](assets/Prefab_In_Avatar.png)
+![Prefab_In_Avatar](./assets/Prefab_In_Avatar.png)
 
 #### 3. テスト
 
@@ -199,7 +199,7 @@ Unity のトップメニューから `Tools > LuiStudio > LED Mask > Mirror Bone
 
 ウィンドウ内の `Mirror` ボタンをクリックすると、マスクが左右対称になります：
 
-![Mirror_Bones_Finished](assets/Mirror_Bones_Finished.png)
+![Mirror_Bones_Finished](./assets/Mirror_Bones_Finished.png)
 
 > :warning: **注意**
 >

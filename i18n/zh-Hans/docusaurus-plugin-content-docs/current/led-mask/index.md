@@ -88,7 +88,7 @@ sidebar_label: LED 口罩
 
 将该 Prefab 拖入 Avatar 中，拖入后 Prefab 与 Avatar 的关系如下：
 
-![Prefab_In_Avatar](assets/Prefab_In_Avatar.png)
+![Prefab_In_Avatar](./assets/Prefab_In_Avatar.png)
 
 #### 3. 测试
 
@@ -194,7 +194,7 @@ sidebar_label: LED 口罩
 
 点击窗口中的 `Mirror` 按钮，口罩将会左右对称：
 
-![Mirror_Bones_Finished](assets/Mirror_Bones_Finished.png)
+![Mirror_Bones_Finished](./assets/Mirror_Bones_Finished.png)
 
 > :warning: **注意**
 >

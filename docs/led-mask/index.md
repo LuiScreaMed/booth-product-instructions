@@ -88,7 +88,7 @@ Enter the folder `Assets/LuiStudio/LED Mask/Prefabs` and find the prefab named w
 
 Drag the found prefab into the avatar, the hierarchy sould be like the image below:
 
-![Prefab_In_Avatar](assets/Prefab_In_Avatar.png)
+![Prefab_In_Avatar](./assets/Prefab_In_Avatar.png)
 
 #### 3. Testing
 
@@ -194,7 +194,7 @@ If you were adjusting the right side of the mask in the last step, please check 
 
 Click on the `Mirror` button, the mask will become symmetrical.
 
-![Mirror_Bones_Finished](assets/Mirror_Bones_Finished.png)
+![Mirror_Bones_Finished](./assets/Mirror_Bones_Finished.png)
 
 > :warning: **Attention**
 >
