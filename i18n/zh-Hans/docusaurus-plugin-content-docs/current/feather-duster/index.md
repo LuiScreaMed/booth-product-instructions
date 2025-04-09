@@ -61,7 +61,7 @@ sidebar_label: 鸡毛掸子
 
 将 `Duster.unitypackage` 拖入 Unity 的 `Project` 窗口中，点击提示窗中的 `Import`，将资源包导入到 Avatar 项目中：
 
-![Import](./Assets/Import.png)
+![Import](./Assets/Import.webp)
 
 <sub>资源包导入结束</sub>
 
@@ -73,7 +73,7 @@ sidebar_label: 鸡毛掸子
 
 将 `Assets/LuiStudio/Duster` 中的 `Duster_Normal_MA.prefab` 拖入 Avatar 中，拖入后 Prefab 与 Avatar 的关系如下：
 
-![Prefab_Normal](./Assets/Prefab_Normal.png)
+![Prefab_Normal](./Assets/Prefab_Normal.webp)
 
 #### 2. 调整鸡毛掸子的位置
 
@@ -81,32 +81,32 @@ sidebar_label: 鸡毛掸子
 
 在 Hierarchy 中，选中 Prefab 中的 `Model/Duster`<sup>[1]</sup>，然后在 Inspector 中将如图的勾选框勾选<sup>[2]</sup>，显示出鸡毛掸子的模型：
 
-![Normal_Show_Model](./Assets/Normal_Show_Model.png)
+![Normal_Show_Model](./Assets/Normal_Show_Model.webp)
 
 勾选后可以看见鸡毛掸子在右手显示：
 
-![Model_Show_On_Right_Hand.png](./Assets/Model_Show_On_Right_Hand.png)
+![Model_Show_On_Right_Handwebp](./Assets/Model_Show_On_Right_Hand.webp)
 
 ##### 2. 调整位置
 
 在 Hierarchy 中，选中 Prefab 中的 `Constraints/Right_Hand/Right_Hand_Relative`<sup>[1]</sup>，使用 Unity 的 `移动、旋转` 工具<sup>[2]</sup>，对鸡毛掸子在右手的位置进行调整：
 
-![Adjust_Position_Right_Hand](./Assets/Adjust_Position_Right_Hand.png)
+![Adjust_Position_Right_Hand](./Assets/Adjust_Position_Right_Hand.webp)
 
 调整到自己满意的位置，如下图：
 
-![Adjust_Position_Right_Hand_Finished](./Assets/Adjust_Position_Right_Hand_Finished.png)
+![Adjust_Position_Right_Hand_Finished](./Assets/Adjust_Position_Right_Hand_Finished.webp)
 
 ##### 3. 隐藏鸡毛掸子模型
 
 为了防止在 VRChat 预览模型的时候出现鸡毛掸子，我们需要对其进行隐藏（如果您对此不介意，则跳过）
 在 Hierarchy 中，选中 Prefab 中的 `Model/Duster`<sup>[1]</sup>，然后在 Inspector 中将如图的勾选框取消勾选<sup>[2]</sup>，将鸡毛掸子的模型隐藏：
 
-![Normal_Hide_Model](./Assets/Normal_Hide_Model.png)
+![Normal_Hide_Model](./Assets/Normal_Hide_Model.webp)
 
 取消勾选后，可以看到鸡毛掸子已经隐藏：
 
-![Model_Hide](./Assets/Model_Hide.png)
+![Model_Hide](./Assets/Model_Hide.webp)
 
 #### 导入完成
 
@@ -126,7 +126,7 @@ sidebar_label: 鸡毛掸子
 
 将 `Assets/LuiStudio/Duster` 中的 `Duster_Normal+Weaponize_MA.prefab` 拖入 Avatar 中，拖入后 Prefab 与 Avatar 的关系如下：
 
-![Prefab_Weaponize](./Assets/Prefab_Weaponize.png)
+![Prefab_Weaponize](./Assets/Prefab_Weaponize.webp)
 
 #### 2. 调整鸡毛掸子在右手（普通状态）的位置
 
@@ -146,7 +146,7 @@ sidebar_label: 鸡毛掸子
 
 在 Hierarchy 中选择 Avatar 模型<sup>[1]</sup>，将 Inspector 中的 `Animator` 组件<sup>[2]</sup>关闭：
 
-![Weaponize_Disable_Avatar_Animator](./Assets/Weaponize_Disable_Avatar_Animator.png)
+![Weaponize_Disable_Avatar_Animator](./Assets/Weaponize_Disable_Avatar_Animator.webp)
 
 ##### 3. 将鸡毛掸子显示在左手
 
@@ -156,37 +156,37 @@ sidebar_label: 鸡毛掸子
 >
 >如果找不到 Animation 窗口，请右键 Project 窗口标签 -> Add Tab -> Animation
 
-![Weaponize_Animation_Left_Handed](./Assets/Weaponize_Animation_Left_Handed.png)
+![Weaponize_Animation_Left_Handed](./Assets/Weaponize_Animation_Left_Handed.webp)
 
 这时可以看见鸡毛掸子移动到了左手：
 
-![Model_Show_On_Left_Hand](./Assets/Model_Show_On_Left_Hand.png)
+![Model_Show_On_Left_Hand](./Assets/Model_Show_On_Left_Hand.webp)
 
 ##### 4. 调整位置
 
 在 Hierarchy 中，选中 Prefab 中的 `Constraints/Left_Hand/Left_Hand_Relative`<sup>[1]</sup>，使用 Unity 的 `移动、旋转` 工具<sup>[2]</sup>，对鸡毛掸子在左手的位置进行调整：
 
-![Adjust_Position_Left_Hand](./Assets/Adjust_Position_Left_Hand.png)
+![Adjust_Position_Left_Hand](./Assets/Adjust_Position_Left_Hand.webp)
 
 将鸡毛掸子缩小的部位移动到合适的位置，如下图：
 
-![Adjust_Position_Left_Hand_Finished](./Assets/Adjust_Position_Left_Hand_Finished.png)
+![Adjust_Position_Left_Hand_Finished](./Assets/Adjust_Position_Left_Hand_Finished.webp)
 
 ##### 5. 取消预览鸡毛掸子在左手的动画
 
 在 Animation 窗口中，点击 `Preview`<sup>[1]</sup> 取消预览动画（**请勿点击 Preview 旁边的红色按钮**）：
 
-![Weaponize_Animation_Left_Handed_Off](./Assets/Weaponize_Animation_Left_Handed_Off.png)
+![Weaponize_Animation_Left_Handed_Off](./Assets/Weaponize_Animation_Left_Handed_Off.webp)
 
 这时能看到鸡毛掸子回到了右手：
 
-![Adjust_Position_Right_Hand_Finished](./Assets/Adjust_Position_Right_Hand_Finished.png)
+![Adjust_Position_Right_Hand_Finished](./Assets/Adjust_Position_Right_Hand_Finished.webp)
 
 ##### 6. 重新开启 Avatar 上的 Animator 组件
 
 在 Hierarchy 中选择 Avatar 模型<sup>[1]</sup>，将 Inspector 中的 `Animator` 组件<sup>[2]</sup>开启：
 
-![Weaponize_Enable_Avatar_Animator](./Assets/Weaponize_Enable_Avatar_Animator.png)
+![Weaponize_Enable_Avatar_Animator](./Assets/Weaponize_Enable_Avatar_Animator.webp)
 
 ##### 7. 隐藏鸡毛掸子模型
 

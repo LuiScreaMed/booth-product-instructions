@@ -42,7 +42,7 @@ This gimmick relies on the following Unity plugins / shaders. Make sure you have
 
 Drag `Mr Tushi.unitypackage` into `Project` window, click the `Import` button on the dialog to import the package to your avatar project:
 
-![Import](./Assets/Import.png)
+![Import](./Assets/Import.webp)
 
 <sub>Importing Unity Package end</sub>
 
@@ -54,21 +54,21 @@ Drag `Mr Tushi.unitypackage` into `Project` window, click the `Import` button on
 
 Find `Assets/LuiStudio/Mr Tushi/Mr Tushi.prefab` and drag it into your avatar, after the dragging, the hierarchy should as below:
 
-![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.png)
+![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.webp)
 
 #### 2. Adjust Position
 
 After finishing the previous step, we can see Mr.Tushi is fixed to avatar's head:
 
-![Tushi_Startup_Position](./Assets/Tushi_Startup_Position.png)
+![Tushi_Startup_Position](./Assets/Tushi_Startup_Position.webp)
 
 Select `Mr Tushi/Armature_Tushi/Root`<sup>[1]</sup> in Hierarchy window, use the `Move Tool`, `Rotate Tool` and `Scale Tool`<sup>[2]</sup> to move Mr.Tushi above avatar's head:
 
-![Adjust_Position](./Assets/Adjust_Position.png)
+![Adjust_Position](./Assets/Adjust_Position.webp)
 
 The reference for the position:
 
-![Position_Example](./Assets/Position_Example.png)
+![Position_Example](./Assets/Position_Example.webp)
 
 #### Well Done
 

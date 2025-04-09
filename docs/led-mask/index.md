@@ -68,7 +68,7 @@ This gimmick relies on the following Unity plugins / shaders. Make sure you have
 
 Drag `LED Mask.unitypackage` into `Project` window, click the `Import` button on the dialog to import the package to your avatar project:
 
-![Import](./assets/Import.png)
+![Import](./assets/Import.webp)
 
 <sub>Importing Unity Package end</sub>
 
@@ -84,11 +84,11 @@ Find the DLC resources, drag the `unitypackage` file into `Project` window, clic
 
 Enter the folder `Assets/LuiStudio/LED Mask/Prefabs` and find the prefab named with the original name of your avatar ([しろいの's にゃにゃし](https://siroinoworks.booth.pm/items/6082750) for example), which as the image below:
 
-![Fitted_Prefab](./assets/Fitted_Prefab.png)
+![Fitted_Prefab](./assets/Fitted_Prefab.webp)
 
 Drag the found prefab into the avatar, the hierarchy sould be like the image below:
 
-![Prefab_In_Avatar](./assets/Prefab_In_Avatar.png)
+![Prefab_In_Avatar](./assets/Prefab_In_Avatar.webp)
 
 #### 3. Testing
 
@@ -115,11 +115,11 @@ You have done the installation for a compatible avatar. Head to [How to Use](#ho
 
 Find `LED_Mask.prefab` from the folder `Assets/LuiStudio/LED Mask/Prefabs`:
 
-![Not_Fitted_Prefab](./assets/Not_Fitted_Prefab.png)
+![Not_Fitted_Prefab](./assets/Not_Fitted_Prefab.webp)
 
 Drag the prefab into your avatar, and **make sure there's only one LED mask prefab in your avatar**. After doing this, the hierarchy sould be like the image below:
 
-![Not_Fitted_Prefab_In_Avatar](./assets/Not_Fitted_Prefab_In_Avatar.png)
+![Not_Fitted_Prefab_In_Avatar](./assets/Not_Fitted_Prefab_In_Avatar.webp)
 
 #### 2. Adjust the Shape of the Mask
 
@@ -127,13 +127,13 @@ Drag the prefab into your avatar, and **make sure there's only one LED mask pref
 >
 >Before following this step, please set the `tool settings` at the top-left corner of the scene window to `Pivot` and `Local`<sup>[1]</sup>:
 >
->![Set_Pivot_Local](./assets/Set_Pivot_Local.png)
+>![Set_Pivot_Local](./assets/Set_Pivot_Local.webp)
 
 Due to difference between avatars' head and bones, we need to adjust the shape of the mask until it fits the avatar.
 
 Select `LED Mask Prefab/Armature_LED_Mask/Root`<sup>[1]</sup>, use the `Move Tool`, `Rotate Tool` and `Scale Tool` to roughly adjust the position, rotation and scale for the mask:
 
-![Adjust_Position_Root](./assets/Adjust_Position_Root.png)
+![Adjust_Position_Root](./assets/Adjust_Position_Root.webp)
 
 > :warning: **Attention**
 >
@@ -141,15 +141,15 @@ Select `LED Mask Prefab/Armature_LED_Mask/Root`<sup>[1]</sup>, use the `Move Too
 
 After the adjustmment, the mask could be like this:
 
-![Adjust_Position_Root_Finished](./assets/Adjust_Position_Root_Finished.png)
+![Adjust_Position_Root_Finished](./assets/Adjust_Position_Root_Finished.webp)
 
 The mask still looks unfit for the avatar's face. We need to fine-tune the shapes of different parts of the mask. Unfold `Root` to reveal the bones of the mask:
 
-![Bones](./assets/Bones.png)
+![Bones](./assets/Bones.webp)
 
 It looks complicated, let's sort it out and solve them one by one:
 
-![Bones_Assigned](./assets/Bones_Assigned.png)
+![Bones_Assigned](./assets/Bones_Assigned.webp)
 
 We divided them into 3 parts, now let's adjust them one by one.
 
@@ -157,19 +157,19 @@ We divided them into 3 parts, now let's adjust them one by one.
 
 The middle of the mask contains bones `Jaw`, `Jaw_Inner`, `Nose_Tip` and `Top`. Here is the reference for them:
 
-![Bones_Reference_1](./assets/Bones_Reference_1.png)
+![Bones_Reference_1](./assets/Bones_Reference_1.webp)
 
 Select them and use `Move Tool` and `Rotate Tool` to fine-tune the shape.
 
 For example:
 
-![Bones_1_Position_Finished](./assets/Bones_1_Position_Finished.png)
+![Bones_1_Position_Finished](./assets/Bones_1_Position_Finished.webp)
 
 ##### 2. Adjust the Left Side of the Mask
 
 This part contains bones `Cheek.L`、`Cheek_Jaw_Inner.L`、`Cheek_Puff.L`、`Cheek_Top.L`、`Side.L` and `Ear.L`. Here is the reference for them:
 
-![Bones_Reference_2](./assets/Bones_Reference_2.png)
+![Bones_Reference_2](./assets/Bones_Reference_2.webp)
 
 Please adjust them with the order of hierarchy, from the outside in, as below:
 
@@ -179,7 +179,7 @@ Please adjust them with the order of hierarchy, from the outside in, as below:
 
 Adjust them until you're happy. For example (Please ignore that my avatar has no ears:sob:):
 
-![Bones_2_Position_Finished](./assets/Bones_2_Position_Finished.png)
+![Bones_2_Position_Finished](./assets/Bones_2_Position_Finished.webp)
 
 ##### 3. Adjust the Right Side of the Mask
 
@@ -188,13 +188,13 @@ I provided a tool to mirror one side of the mask to the other.
 
 Go to `Tools > LuiStudio > LED Mask > Mirror Bones` from the menu bar to call out the `Mirror LED Mask Bones` window. Drag the LED Mask prefab inside your avatar into the `LED Mask` field:
 
-![Mirror_Tool_1](./assets/Mirror_Tool_1.png)
+![Mirror_Tool_1](./assets/Mirror_Tool_1.webp)
 
 If you were adjusting the right side of the mask in the last step, please check the `Mirror Right To Left` checkbox.
 
 Click on the `Mirror` button, the mask will become symmetrical.
 
-![Mirror_Bones_Finished](./assets/Mirror_Bones_Finished.png)
+![Mirror_Bones_Finished](./assets/Mirror_Bones_Finished.webp)
 
 > :warning: **Attention**
 >
@@ -205,7 +205,7 @@ Click on the `Mirror` button, the mask will become symmetrical.
 The LED pattern could be warpped after the adjustment. We could fix it by setting the shader property.
 Select `LED Mask Prefab/LED_Mask`<sup>[1]</sup> and head to Inspector. Scroll down and unfold `LED (Material)`<sup>[2]</sup>. Find the `LED Tiling`<sup>[3]</sup> property, set the `X` and `Y` value until you're satisfied:
 
-![Adjuest_LED_Pattern_Tiling](./assets/Adjuest_LED_Pattern_Tiling.png)
+![Adjuest_LED_Pattern_Tiling](./assets/Adjuest_LED_Pattern_Tiling.webp)
 
 #### 3. Customize Mask Emote
 
@@ -214,12 +214,12 @@ Select `LED Mask Prefab/LED_Mask`<sup>[1]</sup> and head to Inspector. Scroll do
 The reference is helpful for the subsequent steps.
 Select `LED Mask Prefab/LED_Mask`<sup>[1]</sup> and head to Inspector. Scroll down and unfold `LED (Material)`. The `Emote Masks`<sup>[2]</sup> list will be the reference of LED patterns. The numbers behind each `Emote` are the indexes of the patterns. Click on the :unlock:<sup>[3]</sup> icon at the top-right corner to lock the Inspector:
 
-![Show_Emote_Reference](./assets/Show_Emote_Reference.png)
+![Show_Emote_Reference](./assets/Show_Emote_Reference.webp)
 
 We need another Inspector window for other works.
 Right click on the tab `Inspector`, select `Add Tab > Inspector`.
 
-![Add_Inspector](./assets/Add_Inspector.png)
+![Add_Inspector](./assets/Add_Inspector.webp)
 
 > :warning: **Attention**
 >
@@ -242,7 +242,7 @@ The setup tool can be used to preview the given avatar's FX layer animations. It
 Goto `Tools > LuiStudio > LED Mask > Setup Animator Controller` from the menu bar to call out the setup tool window.
 Drag your avatar<sup>[1]</sup> from the Hierarchy into the `Avatar` field<sup>[2]</sup>, and wait for the tool to initialize (The initialization duration increases with the complexity of the FX layer animation controller):
 
-![Setup_Emotes_Drag_In](./assets/Setup_Emotes_Drag_In.png)
+![Setup_Emotes_Drag_In](./assets/Setup_Emotes_Drag_In.webp)
 
 ##### 3. Customize Emote with Setup Tool
 
@@ -251,17 +251,17 @@ Drag your avatar<sup>[1]</sup> from the Hierarchy into the `Avatar` field<sup>[2
 Uncheck the layers that are **not related to face emotes**, this means we are not baking these layers into the final animator controllers.
 Click on the `checkboxes`<sup>[1]</sup> inside layer items to `check / uncheck` layers, you can use the `check all / uncheck all` buttons<sup>[2]</sup> while needed:
 
-![Setup_Emotes_Uncheck_Unrelated_Layers](./assets/Setup_Emotes_Uncheck_Unrelated_Layers.png)
+![Setup_Emotes_Uncheck_Unrelated_Layers](./assets/Setup_Emotes_Uncheck_Unrelated_Layers.webp)
 
 For example:
 
-![Setup_Emotes_Uncheak_Unrelated_Layers_Finished](./assets/Setup_Emotes_Uncheak_Unrelated_Layers_Finished.png)
+![Setup_Emotes_Uncheak_Unrelated_Layers_Finished](./assets/Setup_Emotes_Uncheak_Unrelated_Layers_Finished.webp)
 
 ###### 2. Preview Animations from Layers
 
 Select the layer<sup>[1]</sup> in the `Layers` column, then click on any animations<sup>[2]</sup> in the `Animation Clips` column to preview them in the scene (Click again to cancel preview):
 
-![Setup_Emotes_Preview_Animation](./assets/Setup_Emotes_Preview_Animation.png)
+![Setup_Emotes_Preview_Animation](./assets/Setup_Emotes_Preview_Animation.webp)
 
 > :warning: **Attention**
 >
@@ -279,11 +279,11 @@ We can modify the emote in Animation window while previewing.
 
 Head to Animation window and **enter recording mode**. In the timeline, the property `LED_Mask : ..._Emote Index`<sup>[2]</sup> is the property of the index of the pattern. Other properties are from the original Avatar's animation. Change the pattern index (0 ~ 15)<sup>[3]</sup> to change the LED pattern for the mask, if you want to apply the default pattern (Details in [Notices - (2)](#7-notices)) please directly delete the index property:
 
-![Setup_Emotes_Change_Emote_Index](./assets/Setup_Emotes_Change_Emote_Index.png)
+![Setup_Emotes_Change_Emote_Index](./assets/Setup_Emotes_Change_Emote_Index.webp)
 
 This is a example after you changing the pattern index:
 
-![Setup_Emotes_Change_Emote_Index_Finished](./assets/Setup_Emotes_Change_Emote_Index_Finished.png)
+![Setup_Emotes_Change_Emote_Index_Finished](./assets/Setup_Emotes_Change_Emote_Index_Finished.webp)
 
 **Handle Conflicts**
 
@@ -296,23 +296,23 @@ If the mask has conflicts with your avatar, please handle them according to sugg
 - **Conflicts Caused by Facial Deformations of the Avatar**
 As the image:
 
-  ![Setup_Emotes_Change_Mask_Transform_Example](./assets/Setup_Emotes_Change_Mask_Transform_Example.png)
+  ![Setup_Emotes_Change_Mask_Transform_Example](./assets/Setup_Emotes_Change_Mask_Transform_Example.webp)
 
   **We suggest adjusting the shape of the mask：**
 
   Make sure the **`recording mode` in Animation window is on**<sup>[1]</sup>. Select the LED mask's bones that need to be adjust<sup>[2]</sup> (which is `Cheek_Puff.L` in this case), and use `Move Tool`, `Rotate Tool` and `Scale Tool`<sup>[3]</sup> to adjust them:
 
-  ![Setup_Emotes_Change_Mask_Transform](./assets/Setup_Emotes_Change_Mask_Transform.png)
+  ![Setup_Emotes_Change_Mask_Transform](./assets/Setup_Emotes_Change_Mask_Transform.webp)
 
   An example after finishing the adjustment:
 
-  ![Setup_Emotes_Change_Mask_Transform_Finished](./assets/Setup_Emotes_Change_Mask_Transform_Finished.png)
+  ![Setup_Emotes_Change_Mask_Transform_Finished](./assets/Setup_Emotes_Change_Mask_Transform_Finished.webp)
 
 - **Conflicts Caused by Emanatas of the Avatar**
 
   As the image:
 
-  ![Setup_Emotes_Emanata_Example](./assets/Setup_Emotes_Emanata_Example.png)
+  ![Setup_Emotes_Emanata_Example](./assets/Setup_Emotes_Emanata_Example.webp)
 
   **We suggest adjusting the shape of the mask or adjusting the emanatas:**
 
@@ -322,7 +322,7 @@ As the image:
 
   Make sure the **`recording mode` in Animation window is on**. Adjust the shape of the mask according to the last suggestion. Move the top corner of the mask back a little, and here's the result:
 
-  ![Setup_Emotes_Emanata_Mask_Transform_Finished](./assets/Setup_Emotes_Emanata_Mask_Transform_Finished.png)
+  ![Setup_Emotes_Emanata_Mask_Transform_Finished](./assets/Setup_Emotes_Emanata_Mask_Transform_Finished.webp)
 
   The conflict by the sweat below seems can only be solved by hiding them.
 
@@ -332,11 +332,11 @@ As the image:
 
   Make sure the **`recording mode` in Animation window is on**<sup>[1]</sup>. Locate the game object that contiains blendshapes, usually named `Body` or `Face`<sup>[2]</sup>. Select it, and find `SkinnedMeshRenderer` in Inspector, unfold `BlendShapes`<sup>[3]</sup>, then find and change the related shape key value.
 
-  ![Setup_Emotes_Emanata_Blend_Shape](./assets/Setup_Emotes_Emanata_Blend_Shape.png)
+  ![Setup_Emotes_Emanata_Blend_Shape](./assets/Setup_Emotes_Emanata_Blend_Shape.webp)
 
   Here's the example after adjustment:
 
-  ![Setup_Emotes_Emanata_Blend_Shape_Finished](./assets/Setup_Emotes_Emanata_Blend_Shape_Finished.png)
+  ![Setup_Emotes_Emanata_Blend_Shape_Finished](./assets/Setup_Emotes_Emanata_Blend_Shape_Finished.webp)
 
 ###### 4. Customize the Rest of Mask Emotes
 
@@ -371,7 +371,7 @@ Enter `Play Mode` with `Gesture Manager`. Find and turn on the LED Mask in the a
   If you deleted the property of LED pattern index(..._Emote Index) and want it back. Please make sure to change the tangents' modes to constant after you adding:
   Select every frame<sup>[2]</sup> of the LED pattern index property<sup>[1]</sup>, right click on them and select `Both Tangents > Constant`<sup>[3]</sup>:
 
-  ![Setup_Emotes_Tangents_Constant](./assets/Setup_Emotes_Tangents_Constant.png)
+  ![Setup_Emotes_Tangents_Constant](./assets/Setup_Emotes_Tangents_Constant.webp)
 
 #### Well Done
 
@@ -395,7 +395,7 @@ This gimmick included a tool, we can use it to draw and generate pattern texture
 Go to the folder with this instruction, open the file `LEDPatternPainter/painter.html` with a web browser.
 This is how the painter looks like:
 
-![LED_Pattern_Generator_Introduce](./assets/LED_Pattern_Generator_Introduce.png)
+![LED_Pattern_Generator_Introduce](./assets/LED_Pattern_Generator_Introduce.webp)
 
 Here's the discriptions for labels in the image:
 
@@ -420,13 +420,13 @@ Click the save button to save the pattern. Locate the saved file, drag it into w
 
 Select the imported texture in Project window. Head to Inspector, unfold `Advance`<sup>[1]</sup>, check `Read/Write`<sup>[2]</sup> and `Mip Streaming`<sup>[3]</sup>, set `Max Size` below to `512`<sup>[4]</sup>, then hit `Apply`<sup>[5]</sup>:
 
-![Custom_Pattern_Import_Setting](./assets/Custom_Pattern_Import_Setting.png)
+![Custom_Pattern_Import_Setting](./assets/Custom_Pattern_Import_Setting.webp)
 
 #### 2. Replace Patterns
 
 Select `LED Mask Prefab/LED_Mask`<sup>[1]</sup> in Hierarchy and head to Inspector. Scroll down and unfold `LED (Material)`<sup>[2]</sup>. Unfold `Emote Masks`<sup>[3]</sup> and replace the original pattern to your new pattern.
 
-![Custom_Pattern_Replace](./assets/Custom_Pattern_Replace.png)
+![Custom_Pattern_Replace](./assets/Custom_Pattern_Replace.webp)
 
 After the replacement, use the pattern by changing the LED pattern index to your new pattern in emote animations.
 

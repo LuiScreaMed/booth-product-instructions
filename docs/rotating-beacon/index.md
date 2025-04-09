@@ -48,7 +48,7 @@ This gimmick relies on the following Unity plugins / shaders. Make sure you have
 
 Drag `Rotating Beacon.unitypackage` into `Project` window, click the `Import` button on the dialog to import the package to your avatar project:
 
-![Import](./Assets/Import.png)
+![Import](./Assets/Import.webp)
 
 ---
 
@@ -70,7 +70,7 @@ Specifically, the `Full` prefab uses *a bit* more synced parameter than `Head On
 
 Drag and drop the prefab you've selected from project window into your avatar inside hierarchy (We use `Rotating Beacon(Full)` as an example):
 
-![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.png)
+![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.webp)
 
 #### 2. Setup the Rotating Beacon
 
@@ -78,17 +78,17 @@ Drag and drop the prefab you've selected from project window into your avatar in
 
 After dragging the prefab, we can see a beacon in the scene, which is 1.5 meters from the ground:
 
-![Beacon_Head_Only_Default_Position](./Assets/Beacon_Head_Only_Default_Position.png)
+![Beacon_Head_Only_Default_Position](./Assets/Beacon_Head_Only_Default_Position.webp)
 
 ###### 1. Adjust the Position for the Beacon
 
 Select `Prefab/Model`<sup>[1]</sup> in hierarchy, use `Move Tool`, `Rotate Tool` and `Scale Tool`<sup>[2]</sup> to adjust the beacon's position and it's size:
 
-![Beacon_Head_Only_Adjust_Position](./Assets/Beacon_Head_Only_Adjust_Position.png)
+![Beacon_Head_Only_Adjust_Position](./Assets/Beacon_Head_Only_Adjust_Position.webp)
 
 Move the beacon on top of avatar's head:
 
-![Beacon_Head_Only_Adjust_Position_Finished](./Assets/Beacon_Head_Only_Adjust_Position_Finished.png)
+![Beacon_Head_Only_Adjust_Position_Finished](./Assets/Beacon_Head_Only_Adjust_Position_Finished.webp)
 
 After doing this, you can check out [Extra Setup](#3-extra-setup).
 
@@ -98,17 +98,17 @@ In this Section, we use `Rotating Beacon(Full)` as an example, which is for righ
 
 After adding the prefab, There will be a beacon 1.5 meters from the ground, and a Contact Sender shown as yellow sphere near the corresponding hand:
 
-![Beacon_Full_Default_Position](./Assets/Beacon_Full_Default_Position.png)
+![Beacon_Full_Default_Position](./Assets/Beacon_Full_Default_Position.webp)
 
 ###### 1. Adjust Beacon's Position On Avatar's Head
 
 Select `Prefab/Constraint Parents/Head`<sup>[1]</sup> in hierarchy, use `Move Tool`, `Rotate Tool` and `Scale Tool`<sup>[2]</sup> to adjust the beacon's position and it's size:
 
-![Beacon_Full_Adjust_Position_Head](./Assets/Beacon_Full_Adjust_Position_Head.png)
+![Beacon_Full_Adjust_Position_Head](./Assets/Beacon_Full_Adjust_Position_Head.webp)
 
 Move the beacon on top of avatar's head:
 
-![Beacon_Full_Adjust_Position_Head_Finished](./Assets/Beacon_Full_Adjust_Position_Head_Finished.png)
+![Beacon_Full_Adjust_Position_Head_Finished](./Assets/Beacon_Full_Adjust_Position_Head_Finished.webp)
 
 ###### 2. Adjust Beacon's Position On Avatar's Hand
 
@@ -116,15 +116,15 @@ As we are able to switch the beacon between avatar's head and hand with `Full` P
 
 Select `Prefab/Model`<sup>[1]</sup>, go to Inspector and find component `VRC Parent Constraint`<sup>[2]</sup>. Inside the component, there's a source list, change the `Weight` of `Element 0 [Head]` to `0`<sup>[3]</sup>, then change the `Weight` of `Element 1 [Hand]` into `1`<sup>[4]</sup>:
 
-![Beacon_Full_Set_Constraint_Hand](./Assets/Beacon_Full_Set_Constraint_Hand.png)
+![Beacon_Full_Set_Constraint_Hand](./Assets/Beacon_Full_Set_Constraint_Hand.webp)
 
 As we can see, the beacon moves to near the corresponding hand:
 
-![Beacon_Full_Set_Constraint_Hand_Scene](./Assets/Beacon_Full_Set_Constraint_Hand_Scene.png)
+![Beacon_Full_Set_Constraint_Hand_Scene](./Assets/Beacon_Full_Set_Constraint_Hand_Scene.webp)
 
 Select `Prefab/Constraint Parents/Hand`, move it to avatar's hand. The reference for the position:
 
-![Beacon_Full_Adjust_Position_Hand_Finished](./Assets/Beacon_Full_Adjust_Position_Hand_Finished.png)
+![Beacon_Full_Adjust_Position_Hand_Finished](./Assets/Beacon_Full_Adjust_Position_Hand_Finished.webp)
 
 ###### 3. Adjust Hand's Contact Sender and Head's Contact Receiver
 
@@ -132,11 +132,11 @@ Sender on hand and receiver on head are used to consider where the beacon should
 
 Select `Prefab/Constraint Parents/Hand/Contact Sender`, use `Move Tool` and `Scale Tool` (Or set Position and Radius in Contact Sender component) to adjust the postition and the size of the Sender. Example:
 
-![Adjust_Contact_Sender_Example](./Assets/Adjust_Contact_Sender_Example.png)
+![Adjust_Contact_Sender_Example](./Assets/Adjust_Contact_Sender_Example.webp)
 
 Select `Prefab/Constraint Parents/Head/Contact Receiver`, use `Move Tool` and `Scale Tool` (Or set Position and Radius in Contact Receiver component) to adjust the postition and the size of the Receiver. Example:
 
-![Adjust_Contact_Receiver_Example](./Assets/Adjust_Contact_Receiver_Example.png)
+![Adjust_Contact_Receiver_Example](./Assets/Adjust_Contact_Receiver_Example.webp)
 
 ##### 3. Extra Setup
 

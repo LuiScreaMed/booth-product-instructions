@@ -50,7 +50,7 @@ This gimmick relies on the following Unity plugins / shaders. Make sure you have
 
 Drag `Lemon Tea.unitypackage` into `Project` window, click the `Import` button on the dialog to import the package to your avatar project:
 
-![Import](./Assets/Import.png)
+![Import](./Assets/Import.webp)
 
 <sub>Importing Unity Package end</sub>
 
@@ -80,7 +80,7 @@ This instruction will use the squeezable edition as an example.
 
 Drag `Assets/LuiStudio/Lemon Tea/Lemon_Tea_Squeeze_MA.prefab` (Or prefab of other editions) from project window into your avatar locates in hierarchy, it should looks like this after the drag:
 
-![Prefab](./Assets/Prefab.png)
+![Prefab](./Assets/Prefab.webp)
 
 #### 2. Reposition
 
@@ -101,7 +101,7 @@ The Animator Controller names for each edition:
 
 Head to `Assets/LuiStudio/Lemon Tea/Animations/Controllers` in project window, drag `LemonTeaSqueezeAnimatorGesture`<sup>[1]</sup> (Or animator controller of other editions) into your avatar's<sup>[2]</sup> (Sample_Avatar for example) Animator's Controller<sup>[3]</sup>, you should see the result below after you've done it:
 
-![Gesture_Controller_Drag](./Assets/Gesture_Controller_Drag.png)
+![Gesture_Controller_Drag](./Assets/Gesture_Controller_Drag.webp)
 
 ##### 2. Enable Animation Preview
 
@@ -111,28 +111,28 @@ Select your avatar<sup>[1]</sup> (Sample_Avatar for example) in Hierarchy, and c
 >
 >If you don't see the Animation Window, right click on the tab of the Project Window -> Add Tab -> Animation.
 
-![Animation_Preview](./Assets/Animation_Preview.png)
+![Animation_Preview](./Assets/Animation_Preview.webp)
 
 ##### 3. Reposition the Lemon Tea
 
 Select `Model/Lemon_Tea`<sup>[1]</sup> in prefab located in Hierarchy, use the `Move Tool`, `Rotate Tool` and `Scale Tool`<sup>[2]</sup> to reposition the lemon tea:
 
-![Adjust_Position](./Assets/Adjust_Position.png)
+![Adjust_Position](./Assets/Adjust_Position.webp)
 
 Position the lemon tea until you're happy. Such as the image below:
 
-![Adjust_Position_Finished](./Assets/Adjust_Position_Finished.png)
+![Adjust_Position_Finished](./Assets/Adjust_Position_Finished.webp)
 
 ##### 4. Adjust the Gesture Holding Lemon Tea
 
 After following the steps above, we might see fingers clipping into lemon tea carton, that looks cheap. We need to adjust the gesture to make our avatar "holding" the carton.
 Click on the first keyframe<sup>[1]</sup> in animation window, set the fingers' angles to make the hand visibly holding the carton:
 
-![Adjust_Gesture](./Assets/Adjust_Gesture.png)
+![Adjust_Gesture](./Assets/Adjust_Gesture.webp)
 
 Adjust the gesture until you're happy. Such as image below:
 
-![Adjust_Gesture_Finished](./Assets/Adjust_Gesture_Finished.png)
+![Adjust_Gesture_Finished](./Assets/Adjust_Gesture_Finished.webp)
 
 >:warning: **Attention**
 >
@@ -146,35 +146,35 @@ Adjust the gesture until you're happy. Such as image below:
 
 Select `Model/Lemon Tea/Lemon_Tea`<sup>[1]</sup> in prefab located in Hierarchy, set `Skinned Mesh Renderer -> BlendShapes -> Squeeze` to `100`<sup>[2]</sup>:
 
-![Shape_Key_100](./Assets/Shape_Key_100.png)
+![Shape_Key_100](./Assets/Shape_Key_100.webp)
 
 After that, the carton in the scene will be slightly squeezed：
 
-![Squeezed_Lemon_Tea](./Assets/Squeezed_Lemon_Tea.png)
+![Squeezed_Lemon_Tea](./Assets/Squeezed_Lemon_Tea.webp)
 
 Copy and paste the first keyframe's data to the last keyframe:
 Select your avatar<sup>[1]</sup> in Hierarchy, click on the first keyframe<sup>[2]</sup> in animation window. Press `Ctrl + C` to copy the keyframe, set the timeline to `60`<sup>[3]</sup> and hit `Enter`, then click on the last keyframe<sup>[4]</sup> of the animation and press `Ctrl + V` to paste the frame data.
 Adjust fingers' angles to make the hand visibly squeezing the carton:
 
-![Adjust_Gesture_Squeeze](./Assets/Adjust_Gesture_Squeeze.png)
+![Adjust_Gesture_Squeeze](./Assets/Adjust_Gesture_Squeeze.webp)
 
 Adjust the gesture until you're happy. Such as image below:
 
-![Adjust_Gesture_Squeeze_Finished](./Assets/Adjust_Gesture_Squeeze_Finished.png)
+![Adjust_Gesture_Squeeze_Finished](./Assets/Adjust_Gesture_Squeeze_Finished.webp)
 
 Select `Model/Lemon Tea/Lemon_Tea`<sup>[1]</sup> in prefab located in Hierarchy, and set `Skinned Mesh Renderer -> BlendShapes -> Squeeze` back to `0`<sup>[2]</sup>:
 
-![Shape_Key_0](./Assets/Shape_Key_0.png)
+![Shape_Key_0](./Assets/Shape_Key_0.webp)
 
 ##### 6. Disable Preview and Revert Animator Controller
 
 Select your avatar<sup>[1]</sup> and disable preview<sup>[2]</sup> in animation window:
 
-![Animation_Cancel_Preview](./Assets/Animation_Cancel_Preview.png)
+![Animation_Cancel_Preview](./Assets/Animation_Cancel_Preview.webp)
 
 (Optional) Select your avatar<sup>[1]</sup>, revert the animator controller to previous<sup>[2]</sup> (None for example):
 
-![Gesture_Controller_Reset](./Assets/Gesture_Controller_Reset.png)
+![Gesture_Controller_Reset](./Assets/Gesture_Controller_Reset.webp)
 
 ##### 7. (Optional) Hide the Lemon Tea
 
@@ -182,7 +182,7 @@ If you don't want the lemon tea to be visible in avatar preview in VRChat, pleas
 
 Select `Model/Lemon Tea`<sup>[1]</sup> in prefab located in Hierarchy, and deactivate it<sup>[2]</sup> in Inspector:
 
-![Hide_Lemon_Tea](./Assets/Hide_Lemon_Tea.png)
+![Hide_Lemon_Tea](./Assets/Hide_Lemon_Tea.webp)
 
 ##### 8. Reposition the Mouth Contact Receiver
 
@@ -190,11 +190,11 @@ This gimmick use `Contact Sender` and `Contact Receiver` to simulate the straw t
 
 Select `Receiver/Mouth`<sup>[1]</sup> in prefab located in Hierarchy, use the `Move Tool` and `Rotate Tool`<sup>[2]</sup> to reposition the receiver:
 
-![Adjust_Mouth_Position](./Assets/Adjust_Mouth_Position.png)
+![Adjust_Mouth_Position](./Assets/Adjust_Mouth_Position.webp)
 
 Move the receiver to avatar's mouth, as image below:
 
-![Adjust_Mouth_Position_Result](./Assets/Adjust_Mouth_Position_Result.png)
+![Adjust_Mouth_Position_Result](./Assets/Adjust_Mouth_Position_Result.webp)
 
 #### Well Done
 

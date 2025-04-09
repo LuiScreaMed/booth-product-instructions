@@ -55,7 +55,7 @@ sidebar_label: レモンティー
 
 `Lemon Tea.unitypackage` を Unity の `Project` ウィンドウにドラッグし、プロンプトが表示されたら `Import` をクリックして、アセットパッケージをAvatarプロジェクトにインポートします。
 
-![Import](./Assets/Import.png)
+![Import](./Assets/Import.webp)
 
 <sub>アセットパッケージのインポート完了</sub>
 
@@ -85,7 +85,7 @@ sidebar_label: レモンティー
 
 `Assets/LuiStudio/Lemon Tea` 内の `Lemon_Tea_Squeeze_MA.prefab`（または他のバージョンの Prefab）を Avatar にドラッグすると、Prefab と Avatar の関係は以下のようになります：
 
-![Prefab](./Assets/Prefab.png)
+![Prefab](./Assets/Prefab.webp)
 
 #### 2. 位置調整
 
@@ -106,7 +106,7 @@ sidebar_label: レモンティー
 
 `Project` 内の `Assets/LuiStudio/Lemon Tea/Animations/Controllers` に移動し、`LemonTeaSqueezeAnimatorGesture`<sup>[1]</sup>（または他のバージョンの Animator Controller）を Avatar<sup>[2]</sup>（Sample_Avatar を例にします）の Animator の Controller にドラッグしてください。完了すると、以下のようになります：
 
-![Gesture_Controller_Drag](./Assets/Gesture_Controller_Drag.png)
+![Gesture_Controller_Drag](./Assets/Gesture_Controller_Drag.webp)
 
 ##### 2. アニメーションプレビューを有効化
 
@@ -116,28 +116,28 @@ sidebar_label: レモンティー
 >
 >`Animation` ウィンドウが見つからない場合は、`Project` ウィンドウタブを右クリック -> `Add Tab` -> `Animation` を選択してください。
 
-![Animation_Preview](./Assets/Animation_Preview.png)
+![Animation_Preview](./Assets/Animation_Preview.webp)
 
 ##### 3. レモンティーの位置を調整
 
 `Hierarchy` 内で Prefab の `Model/Lemon_Tea`<sup>[1]</sup> を選択し、Unity の`移動、回転、スケール`ツール<sup>[2]</sup>を使用して、手に持つレモンティーの位置を調整します：
 
-![Adjust_Position](./Assets/Adjust_Position.png)
+![Adjust_Position](./Assets/Adjust_Position.webp)
 
 満足のいく位置に調整したら、以下のようになります：
 
-![Adjust_Position_Finished](./Assets/Adjust_Position_Finished.png)
+![Adjust_Position_Finished](./Assets/Adjust_Position_Finished.webp)
 
 ##### 4. レモンティーを握るジェスチャーの調整
 
 前のステップの結果画像でわかるように、指がレモンティーを突き抜けてしまっており、とても安っぽく見えます。Avatar がしっかりレモンティーを握っているように見せるために、ジェスチャーの調整が必要です。
 `Animation` ウィンドウ内で最初のフレーム<sup>[1]</sup>を選択し、各指<sup>[2]</sup>の角度を調整して、手がレモンティーをしっかり握っているように見えるようにします：
 
-![Adjust_Gesture](./Assets/Adjust_Gesture.png)
+![Adjust_Gesture](./Assets/Adjust_Gesture.webp)
 
 満足のいくジェスチャーに調整したら、以下のようになります：
 
-![Adjust_Gesture_Finished](./Assets/Adjust_Gesture_Finished.png)
+![Adjust_Gesture_Finished](./Assets/Adjust_Gesture_Finished.webp)
 
 >:warning: **注意**
 >
@@ -151,34 +151,34 @@ sidebar_label: レモンティー
 
 `Hierarchy` 内で Prefab の `Model/Lemon Tea/Lemon_Tea`<sup>[1]</sup> を選択し、`Skinned Mesh Renderer -> BlendShapes -> Squeeze` を `100` <sup>[2]</sup>に設定します：
 
-![Shape_Key_100](./Assets/Shape_Key_100.png)
+![Shape_Key_100](./Assets/Shape_Key_100.webp)
 
 変更後、シーン内のレモンティーの箱がやや絞られた形になります：
 
-![Squeezed_Lemon_Tea](./Assets/Squeezed_Lemon_Tea.png)
+![Squeezed_Lemon_Tea](./Assets/Squeezed_Lemon_Tea.webp)
 
 手のジェスチャーアニメーションの最初のフレームを最後のフレームにコピーします。具体的な手順は以下の通りです：
 `Hierarchy` 内で Avatar<sup>[1]</sup> を選択し、`Animation` 内でアニメーションの最初のフレーム<sup>[2]</sup>を選択し、`Ctrl + C`を押してキーフレームをコピーします。その後、タイムラインを `60`<sup>[3]</sup> に変更し、エンターキーを押して、最後のフレーム<sup>[4]</sup>をクリックした後、`Ctrl + V`を押してキーフレームを貼り付けます。各指<sup>[5]</sup>の角度を調整して、手がレモンティーをしっかり絞っているように見えるようにします：
 
-![Adjust_Gesture_Squeeze](./Assets/Adjust_Gesture_Squeeze.png)
+![Adjust_Gesture_Squeeze](./Assets/Adjust_Gesture_Squeeze.webp)
 
 満足のいくジェスチャーに調整したら、以下のようになります：
 
-![Adjust_Gesture_Squeeze_Finished](./Assets/Adjust_Gesture_Squeeze_Finished.png)
+![Adjust_Gesture_Squeeze_Finished](./Assets/Adjust_Gesture_Squeeze_Finished.webp)
 
 `Hierarchy` 内で Prefab の `Model/Lemon Tea/Lemon_Tea`<sup>[1]</sup> を選択し、`Skinned Mesh Renderer -> BlendShapes -> Squeeze` を `0`<sup>[2]</sup> に戻します：
 
-![Shape_Key_0](./Assets/Shape_Key_0.png)
+![Shape_Key_0](./Assets/Shape_Key_0.webp)
 
 ##### 6. プレビュー状態を終了し、Animator Controllerを元に戻す
 
 Avatar<sup>[1]</sup> を選択し、`Animation` ウィンドウでプレビューを解除します<sup>[2]</sup>：
 
-![Animation_Cancel_Preview](./Assets/Animation_Cancel_Preview.png)
+![Animation_Cancel_Preview](./Assets/Animation_Cancel_Preview.webp)
 
 （オプション）Avatar<sup>[1]</sup> を選択し、Animator Controller を元の状態に戻します<sup>[2]</sup>：
 
-![Gesture_Controller_Reset](./Assets/Gesture_Controller_Reset.png)
+![Gesture_Controller_Reset](./Assets/Gesture_Controller_Reset.webp)
 
 ##### 7.（オプション）レモンティーを非表示にする
 
@@ -186,7 +186,7 @@ VRChatでモデルをプレビューする際にレモンティーを表示す�
 
 `Hierarchy` 内で Prefab の `Model/Lemon Tea`<sup>[1]</sup> を選択し、`Inspector` でそれをオフにします<sup>[2]</sup>：
 
-![Hide_Lemon_Tea](./Assets/Hide_Lemon_Tea.png)
+![Hide_Lemon_Tea](./Assets/Hide_Lemon_Tea.webp)
 
 ##### 8. 口部レシーバーの位置を調整
 
@@ -194,11 +194,11 @@ VRChatでモデルをプレビューする際にレモンティーを表示す�
 
 `Hierarchy` 内でPrefabの `Receiver/Mouth`<sup>[1]</sup> を選択し、Unityの`移動、回転`ツール<sup>[2]</sup>を使用して、その位置を調整します：
 
-![Adjust_Mouth_Position](./Assets/Adjust_Mouth_Position.png)
+![Adjust_Mouth_Position](./Assets/Adjust_Mouth_Position.webp)
 
 口部に移動させたら、以下のようになります：
 
-![Adjust_Mouth_Position_Result](./Assets/Adjust_Mouth_Position_Result.png)
+![Adjust_Mouth_Position_Result](./Assets/Adjust_Mouth_Position_Result.webp)
 
 #### インポート完了
 

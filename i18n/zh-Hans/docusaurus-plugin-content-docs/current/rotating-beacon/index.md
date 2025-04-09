@@ -48,7 +48,7 @@ sidebar_label: 旋转警灯
 
 将 `Rotating Beacon.unitypackage` 拖入 Unity 的 `Project` 窗口中，点击提示窗中的 `Import`，将资源包导入到 Avatar 项目中：
 
-![Import](./Assets/Import.png)
+![Import](./Assets/Import.webp)
 
 ---
 
@@ -70,7 +70,7 @@ sidebar_label: 旋转警灯
 
 将您选择的 Prefab，从 Project 窗口中拖拽到 Hierarchy 中您的 Avatar 下。拖入完成后，Prefab 与 Avatar 的关系如下（这里以 `Rotating Beacon(Full)` 为例）：
 
-![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.png)
+![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.webp)
 
 #### 2. 配置旋转警灯
 
@@ -78,17 +78,17 @@ sidebar_label: 旋转警灯
 
 在拖入 Prefab 后，场景中的警灯会出现在离地面 1.5m 的高度：
 
-![Beacon_Head_Only_Default_Position](./Assets/Beacon_Head_Only_Default_Position.png)
+![Beacon_Head_Only_Default_Position](./Assets/Beacon_Head_Only_Default_Position.webp)
 
 ###### 1. 调整警灯的位置
 
 在 Hierarchy 中，选中 `Prefab/Model`<sup>[1]</sup>，使用 `移动`、`旋转` 和 `缩放` 工具<sup>[2]</sup>调整其位置和大小：
 
-![Beacon_Head_Only_Adjust_Position](./Assets/Beacon_Head_Only_Adjust_Position.png)
+![Beacon_Head_Only_Adjust_Position](./Assets/Beacon_Head_Only_Adjust_Position.webp)
 
 让警灯置于 Avatar 的头顶：
 
-![Beacon_Head_Only_Adjust_Position_Finished](./Assets/Beacon_Head_Only_Adjust_Position_Finished.png)
+![Beacon_Head_Only_Adjust_Position_Finished](./Assets/Beacon_Head_Only_Adjust_Position_Finished.webp)
 
 完成后，请查看 [进一步配置](#3-进一步配置)。
 
@@ -98,17 +98,17 @@ sidebar_label: 旋转警灯
 
 在添加 Prefab 后，场景中会有一个距离地面 1.5m 高度的警灯，还有一个黄色的球形 Contact Sender 在对应手的方向附近：
 
-![Beacon_Full_Default_Position](./Assets/Beacon_Full_Default_Position.png)
+![Beacon_Full_Default_Position](./Assets/Beacon_Full_Default_Position.webp)
 
 ###### 1. 调整警灯在头上的位置
 
 选中 Hierarchy 中的 `Prefab/Constraint Parents/Head`<sup>[1]</sup>，在场景中使用 `移动`、`旋转` 和 `缩放` 工具<sup>[2]</sup>调整其位置和大小：
 
-![Beacon_Full_Adjust_Position_Head](./Assets/Beacon_Full_Adjust_Position_Head.png)
+![Beacon_Full_Adjust_Position_Head](./Assets/Beacon_Full_Adjust_Position_Head.webp)
 
 将警灯置于 Avatar 的头顶：
 
-![Beacon_Full_Adjust_Position_Head_Finished](./Assets/Beacon_Full_Adjust_Position_Head_Finished.png)
+![Beacon_Full_Adjust_Position_Head_Finished](./Assets/Beacon_Full_Adjust_Position_Head_Finished.webp)
 
 ###### 2. 调整警灯在手上的位置
 
@@ -116,15 +116,15 @@ sidebar_label: 旋转警灯
 
 在 Hierarchy 中选择 `Prefab/Model`<sup>[1]</sup>，转到 Inspector 窗口，将 `VRC Parent Constraint`<sup>[2]</sup> 组件下的 `Sources` 列表中，`Element 0 [Head]` 的 `Weight` 改为 `0`<sup>[3]</sup>，然后将 `Element 1 [Hand]` 的 `Weight` 改为 `1`<sup>[4]</sup>：
 
-![Beacon_Full_Set_Constraint_Hand](./Assets/Beacon_Full_Set_Constraint_Hand.png)
+![Beacon_Full_Set_Constraint_Hand](./Assets/Beacon_Full_Set_Constraint_Hand.webp)
 
 这时我们可以看到，场景中的警灯移动到了相应手的附近：
 
-![Beacon_Full_Set_Constraint_Hand_Scene](./Assets/Beacon_Full_Set_Constraint_Hand_Scene.png)
+![Beacon_Full_Set_Constraint_Hand_Scene](./Assets/Beacon_Full_Set_Constraint_Hand_Scene.webp)
 
 回到 Hierarchy，选中 `Prefab/Constraint Parents/Hand`，将警灯移动到手上。位置参考：
 
-![Beacon_Full_Adjust_Position_Hand_Finished](./Assets/Beacon_Full_Adjust_Position_Hand_Finished.png)
+![Beacon_Full_Adjust_Position_Hand_Finished](./Assets/Beacon_Full_Adjust_Position_Hand_Finished.webp)
 
 ###### 3. 调整手部的 Contact Sender 和头部的 Contact Receiver
 
@@ -132,11 +132,11 @@ sidebar_label: 旋转警灯
 
 选择 Hierarchy 中的 `Prefab/Constraint Parents/Hand/Contact Sender`，在场景中使用 `移动` 和 `缩放` 工具（或者在 Contact Sender 组件中调整 Position 和 Radius）调整 Sender 的位置和大小。调整参考：
 
-![Adjust_Contact_Sender_Example](./Assets/Adjust_Contact_Sender_Example.png)
+![Adjust_Contact_Sender_Example](./Assets/Adjust_Contact_Sender_Example.webp)
 
 在 Hierarchy 中，选中 `Prefab/Constraint Parents/Head/Contact Receiver`，在场景中使用 `移动` 和 `缩放` 工具（或者在 Contact Receiver 组件中调整 Position 和 Radius）调整 Receiver 的位置和大小。调整参考：
 
-![Adjust_Contact_Receiver_Example](./Assets/Adjust_Contact_Receiver_Example.png)
+![Adjust_Contact_Receiver_Example](./Assets/Adjust_Contact_Receiver_Example.webp)
 
 ##### 3. 进一步配置
 

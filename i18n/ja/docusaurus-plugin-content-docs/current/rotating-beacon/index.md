@@ -52,7 +52,7 @@ sidebar_label: 回転ビーコン
 
 `Rotating Beacon.unitypackage` を Unity の `Project` ウィンドウにドラッグし、ポップアップウィンドウで `Import` をクリックしてリソースパッケージをアバタープロジェクトにインポートします：
 
-![Import](./Assets/Import.png)
+![Import](./Assets/Import.webp)
 
 ---
 
@@ -74,7 +74,7 @@ sidebar_label: 回転ビーコン
 
 選択した Prefab を Project ウィンドウから Hierarchy 内のアバターにドラッグ＆ドロップします。追加後、Prefab とアバターの関係は以下のようになります（ここでは `Rotating Beacon(Full)` を例とします）：
 
-![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.png)
+![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.webp)
 
 #### 2. 回転ビーコンの設定
 
@@ -82,17 +82,17 @@ sidebar_label: 回転ビーコン
 
 Prefab を追加後、シーン内のビーコンは地面から 1.5m の高さに配置されます：
 
-![Beacon_Head_Only_Default_Position](./Assets/Beacon_Head_Only_Default_Position.png)
+![Beacon_Head_Only_Default_Position](./Assets/Beacon_Head_Only_Default_Position.webp)
 
 ###### 1. ビーコンの位置調整
 
 Hierarchy で `Prefab/Model`<sup>[1]</sup> を選択し、`移動`、`回転`、`スケール` ツール<sup>[2]</sup> を使ってその位置とサイズを調整します：
 
-![Beacon_Head_Only_Adjust_Position](./Assets/Beacon_Head_Only_Adjust_Position.png)
+![Beacon_Head_Only_Adjust_Position](./Assets/Beacon_Head_Only_Adjust_Position.webp)
 
 ビーコンをアバターの頭部に配置します：
 
-![Beacon_Head_Only_Adjust_Position_Finished](./Assets/Beacon_Head_Only_Adjust_Position_Finished.png)
+![Beacon_Head_Only_Adjust_Position_Finished](./Assets/Beacon_Head_Only_Adjust_Position_Finished.webp)
 
 完了後、[さらなる設定](#3-さらなる設定) を参照してください。
 
@@ -102,17 +102,17 @@ Hierarchy で `Prefab/Model`<sup>[1]</sup> を選択し、`移動`、`回転`、
 
 Prefab を追加後、シーンには地面から 1.5m の高さに配置されたビーコンと、対応する手の方向近くに黄色い球状の Contact Sender が表示されます：
 
-![Beacon_Full_Default_Position](./Assets/Beacon_Full_Default_Position.png)
+![Beacon_Full_Default_Position](./Assets/Beacon_Full_Default_Position.webp)
 
 ###### 1. ビーコンの頭部位置の調整
 
 Hierarchy で `Prefab/Constraint Parents/Head`<sup>[1]</sup> を選択し、シーン内で `移動`、`回転`、`スケール` ツール<sup>[2]</sup> を使ってその位置とサイズを調整します：
 
-![Beacon_Full_Adjust_Position_Head](./Assets/Beacon_Full_Adjust_Position_Head.png)
+![Beacon_Full_Adjust_Position_Head](./Assets/Beacon_Full_Adjust_Position_Head.webp)
 
 ビーコンをアバターの頭部に配置します：
 
-![Beacon_Full_Adjust_Position_Head_Finished](./Assets/Beacon_Full_Adjust_Position_Head_Finished.png)
+![Beacon_Full_Adjust_Position_Head_Finished](./Assets/Beacon_Full_Adjust_Position_Head_Finished.webp)
 
 ###### 2. ビーコンの手部位置の調整
 
@@ -120,15 +120,15 @@ Hierarchy で `Prefab/Constraint Parents/Head`<sup>[1]</sup> を選択し、シ�
 
 Hierarchy で `Prefab/Model`<sup>[1]</sup> を選択し、Inspector ウィンドウで `VRC Parent Constraint`<sup>[2]</sup> コンポーネント内の `Sources` リストに移動します。`Element 0 [Head]` の `Weight` を `0`<sup>[3]</sup> に変更し、`Element 1 [Hand]` の `Weight` を `1`<sup>[4]</sup> に設定します：
 
-![Beacon_Full_Set_Constraint_Hand](./Assets/Beacon_Full_Set_Constraint_Hand.png)
+![Beacon_Full_Set_Constraint_Hand](./Assets/Beacon_Full_Set_Constraint_Hand.webp)
 
 これにより、シーン内のビーコンが対応する手部の近くに移動します：
 
-![Beacon_Full_Set_Constraint_Hand_Scene](./Assets/Beacon_Full_Set_Constraint_Hand_Scene.png)
+![Beacon_Full_Set_Constraint_Hand_Scene](./Assets/Beacon_Full_Set_Constraint_Hand_Scene.webp)
 
 Hierarchy に戻り、`Prefab/Constraint Parents/Hand` を選択して、ビーコンを手部に移動します。参考位置：
 
-![Beacon_Full_Adjust_Position_Hand_Finished](./Assets/Beacon_Full_Adjust_Position_Hand_Finished.png)
+![Beacon_Full_Adjust_Position_Hand_Finished](./Assets/Beacon_Full_Adjust_Position_Hand_Finished.webp)
 
 ###### 3. 手部の Contact Sender と頭部の Contact Receiver の調整
 
@@ -136,11 +136,11 @@ Hierarchy に戻り、`Prefab/Constraint Parents/Hand` を選択して、ビー�
 
 Hierarchy で `Prefab/Constraint Parents/Hand/Contact Sender` を選択し、シーン内で `移動` と `スケール` ツール（または Contact Sender コンポーネント内で Position と Radius を調整）を使って Sender の位置とサイズを調整します。調整例：
 
-![Adjust_Contact_Sender_Example](./Assets/Adjust_Contact_Sender_Example.png)
+![Adjust_Contact_Sender_Example](./Assets/Adjust_Contact_Sender_Example.webp)
 
 次に、Hierarchy で `Prefab/Constraint Parents/Head/Contact Receiver` を選択し、同様に `移動` と `スケール` ツール（または Contact Receiver コンポーネント内で Position と Radius を調整）を使って Receiver の位置とサイズを調整します。調整例：
 
-![Adjust_Contact_Receiver_Example](./Assets/Adjust_Contact_Receiver_Example.png)
+![Adjust_Contact_Receiver_Example](./Assets/Adjust_Contact_Receiver_Example.webp)
 
 ##### 3. さらなる設定
 

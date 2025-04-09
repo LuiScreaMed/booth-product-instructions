@@ -66,7 +66,7 @@ sidebar_label: ダスター
 
 `Duster.unitypackage` を Unity の `Project` ウィンドウにドラッグアンドドロップし、ポップアップウィンドウの `Import` をクリックして、パッケージを Avatar プロジェクトにインポートします：
 
-![インポート](./Assets/Import.png)
+![インポート](./Assets/Import.webp)
 
 <sub>パッケージのインポート完了</sub>
 
@@ -78,7 +78,7 @@ sidebar_label: ダスター
 
 `Assets/LuiStudio/Duster` 内の `Duster_Normal_MA.prefab` を Avatar にドラッグアンドドロップします。ドラッグアンドドロップ後、Prefab と Avatar の関係は次のようになります：
 
-![通常プレハブ](./Assets/Prefab_Normal.png)
+![通常プレハブ](./Assets/Prefab_Normal.webp)
 
 #### 2. ダスターの位置調整
 
@@ -86,32 +86,32 @@ sidebar_label: ダスター
 
 Hierarchy で、Prefab 内の `Model/Duster`<sup>[1]</sup> を選択し、Inspector で以下のようにチェックボックスをチェック<sup>[2]</sup> して、ダスターのモデルを表示します：
 
-![通常_モデル表示](./Assets/Normal_Show_Model.png)
+![通常_モデル表示](./Assets/Normal_Show_Model.webp)
 
 チェックを入れると、ダスターが右手に表示されます：
 
-![モデル右手表示](./Assets/Model_Show_On_Right_Hand.png)
+![モデル右手表示](./Assets/Model_Show_On_Right_Hand.webp)
 
 ##### 2. 位置調整
 
 Hierarchy で、Prefab 内の `Constraints/Right_Hand/Right_Hand_Relative`<sup>[1]</sup> を選択し、Unity の `移動、回転` ツール<sup>[2]</sup> を使用して、ダスターの右手での位置を調整します：
 
-![右手位置調整](./Assets/Adjust_Position_Right_Hand.png)
+![右手位置調整](./Assets/Adjust_Position_Right_Hand.webp)
 
 自分の満足のいく位置に調整し、以下のようになります：
 
-![右手位置調整完了](./Assets/Adjust_Position_Right_Hand_Finished.png)
+![右手位置調整完了](./Assets/Adjust_Position_Right_Hand_Finished.webp)
 
 ##### 3. ダスターのモデルを非表示にする
 
 VRChatでモデルをプレビューする際にダスターが表示されないようにするために、非表示にする必要があります（これについて気にしない場合は、この手順をスキップしてください）
 Hierarchy で、Prefab 内の `Model/Duster`<sup>[1]</sup> を選択し、Inspector で以下のようにチェックボックスを外して<sup>[2]</sup> 、ダスターのモデルを非表示にします：
 
-![通常_モデル非表示](./Assets/Normal_Hide_Model.png)
+![通常_モデル非表示](./Assets/Normal_Hide_Model.webp)
 
 チェックを外すと、ダスターが非表示になります：
 
-![モデル非表示](./Assets/Model_Hide.png)
+![モデル非表示](./Assets/Model_Hide.webp)
 
 #### インポート完了
 
@@ -131,7 +131,7 @@ Hierarchy で、Prefab 内の `Model/Duster`<sup>[1]</sup> を選択し、Inspec
 
 `Assets/LuiStudio/Duster` 内の `Duster_Normal+Weaponize_MA.prefab` を Avatar にドラッグアンドドロップします。ドラッグアンドドロップ後、Prefab と Avatar の関係は次のようになります：
 
-![武器プレハブ](./Assets/Prefab_Weaponize.png)
+![武器プレハブ](./Assets/Prefab_Weaponize.webp)
 
 #### 2. ダスターの右手（通常状態）の位置を調整
 
@@ -151,7 +151,7 @@ Hierarchy で、Prefab 内の `Model/Duster`<sup>[1]</sup> を選択し、Inspec
 
 Hierarchy で Avatar モデルを選択<sup>[1]</sup> し、Inspector で `Animator` コンポーネント<sup>[2]</sup> を無効にします：
 
-![Avatar Animatorコンポーネントを無効にする](./Assets/Weaponize_Disable_Avatar_Animator.png)
+![Avatar Animatorコンポーネントを無効にする](./Assets/Weaponize_Disable_Avatar_Animator.webp)
 
 ##### 3. ダスターを左手に表示する
 
@@ -161,21 +161,21 @@ Hierarchy で、Prefab 内の任意のオブジェクトを選択し、Animation
 >
 >Animation ウィンドウが見つからない場合は、Project ウィンドウタブを右クリック -> タブの追加 -> Animation で追加してください。
 
-![左手のアニメーション](./Assets/Weaponize_Animation_Left_Handed.png)
+![左手のアニメーション](./Assets/Weaponize_Animation_Left_Handed.webp)
 
 これにより、ダスターが左手に移動します：
 
-![モデル左手に表示](./Assets/Model_Show_On_Left_Hand.png)
+![モデル左手に表示](./Assets/Model_Show_On_Left_Hand.webp)
 
 ##### 4. 位置調整
 
 Hierarchy で、Prefab 内の `Constraints/Left_Hand/Left_Hand_Relative`<sup>[1]</sup> を選択し、Unity の `移動、回転` ツール<sup>[2]</sup> を使用して、ダスターの左手での位置を調整します：
 
-![左手の位置調整](./Assets/Adjust_Position_Left_Hand.png)
+![左手の位置調整](./Assets/Adjust_Position_Left_Hand.webp)
 
 ダスターを適切な位置に移動し、以下のようになります：
 
-![左手の位置調整完了](./Assets/Adjust_Position_Left_Hand_Finished.png)
+![左手の位置調整完了](./Assets/Adjust_Position_Left_Hand_Finished.webp)
 
 ##### 5. 左手のダスターのアニメーションプレビューを無効にする
 
@@ -183,17 +183,17 @@ Animation ウィンドウで、 `Preview`<sup>[1]</sup> をクリックしてア
 
 タンの横のプレビューをクリックしないでください**）：
 
-![左手のアニメーション無効化](./Assets/Weaponize_Animation_Left_Handed_Off.png)
+![左手のアニメーション無効化](./Assets/Weaponize_Animation_Left_Handed_Off.webp)
 
 これにより、ダスターが右手に戻ります：
 
-![右手位置調整完了](./Assets/Adjust_Position_Right_Hand_Finished.png)
+![右手位置調整完了](./Assets/Adjust_Position_Right_Hand_Finished.webp)
 
 ##### 6. AvatarのAnimatorコンポーネントを再度有効にする
 
 Hierarchy で Avatar モデルを選択<sup>[1]</sup> し、Inspector で `Animator` コンポーネント<sup>[2]</sup> を有効にします：
 
-![Avatar Animatorコンポーネントを有効にする](./Assets/Weaponize_Enable_Avatar_Animator.png)
+![Avatar Animatorコンポーネントを有効にする](./Assets/Weaponize_Enable_Avatar_Animator.webp)
 
 ##### 7. ダスターのモデルを非表示にする
 

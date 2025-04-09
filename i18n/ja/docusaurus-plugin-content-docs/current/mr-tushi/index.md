@@ -47,7 +47,7 @@ sidebar_label: Mr.トゥシー
 
 `Mr Tushi.unitypackage` を Unity の `Project` ウィンドウにドラッグし、プロンプトが表示されたら `Import` をクリックして、アセットパッケージを Avatar プロジェクトにインポートします。
 
-![Import](./Assets/Import.png)
+![Import](./Assets/Import.webp)
 
 <sub>アセットパッケージのインポート完了</sub>
 
@@ -59,21 +59,21 @@ sidebar_label: Mr.トゥシー
 
 Project ウィンドウで `Assets/LuiStudio/Mr Tushi/Mr Tushi.prefab` を Hierarchy ウィンドウのアバターにドラッグ＆ドロップします。Prefab を追加すると、アバターと Prefab の関係は以下のようになります：
 
-![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.png)
+![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.webp)
 
 #### 2. 位置の調整
 
 前の手順を完了すると、シーン内で Mr.トゥシー が頭部の骨に固定されているのが確認できます（以下の画像を参照）：
 
-![Tushi_Startup_Position](./Assets/Tushi_Startup_Position.png)
+![Tushi_Startup_Position](./Assets/Tushi_Startup_Position.webp)
 
 Hierarchy で `Mr Tushi/Armature_Tushi/Root`<sup>[1]</sup> を選択し、シーン内で `移動ツール`、`回転ツール`、`スケールツール`<sup>[2]</sup> を使って Mr.トゥシー を頭の上に移動します：
 
-![Adjust_Position](./Assets/Adjust_Position.png)
+![Adjust_Position](./Assets/Adjust_Position.webp)
 
 移動後の参考位置：
 
-![Position_Example](./Assets/Position_Example.png)
+![Position_Example](./Assets/Position_Example.webp)
 
 #### インポート完了
 

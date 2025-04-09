@@ -42,7 +42,7 @@ sidebar_label: 图西先生
 
 将 `Mr Tushi.unitypackage` 拖入 Unity 的 `Project` 窗口中，点击提示窗中的 `Import`，将资源包导入到 Avatar 项目中：
 
-![Import](./Assets/Import.png)
+![Import](./Assets/Import.webp)
 
 <sub>资源包导入结束</sub>
 
@@ -54,21 +54,21 @@ sidebar_label: 图西先生
 
 在 Project 窗口中，找到 `Assets/LuiStudio/Mr Tushi/Mr Tushi.prefab`，将其拖入 Hierarchy 窗口中的 Avatar 中，拖入后 Prefab 与 Avatar 的关系如下:
 
-![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.png)
+![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.webp)
 
 #### 2. 调整位置
 
 在完成上一步后，我们可以在场景中看到图西先生被固定到了头部的骨骼上，如图：
 
-![Tushi_Startup_Position](./Assets/Tushi_Startup_Position.png)
+![Tushi_Startup_Position](./Assets/Tushi_Startup_Position.webp)
 
 在 Hierarchy 选中 `Mr Tushi/Armature_Tushi/Root`<sup>[1]</sup>，在场景中使用 `移动工具`、`旋转工具` 和 `缩放工具`<sup>[2]</sup> 将图西先生移动到头顶：
 
-![Adjust_Position](./Assets/Adjust_Position.png)
+![Adjust_Position](./Assets/Adjust_Position.webp)
 
 移动后的位置参考：
 
-![Position_Example](./Assets/Position_Example.png)
+![Position_Example](./Assets/Position_Example.webp)
 
 #### 导入完成
 

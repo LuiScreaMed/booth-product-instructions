@@ -50,7 +50,7 @@ sidebar_label: 柠檬茶
 
 将 `Lemon Tea.unitypackage` 拖入 Unity 的 `Project` 窗口中，点击提示窗中的 `Import`，将资源包导入到 Avatar 项目中：
 
-![Import](./Assets/Import.png)
+![Import](./Assets/Import.webp)
 
 <sub>资源包导入结束</sub>
 
@@ -80,7 +80,7 @@ sidebar_label: 柠檬茶
 
 将 `Assets/LuiStudio/Lemon Tea` 中的 `Lemon_Tea_Squeeze_MA.prefab`（或其他版本的预制件） 拖入 Avatar 中，拖入后 Prefab 与 Avatar 的关系如下：
 
-![Prefab](./Assets/Prefab.png)
+![Prefab](./Assets/Prefab.webp)
 
 #### 2. 调整位置
 
@@ -101,7 +101,7 @@ sidebar_label: 柠檬茶
 
 在 Project 中，转到 `Assets/LuiStudio/Lemon Tea/Animations/Controllers`，将 `LemonTeaSqueezeAnimatorGesture`<sup>[1]</sup>（或其他版本的 Animator Controller） 拖入到 Avatar<sup>[2]</sup>（以 Sample_Avatar 为例） 的 Animator 的 Controller 中<sup>[3]</sup>，完成后如下图：
 
-![Gesture_Controller_Drag](./Assets/Gesture_Controller_Drag.png)
+![Gesture_Controller_Drag](./Assets/Gesture_Controller_Drag.webp)
 
 ##### 2. 启用动画预览
 
@@ -111,28 +111,28 @@ sidebar_label: 柠檬茶
 >
 >如果找不到 Animation 窗口，请右键 Project 窗口标签 -> Add Tab -> Animation
 
-![Animation_Preview](./Assets/Animation_Preview.png)
+![Animation_Preview](./Assets/Animation_Preview.webp)
 
 ##### 3. 调整柠檬茶的位置
 
 在 Hierarchy 中，选中 Prefab 中的 `Model/Lemon_Tea`<sup>[1]</sup>，使用 Unity 的 `移动、旋转、缩放` 工具<sup>[2]</sup>，对柠檬茶在手上的位置进行调整：
 
-![Adjust_Position](./Assets/Adjust_Position.png)
+![Adjust_Position](./Assets/Adjust_Position.webp)
 
 调整到自己满意的位置，如下图：
 
-![Adjust_Position_Finished](./Assets/Adjust_Position_Finished.png)
+![Adjust_Position_Finished](./Assets/Adjust_Position_Finished.webp)
 
 ##### 4. 调整握持柠檬茶的手势
 
 在上一步骤的结果图片中可以看到，手指穿过了柠檬茶，看起来特别的廉价，为了让 Avatar 看起来能够好好握住柠檬茶，我们还需要对手势进行调整。
 在 Animation 窗口中，选择第一帧<sup>[1]</sup>，调整每个手指<sup>[2]</sup>的角度，让手看起来好好握住了柠檬茶：
 
-![Adjust_Gesture](./Assets/Adjust_Gesture.png)
+![Adjust_Gesture](./Assets/Adjust_Gesture.webp)
 
 调整到自己满意的手势，如下图：
 
-![Adjust_Gesture_Finished](./Assets/Adjust_Gesture_Finished.png)
+![Adjust_Gesture_Finished](./Assets/Adjust_Gesture_Finished.webp)
 
 >:warning: **注意**
 >
@@ -146,34 +146,34 @@ sidebar_label: 柠檬茶
 
 在 Hierarchy 中，选中 Prefab 中的 `Model/Lemon Tea/Lemon_Tea`<sup>[1]</sup>，将其 `Skinned Mesh Renderer -> BlendShapes -> Squeeze` 修改至 `100`<sup>[2]</sup>：
 
-![Shape_Key_100](./Assets/Shape_Key_100.png)
+![Shape_Key_100](./Assets/Shape_Key_100.webp)
 
 修改后，场景中的柠檬茶盒子将变成被略微挤压的样子：
 
-![Squeezed_Lemon_Tea](./Assets/Squeezed_Lemon_Tea.png)
+![Squeezed_Lemon_Tea](./Assets/Squeezed_Lemon_Tea.webp)
 
 将手势动画的第一帧复制到最后一帧，具体操作如下：
 在 Hierarchy 中，选中 Avatar<sup>[1]</sup>，然后在 Animation 中选择动画的第一帧<sup>[2]</sup>，按下 `Ctrl + C` 复制关键帧，然后将时间轴修改到 `60`<sup>[3]</sup>并按下回车，点击动画的最后一帧<sup>[4]</sup>后按下 `Ctrl + V` 粘贴关键帧，调整每个手指<sup>[5]</sup>的角度，让手看起来捏住了柠檬茶：
 
-![Adjust_Gesture_Squeeze](./Assets/Adjust_Gesture_Squeeze.png)
+![Adjust_Gesture_Squeeze](./Assets/Adjust_Gesture_Squeeze.webp)
 
 调整到自己满意的手势，如下图：
 
-![Adjust_Gesture_Squeeze_Finished](./Assets/Adjust_Gesture_Squeeze_Finished.png)
+![Adjust_Gesture_Squeeze_Finished](./Assets/Adjust_Gesture_Squeeze_Finished.webp)
 
 在 Hierarchy 中，选中 Prefab 中的 `Model/Lemon Tea/Lemon_Tea`<sup>[1]</sup>，将其 `Skinned Mesh Renderer -> BlendShapes -> Squeeze` 改回 `0`<sup>[2]</sup>：
 
-![Shape_Key_0](./Assets/Shape_Key_0.png)
+![Shape_Key_0](./Assets/Shape_Key_0.webp)
 
 ##### 6. 关闭预览状态并恢复 Animator Controller
 
 选择 Avatar<sup>[1]</sup>，在 Animation 窗口中取消预览<sup>[2]</sup>：
 
-![Animation_Cancel_Preview](./Assets/Animation_Cancel_Preview.png)
+![Animation_Cancel_Preview](./Assets/Animation_Cancel_Preview.webp)
 
 （可选）选择 Avatar<sup>[1]</sup>，将 Animator Controller 恢复到先前的状态<sup>[2]</sup>：
 
-![Gesture_Controller_Reset](./Assets/Gesture_Controller_Reset.png)
+![Gesture_Controller_Reset](./Assets/Gesture_Controller_Reset.webp)
 
 ##### 7.（可选）隐藏柠檬茶
 
@@ -181,7 +181,7 @@ sidebar_label: 柠檬茶
 
 在 Hierarchy 中，选中 Prefab 中的 `Model/Lemon Tea`<sup>[1]</sup>，在 Inspector 中将其关闭<sup>[2]</sup>：
 
-![Hide_Lemon_Tea](./Assets/Hide_Lemon_Tea.png)
+![Hide_Lemon_Tea](./Assets/Hide_Lemon_Tea.webp)
 
 ##### 8. 调整嘴部接收器的位置
 
@@ -189,11 +189,11 @@ sidebar_label: 柠檬茶
 
 在 Hierarchy 中，选中 Prefab 中的 `Receiver/Mouth`<sup>[1]</sup>，使用 Unity 的 `移动、旋转` 工具<sup>[2]</sup>，调整其位置：
 
-![Adjust_Mouth_Position](./Assets/Adjust_Mouth_Position.png)
+![Adjust_Mouth_Position](./Assets/Adjust_Mouth_Position.webp)
 
 将其移动到嘴部，如下图：
 
-![Adjust_Mouth_Position_Result](./Assets/Adjust_Mouth_Position_Result.png)
+![Adjust_Mouth_Position_Result](./Assets/Adjust_Mouth_Position_Result.webp)
 
 #### 导入完成
 

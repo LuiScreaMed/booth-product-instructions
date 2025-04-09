@@ -46,7 +46,7 @@ This gimmick relies on the following Unity plugins / shaders. Make sure you have
 
 Drag `Search Light.unitypackage` into `Project` window, click the `Import` button on the dialog to import the package to your avatar project:
 
-![Import](./assets/Import.png)
+![Import](./assets/Import.webp)
 
 <sub>Importing Unity Package end</sub>
 
@@ -67,7 +67,7 @@ Check your avatar to make sure if it contains eye bones to add the currect prefa
 
 Drag the satisfied prefab from `Assets/LuiStudio/Search Light` to your avatar. Hierarchy should be like:
 
-![Prefab](./assets/Prefab.png)
+![Prefab](./assets/Prefab.webp)
 
 #### 2. Reposition
 
@@ -77,11 +77,11 @@ There's a position indicator model for better experience, the model will be auto
 
 Select `Armature_Search_Light`<sup>[1]</sup> under the added prefab, use the `Move Tool` and `Rotate Tool`<sup>[2]</sup> and move the Search Light in front of avatar's eyes:
 
-![Adjust_Position](./assets/Adjust_Position.png)
+![Adjust_Position](./assets/Adjust_Position.webp)
 
 It should look like this after the movement:
 
-![Adjust_Position_Finished](./assets/Adjust_Position_Finished.png)
+![Adjust_Position_Finished](./assets/Adjust_Position_Finished.webp)
 
 ##### 2. Adjust Search Lights for Both Eyes
 
@@ -91,27 +91,27 @@ We need to align the search lights to both eyes after the roughly move. In this 
 
 Select `Search_Light_L`<sup>[1]</sup> under `Armature_Search_Light`, use `Move Tool` and `Rotate Tool` to align the search light to the front of left eye:
 
-![Adjust_Position_L](./assets/Adjust_Position_L.png)
+![Adjust_Position_L](./assets/Adjust_Position_L.webp)
 
 ###### 2. Adjust for Right Eye
 
 Select `Search_Light_L`<sup>[1]</sup>, head to Inspector, right click on Position under Transform, and click on `Copy`<sup>[2]</sup>:
 
-![Copy_Position_L](./assets/Copy_Position_L.png)
+![Copy_Position_L](./assets/Copy_Position_L.webp)
 
 Select `Search_Light_R`<sup>[1]</sup>, head to Inspector, right click on Position under Transform, and click on `Paste`<sup>[2]</sup>:
 
-![Paste_Position_R](./assets/Paste_Position_R.png)
+![Paste_Position_R](./assets/Paste_Position_R.webp)
 
 Make the X axis value opposite in Position:
 
-![Position_R_X_Opposite](./assets/Position_R_X_Opposite.png)
+![Position_R_X_Opposite](./assets/Position_R_X_Opposite.webp)
 
 ##### 3. Hide the Position Indicator (Optional)
 
 Select `Position (Auto_Remove_After_Upload)`, uncheck the active check box in Inspector:
 
-![Hide_Position_Indicator](./assets/Hide_Position_Indicator.png)
+![Hide_Position_Indicator](./assets/Hide_Position_Indicator.webp)
 
 #### Well Done
 

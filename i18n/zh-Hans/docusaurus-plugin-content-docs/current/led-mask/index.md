@@ -68,7 +68,7 @@ sidebar_label: LED 口罩
 
 将 `LED Mask.unitypackage` 拖入 Unity 的 `Project` 窗口中，点击提示窗中的 `Import`，将资源包导入到 Avatar 项目中：
 
-![Import](./assets/Import.png)
+![Import](./assets/Import.webp)
 
 <sub>资源包导入结束</sub>
 
@@ -84,11 +84,11 @@ sidebar_label: LED 口罩
 
 在 Project 窗口中，转到 `Assets/LuiStudio/LED Mask/Prefabs`，找到标有您的 Avatar 素体名字的 Prefab（本教程中以 [しろいの 的 にゃにゃし](https://siroinoworks.booth.pm/items/6082750) 为例），如图：
 
-![Fitted_Prefab](./assets/Fitted_Prefab.png)
+![Fitted_Prefab](./assets/Fitted_Prefab.webp)
 
 将该 Prefab 拖入 Avatar 中，拖入后 Prefab 与 Avatar 的关系如下：
 
-![Prefab_In_Avatar](./assets/Prefab_In_Avatar.png)
+![Prefab_In_Avatar](./assets/Prefab_In_Avatar.webp)
 
 #### 3. 测试
 
@@ -115,11 +115,11 @@ sidebar_label: LED 口罩
 
 在 Project 窗口中，转到 `Assets/LuiStudio/LED Mask/Prefabs`，找到 `LED_Mask.prefab`，如图：
 
-![Not_Fitted_Prefab](./assets/Not_Fitted_Prefab.png)
+![Not_Fitted_Prefab](./assets/Not_Fitted_Prefab.webp)
 
 将该 Prefab 拖入 Avatar 中，**并保证 Avatar 中只存在一个 LED 口罩 Prefab**，拖入后 Prefab 与 Avatar 的关系如下：
 
-![Not_Fitted_Prefab_In_Avatar](./assets/Not_Fitted_Prefab_In_Avatar.png)
+![Not_Fitted_Prefab_In_Avatar](./assets/Not_Fitted_Prefab_In_Avatar.webp)
 
 #### 2. 调整口罩形状
 
@@ -127,13 +127,13 @@ sidebar_label: LED 口罩
 >
 >在这一步之前，请将场景窗口左上角的 Tool Settings 修改为 Pivot（轴心）和 Local（局部）<sup>[1]</sup>：
 >
->![Set_Pivot_Local](./assets/Set_Pivot_Local.png)
+>![Set_Pivot_Local](./assets/Set_Pivot_Local.webp)
 
 因为每个 Avatar 的脸型和骨骼都不尽相同，我们需要将 LED 口罩的形状调整到适合自己的 Avatar 为止。
 
 保持在 Hierarchy 中选中 `LED 口罩 Prefab/Armature_LED_Mask/Root`<sup>[1]</sup>，在场景中使用 `移动工具`、`旋转工具`和`缩放工具`<sup>[2]</sup>粗略地对口罩的位置、旋转和大小进行调整：
 
-![Adjust_Position_Root](./assets/Adjust_Position_Root.png)
+![Adjust_Position_Root](./assets/Adjust_Position_Root.webp)
 
 >:warning: **注意**
 >
@@ -141,15 +141,15 @@ sidebar_label: LED 口罩
 
 粗略调整完毕后，看起来如下图所示：
 
-![Adjust_Position_Root_Finished](./assets/Adjust_Position_Root_Finished.png)
+![Adjust_Position_Root_Finished](./assets/Adjust_Position_Root_Finished.webp)
 
 口罩看起来依然不贴合 Avatar 的脸颊，我们需要对口罩的各个部位进行微调，展开 `Root`，可以看到口罩不同部位的骨骼：
 
-![Bones](./assets/Bones.png)
+![Bones](./assets/Bones.webp)
 
 这看起来很复杂，但是如果我们分成不同的部分，一步一步进行调整，就简单多了：
 
-![Bones_Assigned](./assets/Bones_Assigned.png)
+![Bones_Assigned](./assets/Bones_Assigned.webp)
 
 我们分成了三个部分，下面我们对三个部分按顺序进行调整。
 
@@ -157,19 +157,19 @@ sidebar_label: LED 口罩
 
 这一部分的骨骼包含：`Jaw`、`Jaw_Inner`、`Nose_Tip`和`Top`，这些骨骼所对应的部位如图所示：
 
-![Bones_Reference_1](./assets/Bones_Reference_1.png)
+![Bones_Reference_1](./assets/Bones_Reference_1.webp)
 
 选中相应的骨骼，使用 `移动`、`旋转` 工具对需要修改的部位进行微调。
 
 调整到您满意的程度，如下图：
 
-![Bones_1_Position_Finished](./assets/Bones_1_Position_Finished.png)
+![Bones_1_Position_Finished](./assets/Bones_1_Position_Finished.webp)
 
 ##### 2. 调整口罩的左侧部分
 
 这一部分的骨骼包含：`Cheek.L`、`Cheek_Jaw_Inner.L`、`Cheek_Puff.L`、`Cheek_Top.L`、`Side.L`和`Ear.L`，这些骨骼所对应的部位如图所示：
 
-![Bones_Reference_2](./assets/Bones_Reference_2.png)
+![Bones_Reference_2](./assets/Bones_Reference_2.webp)
 
 请根据骨骼的层级，从外到里，按顺序调整，例如以下顺序：
 
@@ -179,7 +179,7 @@ sidebar_label: LED 口罩
 
 调整到您满意的程度，如下图（请忽视我的 Avatar 中没有耳朵的情况:sob:）：
 
-![Bones_2_Position_Finished](./assets/Bones_2_Position_Finished.png)
+![Bones_2_Position_Finished](./assets/Bones_2_Position_Finished.webp)
 
 ##### 3. 调整口罩的右侧部分
 
@@ -188,13 +188,13 @@ sidebar_label: LED 口罩
 
 点击 Unity 顶部菜单中的 `Tools > LuiStudio > LED Mask > Mirror Bones`，呼出 `Mirror LED Mask Bones` 窗口，将  Avatar 中的 LED 口罩 Prefab 拖入窗口的 `LED Mask` 中：
 
-![Mirror_Tool_1](./assets/Mirror_Tool_1.png)
+![Mirror_Tool_1](./assets/Mirror_Tool_1.webp)
 
 如果移动的骨骼是右侧的骨骼，请将窗口中的 `Mirror Right To Left` 勾选。
 
 点击窗口中的 `Mirror` 按钮，口罩将会左右对称：
 
-![Mirror_Bones_Finished](./assets/Mirror_Bones_Finished.png)
+![Mirror_Bones_Finished](./assets/Mirror_Bones_Finished.webp)
 
 > :warning: **注意**
 >
@@ -205,7 +205,7 @@ sidebar_label: LED 口罩
 如果调整了口罩的形状后，因为口罩过宽或者过窄导致图案的变形，可以通过调整口罩 LED 着色器的一项设置修复。
 在 Hierarchy 中选中 `LED 口罩 Prefab/LED_Mask`<sup>[1]</sup>，在 Inspector 最下方中，展开 `LED (Material)`<sup>[2]</sup>，找到 `LED Tiling`<sup>[3]</sup> 属性，调整其 `X` 和 `Y`<sup>[4]</sup> 数值到满意为止：
 
-![Adjuest_LED_Pattern_Tiling](./assets/Adjuest_LED_Pattern_Tiling.png)
+![Adjuest_LED_Pattern_Tiling](./assets/Adjuest_LED_Pattern_Tiling.webp)
 
 #### 3. 自定义口罩表情
 
@@ -214,12 +214,12 @@ sidebar_label: LED 口罩
 口罩LED的图案参考对后续的步骤很有帮助。
 选中 Hierarchy 中的 `LED 口罩 Prefab/LED_Mask`<sup>[1]</sup>，转到 Inspector，找到位于最底下的 `LED (Material)`，将其展开后，其中的 `Emote Masks`<sup>[2]</sup> 纹理列表将作为我们设置口罩表情的图案参考，`Emote` 后的数字即为图案编号。请通过点击 Inspector 窗口右上角的 :unlock:<sup>[3]</sup> 将该 Inspector 窗口锁定：
 
-![Show_Emote_Reference](./assets/Show_Emote_Reference.png)
+![Show_Emote_Reference](./assets/Show_Emote_Reference.webp)
 
 我们需要新建一个 Inspector 进行其他操作。
 右键 Inspector 窗口上的 `Inspector（检查器）` 标签，选择 `Add Tab（添加标签） -> Inspector（检查器）`：
 
-![Add_Inspector](./assets/Add_Inspector.png)
+![Add_Inspector](./assets/Add_Inspector.webp)
 
 > :warning: **注意**
 >
@@ -241,7 +241,7 @@ sidebar_label: LED 口罩
 
 选择 Unity 顶部菜单中的 `Tools > LuiStudio > LED Mask > Setup Animator Controller`，呼出设置工具，将 Hierarchy 中的 Avatar<sup>[1]</sup> 拖入窗口中的 `Avatar`<sup>[2]</sup> 中，并等待工具完成初始化（初始化时长随 FX 层动画控制器的复杂程度而增长）：
 
-![Setup_Emotes_Drag_In](./assets/Setup_Emotes_Drag_In.png)
+![Setup_Emotes_Drag_In](./assets/Setup_Emotes_Drag_In.webp)
 
 ##### 3. 使用口罩表情设置工具自定义表情
 
@@ -249,17 +249,17 @@ sidebar_label: LED 口罩
 
 首先将**不涉及面部表情**的动画层取消勾选，取消勾选意味着最终的动画控制器不包含该动画层。通过点击动画层列表子项右侧的 `勾选框`<sup>[1]</sup> 对动画层进行 `勾选 / 取消勾选`，必要时可以使用 `全选/取消全选` 按钮<sup>[2]</sup>：
 
-![Setup_Emotes_Uncheck_Unrelated_Layers](./assets/Setup_Emotes_Uncheck_Unrelated_Layers.png)
+![Setup_Emotes_Uncheck_Unrelated_Layers](./assets/Setup_Emotes_Uncheck_Unrelated_Layers.webp)
 
 作为示例，删除后的动画层如下：
 
-![Setup_Emotes_Uncheak_Unrelated_Layers_Finished](./assets/Setup_Emotes_Uncheak_Unrelated_Layers_Finished.png)
+![Setup_Emotes_Uncheak_Unrelated_Layers_Finished](./assets/Setup_Emotes_Uncheak_Unrelated_Layers_Finished.webp)
 
 ###### 2. 预览动画层中的表情
 
 在 `Layers` 栏中选择动画层<sup>[1]</sup>，在右侧的 `Animation Clips` 栏中点击动画<sup>[2]</sup>，则可以在场景中预览动画<sup>[3]</sup>（再次点击即可停止预览）：
 
-![Setup_Emotes_Preview_Animation](./assets/Setup_Emotes_Preview_Animation.png)
+![Setup_Emotes_Preview_Animation](./assets/Setup_Emotes_Preview_Animation.webp)
 
 > :warning: **注意**
 >
@@ -277,11 +277,11 @@ sidebar_label: LED 口罩
 
 转到 Animation 窗口并**打开 `录制模式`<sup>[1]</sup>**。时间轴中的 `LED_Mask : ..._Emote Index`<sup>[2]</sup> 为口罩的图案索引，其余的属性为 Avatar 原本的表情动画属性，修改图案索引的值（0 ~ 15）<sup>[3]</sup> 以更改口罩图案，如果想使用默认值（详见 [注意事项 - (2)](#7-注意事项)），请直接将索引属性删除：
 
-![Setup_Emotes_Change_Emote_Index](./assets/Setup_Emotes_Change_Emote_Index.png)
+![Setup_Emotes_Change_Emote_Index](./assets/Setup_Emotes_Change_Emote_Index.webp)
 
 调整后的示例如下：
 
-![Setup_Emotes_Change_Emote_Index_Finished](./assets/Setup_Emotes_Change_Emote_Index_Finished.png)
+![Setup_Emotes_Change_Emote_Index_Finished](./assets/Setup_Emotes_Change_Emote_Index_Finished.webp)
 
 **冲突处理**
 
@@ -295,17 +295,17 @@ sidebar_label: LED 口罩
 
   如图：
 
-  ![Setup_Emotes_Change_Mask_Transform_Example](./assets/Setup_Emotes_Change_Mask_Transform_Example.png)
+  ![Setup_Emotes_Change_Mask_Transform_Example](./assets/Setup_Emotes_Change_Mask_Transform_Example.webp)
 
   **这种情况建议修改口罩的形状：**
 
   确保 Animation 窗口中的 **`录制模式` 保持开启状态**<sup>[1]</sup>，选择 LED 口罩相应位置（这里是左脸颊）<sup>[2]</sup>的骨骼通过 `移动`、`旋转`和`缩放`工具进行调整<sup>[3]</sup>：
 
-  ![Setup_Emotes_Change_Mask_Transform](./assets/Setup_Emotes_Change_Mask_Transform.png)
+  ![Setup_Emotes_Change_Mask_Transform](./assets/Setup_Emotes_Change_Mask_Transform.webp)
 
   调整后的示例如下：
 
-  ![Setup_Emotes_Change_Mask_Transform_Finished](./assets/Setup_Emotes_Change_Mask_Transform_Finished.png)
+  ![Setup_Emotes_Change_Mask_Transform_Finished](./assets/Setup_Emotes_Change_Mask_Transform_Finished.webp)
 
   <sup>にゃにゃし可爱捏</sup>
 
@@ -313,7 +313,7 @@ sidebar_label: LED 口罩
 
   如图：
 
-  ![Setup_Emotes_Emanata_Example](./assets/Setup_Emotes_Emanata_Example.png)
+  ![Setup_Emotes_Emanata_Example](./assets/Setup_Emotes_Emanata_Example.webp)
 
   **这种情况建议视情况选择调整漫画符号或者口罩形状：**
 
@@ -321,7 +321,7 @@ sidebar_label: LED 口罩
 
   确保 Animation 窗口中的 **`录制模式` 保持开启状态**，根据上一建议的位置移动步骤，对口罩的上方边缘进行调整，调整完成后如下：
 
-  ![Setup_Emotes_Emanata_Mask_Transform_Finished](./assets/Setup_Emotes_Emanata_Mask_Transform_Finished.png)
+  ![Setup_Emotes_Emanata_Mask_Transform_Finished](./assets/Setup_Emotes_Emanata_Mask_Transform_Finished.webp)
 
   下半部分的汗，我认为通过调整形态键隐藏起来比较好。
 
@@ -329,11 +329,11 @@ sidebar_label: LED 口罩
   &#10;
   确保 Animation 窗口中的 **`录制模式` 保持开启状态**<sup>[1]</sup>，在 Hierarchy 中找到 Avatar 中包含表情形态键的 Gameobject，一般情况下名称为 `Body` 或 `Face`<sup>[2]</sup>。选中后，在 Inspector 中找到 `SkinnedMeshRenderer` 组件，展开该组件中的 `BlendShapes`<sup>[3]</sup>，找到并调整漫画符号的形态键：
 
-  ![Setup_Emotes_Emanata_Blend_Shape](./assets/Setup_Emotes_Emanata_Blend_Shape.png)
+  ![Setup_Emotes_Emanata_Blend_Shape](./assets/Setup_Emotes_Emanata_Blend_Shape.webp)
 
   调整后的示例如下：
 
-  ![Setup_Emotes_Emanata_Blend_Shape_Finished](./assets/Setup_Emotes_Emanata_Blend_Shape_Finished.png)
+  ![Setup_Emotes_Emanata_Blend_Shape_Finished](./assets/Setup_Emotes_Emanata_Blend_Shape_Finished.webp)
 
   <sup>にゃにゃし可爱捏</sup>
 
@@ -367,7 +367,7 @@ sidebar_label: LED 口罩
   如果您在修改口罩表情动画时删除了口罩图案索引的属性（..._Emote Index），并且需要重新加回来时。请确保重新添加后，将其关键帧的曲线修改为恒定曲线。具体修改步骤为：
   选择口罩图案索引属性下<sup>[1]</sup>的所有帧<sup>[2]</sup>，右键选择 `Both Tangents > Constant`<sup>[3]</sup>：
 
-  ![Setup_Emotes_Tangents_Constant](./assets/Setup_Emotes_Tangents_Constant.png)
+  ![Setup_Emotes_Tangents_Constant](./assets/Setup_Emotes_Tangents_Constant.webp)
 
 #### 导入完成
 
@@ -391,7 +391,7 @@ LED 着色器的纹理是作为蒙版使用的，一个像素的红色值越高�
 在该说明书所在文件夹中，找到 `LEDPatternPainter/painter.html` 并通过浏览器打开。
 开启的绘制工具如下所示：
 
-![LED_Pattern_Generator_Introduce](./assets/LED_Pattern_Generator_Introduce.png)
+![LED_Pattern_Generator_Introduce](./assets/LED_Pattern_Generator_Introduce.webp)
 
 图中标注的各个交互的说明如下：
 
@@ -416,13 +416,13 @@ LED 着色器的纹理是作为蒙版使用的，一个像素的红色值越高�
 
 在 Project 窗口中，点击导入的图案纹理，转到 Inspector，展开 `Advance`<sup>[1]</sup>，勾选 `Read/Write`<sup>[2]</sup> 和 `Mip Streaming`<sup>[3]</sup>，将下方的 `Max Size` 改为 `512`<sup>[4]</sup>，然后点击 `Apply`<sup>[5]</sup>：
 
-![Custom_Pattern_Import_Setting](./assets/Custom_Pattern_Import_Setting.png)
+![Custom_Pattern_Import_Setting](./assets/Custom_Pattern_Import_Setting.webp)
 
 #### 2. 替换图案
 
 在 Hierarchy 中选中 `LED 口罩 Prefab/LED_Mask`<sup>[1]</sup>，在 Inspector 最下方中，展开 `LED (Material)`<sup>[2]</sup>，展开 `Emote Masks`<sup>[3]</sup>，将想要替换的图案替换成您的图案：
 
-![Custom_Pattern_Replace](./assets/Custom_Pattern_Replace.png)
+![Custom_Pattern_Replace](./assets/Custom_Pattern_Replace.webp)
 
 替换完成后，在口罩的表情动画中，通过 `Emote Masks` 下的口罩图案索引进行选择。
 

@@ -50,7 +50,7 @@ sidebar_label: サーチライト
 
 `Search Light.unitypackage` を Unity の `Project` ウィンドウにドラッグし、プロンプトが表示されたら `Import` をクリックして、アセットパッケージをAvatarプロジェクトにインポートします。
 
-![Import](./assets/Import.png)
+![Import](./assets/Import.webp)
 
 <sub>アセットパッケージのインポート完了</sub>
 
@@ -71,7 +71,7 @@ sidebar_label: サーチライト
 
 `Assets/LuiStudio/Search Light` の対応する Prefab を Avatar にドラッグし、ドラッグ後の Prefab と Avatar の関係は以下のようになります（ Search Light (eyes) を例にしています）：
 
-![Prefab](./assets/Prefab.png)
+![Prefab](./assets/Prefab.webp)
 
 #### 2. 位置の調整
 
@@ -81,11 +81,11 @@ Prefab には位置を指示するモデルが含まれています。このモ�
 
 Hierarchy 内で Prefab の `Armature_Search_Light`<sup>[1]</sup> を選択し、Unity の `移動、回転` ツール<sup>[2]</sup>を使用して、サーチライトの全体の位置を調整します：
 
-![Adjust_Position](./assets/Adjust_Position.png)
+![Adjust_Position](./assets/Adjust_Position.webp)
 
 目の正面に調整したら、以下のようになります：
 
-![Adjust_Position_Finished](./assets/Adjust_Position_Finished.png)
+![Adjust_Position_Finished](./assets/Adjust_Position_Finished.webp)
 
 ##### 2. 両目の位置を調整
 
@@ -95,27 +95,27 @@ Hierarchy 内で Prefab の `Armature_Search_Light`<sup>[1]</sup> を選択し�
 
 Hierarchy 内で `Armature_Search_Light` 内の `Search_Light_L`<sup>[1]</sup> を選択し、Unity の `移動、回転` ツール<sup>[2]</sup>を使用して光線を左目の正面に向けます<sup>[3]</sup>：
 
-![Adjust_Position_L](./assets/Adjust_Position_L.png)
+![Adjust_Position_L](./assets/Adjust_Position_L.webp)
 
 ###### 2. 右目の位置を調整
 
 `Search_Light_L`<sup>[1]</sup> を選択した状態を保持し、`Inspector` で Transform の Position を右クリックして `コピー`<sup>[2]</sup> を選択します：
 
-![Copy_Position_L](./assets/Copy_Position_L.png)
+![Copy_Position_L](./assets/Copy_Position_L.webp)
 
 次に、`Search_Light_R`<sup>[1]</sup> を選択し、`Inspector` で Transform の Position を右クリックして `貼り付け`<sup>[2]</sup> を選択します：
 
-![Paste_Position_R](./assets/Paste_Position_R.png)
+![Paste_Position_R](./assets/Paste_Position_R.webp)
 
 Position の X軸 の値を正の数なら負に、負の数なら正に反転させます：
 
-![Position_R_X_Opposite](./assets/Position_R_X_Opposite.png)
+![Position_R_X_Opposite](./assets/Position_R_X_Opposite.webp)
 
 ##### 3. 位置指示モデルを非表示にする（オプション）
 
 `Position (Auto_Remove_After_Upload)` を選択し、`Inspector` でそのチェックを外します：
 
-![Hide_Position_Indicator](./assets/Hide_Position_Indicator.png)
+![Hide_Position_Indicator](./assets/Hide_Position_Indicator.webp)
 
 #### インポート完了
 

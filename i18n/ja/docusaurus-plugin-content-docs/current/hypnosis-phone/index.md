@@ -54,7 +54,7 @@ sidebar_label: 催眠スマホ
 
 `Hypnosis Phone.unitypackage` を Unity の `Project` ウィンドウにドラッグし、プロンプトが表示されたら `Import` をクリックして、アセットパッケージを Avatar プロジェクトにインポートします。
 
-![Import](./Assets/Import.png)
+![Import](./Assets/Import.webp)
 
 <sub>アセットパッケージのインポート完了</sub>
 
@@ -71,13 +71,13 @@ Project ウィンドウで、`Assets/LuiStudio/Hypnosis Phone` に移動し、�
 
 選択した Prefab（例として右手用）をアバターにドラッグ＆ドロップします。ドラッグ後、Prefab とアバターの関係は以下のようになります：
 
-![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.png)
+![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.webp)
 
 #### 2. スマホの位置と握るポーズの調整
 
 前のステップが完了すると、シーン内のスマホが対応する手に固定されているのが確認できます。以下の画像のように表示されます：
 
-![Phone_Startup_Position](./Assets/Phone_Startup_Position.png)
+![Phone_Startup_Position](./Assets/Phone_Startup_Position.webp)
 
 ##### 1. （オプション）ジェスチャーアニメーションとコントローラーをコピー
 
@@ -94,12 +94,12 @@ Project ウィンドウで `Assets/LuiStudio/Hypnosis Phone/Animations` に移�
 >
 > Animator ウィンドウ内の `On` ステートをクリックしても Inspector に内容が表示されない場合、Animator ウィンドウ内の任意の空白部分をクリックして選択を解除し、再度 `On` ステートをクリックしてください。
 
-![Replace_Gesture_On_Animation](./Assets/Replace_Gesture_On_Animation.png)
+![Replace_Gesture_On_Animation](./Assets/Replace_Gesture_On_Animation.webp)
 
 次に、Hierarchy ウィンドウで催眠スマホの Prefab<sup>[1]</sup> を選択し、Inspector ウィンドウ内の**最初の** `MA Merge Animator` コンポーネント<sup>[2]</sup> を見つけてください。  
 Project ウィンドウ内のアニメーションコントローラー（`HypnosisPhoneGesture*Controlller`）<sup>[3]</sup> を、このコンポーネントの `Animator to merge` にドラッグ＆ドロップして、元のジェスチャーアニメーションコントローラーを置き換えます<sup>[4]</sup>：
 
-![Replace_Gesture_Controller](./Assets/Replace_Gesture_Controller.png)
+![Replace_Gesture_Controller](./Assets/Replace_Gesture_Controller.webp)
 
 ##### 2. アバターの Animator アニメーションコントローラーを変更
 
@@ -112,12 +112,12 @@ Project ウィンドウ内のアニメーションコントローラー（`Hypno
 Hierarchy ウィンドウで催眠スマホの Prefab<sup>[1]</sup> を選択し、Inspector ウィンドウ内の**最初の** `MA Merge Animator` コンポーネント<sup>[2]</sup> を見つけてください。  
 その中の `Animator to merge` 欄にあるアニメーションコントローラー<sup>[3]</sup> をクリックして、Project ウィンドウで該当するアニメーションコントローラーの場所を特定します：
 
-![Locate_Gesture_Controller](./Assets/Locate_Gesture_Controller.png)
+![Locate_Gesture_Controller](./Assets/Locate_Gesture_Controller.webp)
 
 次に、Hierarchy ウィンドウでアバター<sup>[1]</sup> を選択し、Inspector ウィンドウ内で `Animator` コンポーネント<sup>[2]</sup> を見つけてください。  
 Project ウィンドウ内で前の手順で特定したアニメーションコントローラー<sup>[3]</sup> を `Animator` コンポーネントの `Controller` 欄<sup>[4]</sup> にドラッグ＆ドロップします：
 
-![Replace_Avatar_Animator_Controller](./Assets/Replace_Avatar_Animator_Controller.png)
+![Replace_Avatar_Animator_Controller](./Assets/Replace_Avatar_Animator_Controller.webp)
 
 ##### 3. スマホの位置と握り手ジェスチャーを調整
 
@@ -129,24 +129,24 @@ Hierarchy ウィンドウで `催眠スマホ Prefab/Phone`<sup>[1]</sup> を選
 >
 > Animation ウィンドウが見つからない場合は、Project ウィンドウのタブを右クリックし、`Add Tab -> Animation` を選択してください。
 
-![Preview_Gesture_Animation](./Assets/Preview_Gesture_Animation.png)
+![Preview_Gesture_Animation](./Assets/Preview_Gesture_Animation.webp)
 
 ###### 2. スマホの位置と握り手ジェスチャーを調整
 
 シーン内で、`移動ツール`、`回転ツール`、`拡大縮小ツール`<sup>[1]</sup> を使ってスマホの位置を調整します。  
 Animation ウィンドウでは、アニメーションのタイムラインカーソルを最初のフレームに維持した状態で<sup>[2]</sup>、左側のパネルで各指を調整します<sup>[3]</sup>：
 
-![Adjust_Phone_Pos_And_Gesture](./Assets/Adjust_Phone_Pos_And_Gesture.png)
+![Adjust_Phone_Pos_And_Gesture](./Assets/Adjust_Phone_Pos_And_Gesture.webp)
 
 > :warning: **注意**  
 >
 > Animation ウィンドウで、マウスカーソルをあるプロパティの値の左側に移動すると、カーソルが以下の図のように変化します。この状態で上下または左右にドラッグすることで、指の調整がより簡単に行えます：  
 >
-> ![Adjuust_Gesture_Value_Hint](./Assets/Adjuust_Gesture_Value_Hint.png)
+> ![Adjuust_Gesture_Value_Hint](./Assets/Adjuust_Gesture_Value_Hint.webp)
 
 スマホの位置とジェスチャーの参考例：  
 
-![Phone_Pos_And_Gesture_Example](./Assets/Phone_Pos_And_Gesture_Example.png)
+![Phone_Pos_And_Gesture_Example](./Assets/Phone_Pos_And_Gesture_Example.webp)
 
 ###### 3. アニメーションプレビューを終了
 

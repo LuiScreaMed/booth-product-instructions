@@ -72,7 +72,7 @@ sidebar_label: LED マスク
 
 `LED Mask.unitypackage` を Unity の `Project` ウィンドウにドラッグし、プロンプトが表示されたら `Import` をクリックして、アセットパッケージを Avatar プロジェクトにインポートします。
 
-![Import](./assets/Import.png)
+![Import](./assets/Import.webp)
 
 <sub>アセットパッケージのインポート完了</sub>
 
@@ -88,11 +88,11 @@ sidebar_label: LED マスク
 
 `Project` ウィンドウで、`Assets/LuiStudio/LED Mask/Prefabs` に移動し、アバター素体の名前が付いている Prefab を見つけます（本チュートリアルでは[しろいののにゃにゃし](https://siroinoworks.booth.pm/items/6082750)を例とします）。以下の画像をご覧ください：
 
-![Fitted_Prefab](./assets/Fitted_Prefab.png)
+![Fitted_Prefab](./assets/Fitted_Prefab.webp)
 
 この Prefab をアバターにドラッグします。ドラッグ後の Prefab とアバターの関係は次のようになります：
 
-![Prefab_In_Avatar](./assets/Prefab_In_Avatar.png)
+![Prefab_In_Avatar](./assets/Prefab_In_Avatar.webp)
 
 #### 3. テスト
 
@@ -120,11 +120,11 @@ sidebar_label: LED マスク
 
 `Project` ウィンドウで、`Assets/LuiStudio/LED Mask/Prefabs` に移動し、 `LED_Mask.prefab` を見つけます。以下の画像をご覧ください：
 
-![Not_Fitted_Prefab](./assets/Not_Fitted_Prefab.png)
+![Not_Fitted_Prefab](./assets/Not_Fitted_Prefab.webp)
 
 この Prefab をアバターにドラッグし、**アバター内に LED マスクの Prefab が一つだけ存在することを確認**します。ドラッグ後の Prefab とアバターの関係は次のようになります：
 
-![Not_Fitted_Prefab_In_Avatar](./assets/Not_Fitted_Prefab_In_Avatar.png)
+![Not_Fitted_Prefab_In_Avatar](./assets/Not_Fitted_Prefab_In_Avatar.webp)
 
 #### 2. マスク形状の調整
 
@@ -132,13 +132,13 @@ sidebar_label: LED マスク
 >
 > この手順の前に、シーンウィンドウの左上にある `Tool Settings` を `Pivot（ピボット）` と `Local（ローカル）` に設定してください<sup>[1]</sup>：
 >
-> ![Set_Pivot_Local](./assets/Set_Pivot_Local.png)
+> ![Set_Pivot_Local](./assets/Set_Pivot_Local.webp)
 
 各アバターの顔の形状や骨格が異なるため、LED マスクの形状を自身のアバターに合わせて調整する必要があります。
 
 `Hierarchy` 内で `LED マスク Prefab/Armature_LED_Mask/Root`<sup>[1]</sup> を選択したまま、シーン内で `移動ツール`、`回転ツール`、および`スケールツール`<sup>[2]</sup> を使用して、マスクの位置、回転、サイズを大まかに調整します：
 
-![Adjust_Position_Root](./assets/Adjust_Position_Root.png)
+![Adjust_Position_Root](./assets/Adjust_Position_Root.webp)
 
 >:warning: **注意**
 >
@@ -146,15 +146,15 @@ sidebar_label: LED マスク
 
 粗調整が完了すると、以下のようになります：
 
-![Adjust_Position_Root_Finished](./assets/Adjust_Position_Root_Finished.png)
+![Adjust_Position_Root_Finished](./assets/Adjust_Position_Root_Finished.webp)
 
 マスクがまだアバターの頬に完全にフィットしていないので、マスクの各部位を微調整する必要があります。`Root` を展開すると、マスクのさまざまな部位に対応するボーンが表示されます：
 
-![Bones](./assets/Bones.png)
+![Bones](./assets/Bones.webp)
 
 一見複雑に見えますが、各部位を分けて順番に調整すれば簡単に行えます：
 
-![Bones_Assigned](./assets/Bones_Assigned.png)
+![Bones_Assigned](./assets/Bones_Assigned.webp)
 
 3 つの部分に分けましたので、以下ではそれぞれの部分を順番に調整していきます。
 
@@ -162,19 +162,19 @@ sidebar_label: LED マスク
 
 この部分のボーンには `Jaw`、`Jaw_Inner`、`Nose_Tip`、`Top` が含まれています。これらのボーンに対応する部位は下図のとおりです：
 
-![Bones_Reference_1](./assets/Bones_Reference_1.png)
+![Bones_Reference_1](./assets/Bones_Reference_1.webp)
 
 該当するボーンを選択し、`移動` や `回転` ツールを使用して必要な部位を微調整します。
 
 満足のいく位置に調整したら、次の図のようにします：
 
-![Bones_1_Position_Finished](./assets/Bones_1_Position_Finished.png)
+![Bones_1_Position_Finished](./assets/Bones_1_Position_Finished.webp)
 
 ##### 2. マスク左側部分の調整
 
 この部分のボーンには `Cheek.L`、`Cheek_Jaw_Inner.L`、`Cheek_Puff.L`、`Cheek_Top.L`、`Side.L`、`Ear.L` が含まれています。これらのボーンに対応する部位は下図のとおりです：
 
-![Bones_Reference_2](./assets/Bones_Reference_2.png)
+![Bones_Reference_2](./assets/Bones_Reference_2.webp)
 
 ボーンのHierarchyに基づき、外側から内側へ順に調整してください。例えば、以下の順番で調整します：
 
@@ -184,7 +184,7 @@ sidebar_label: LED マスク
 
 満足のいく位置に調整したら、次の図のようにします（私の Avatar に耳がないことは無視してください :sob:）：
 
-![Bones_2_Position_Finished](./assets/Bones_2_Position_Finished.png)
+![Bones_2_Position_Finished](./assets/Bones_2_Position_Finished.webp)
 
 ##### 3. マスク右側部分の調整
 
@@ -193,13 +193,13 @@ sidebar_label: LED マスク
 
 Unity のトップメニューから `Tools > LuiStudio > LED Mask > Mirror Bones` をクリックして、`Mirror LED Mask Bones` ウィンドウを開き、Avatar の LED マスク Prefab をウィンドウの `LED Mask` 部分にドラッグしてください：
 
-![Mirror_Tool_1](./assets/Mirror_Tool_1.png)
+![Mirror_Tool_1](./assets/Mirror_Tool_1.webp)
 
 もし移動対象のボーンが右側のボーンの場合は、ウィンドウ内の `Mirror Right To Left` にチェックを入れてください。
 
 ウィンドウ内の `Mirror` ボタンをクリックすると、マスクが左右対称になります：
 
-![Mirror_Bones_Finished](./assets/Mirror_Bones_Finished.png)
+![Mirror_Bones_Finished](./assets/Mirror_Bones_Finished.webp)
 
 > :warning: **注意**
 >
@@ -211,7 +211,7 @@ Unity のトップメニューから `Tools > LuiStudio > LED Mask > Mirror Bone
 
 Hierarchy で `LED 口罩 Prefab/LED_Mask`<sup>[1]</sup> を選択し、Inspector の最下部で `LED (Material)`<sup>[2]</sup> を展開して、`LED Tiling`<sup>[3]</sup> プロパティを見つけます。その `X` と `Y`<sup>[4]</sup> の値を調整して満足のいく結果になるまで調整してください：
 
-![Adjuest_LED_Pattern_Tiling](./assets/Adjuest_LED_Pattern_Tiling.png)
+![Adjuest_LED_Pattern_Tiling](./assets/Adjuest_LED_Pattern_Tiling.webp)
 
 #### 3. マスク表情のカスタマイズ
 
@@ -220,12 +220,12 @@ Hierarchy で `LED 口罩 Prefab/LED_Mask`<sup>[1]</sup> を選択し、Inspecto
 マスクLEDのパターン参考は、後続の手順に役立ちます。
 Hierarchy の `LED 口罩 Prefab/LED_Mask`<sup>[1]</sup> を選択し、Inspector に移動して一番下にある `LED (Material)` を見つけて展開します。中にある `Emote Masks`<sup>[2]</sup> テクスチャリストがマスク表情のパターン参考となります。`Emote` の後の数字がパターン番号です。Inspector ウィンドウの右上にある :unlock:<sup>[3]</sup> をクリックして、この Inspector ウィンドウをロックしてください：
 
-![Show_Emote_Reference](./assets/Show_Emote_Reference.png)
+![Show_Emote_Reference](./assets/Show_Emote_Reference.webp)
 
 新しい `Inspector` を作成して、他の操作を行います。
 `Inspector` ウィンドウの `Inspector` タブを右クリックし、`Add Tab -> Inspector`を選択します：
 
-![Add_Inspector](./assets/Add_Inspector.png)
+![Add_Inspector](./assets/Add_Inspector.webp)
 
 > :warning: **注意**
 >
@@ -246,7 +246,7 @@ Hierarchy の `LED 口罩 Prefab/LED_Mask`<sup>[1]</sup> を選択し、Inspecto
 
 Unity のトップメニューから `Tools > LuiStudio > LED Mask > Setup Animator Controller` を選択して、設定ツールを起動します。`Hierarchy` 内のアバター<sup>[1]</sup>をウィンドウ内の `Avatar`<sup>[2]</sup> にドラッグして入れ、ツールが初期設定を完了するのを待ちます（初期設定の時間は FX レイヤーのアニメーションコントローラーの複雑さによって変わります）：
 
-![Setup_Emotes_Drag_In](./assets/Setup_Emotes_Drag_In.png)
+![Setup_Emotes_Drag_In](./assets/Setup_Emotes_Drag_In.webp)
 
 ##### 3. マスク表情設定ツールを使用して表情をカスタマイズする
 
@@ -254,17 +254,17 @@ Unity のトップメニューから `Tools > LuiStudio > LED Mask > Setup Anima
 
 まず、**表情に関係のない**アニメーションレイヤーのチェックを外します。チェックを外すと、最終的なアニメーションコントローラーにそのアニメーションレイヤーが含まれなくなります。アニメーションレイヤーリストの各項目の右側にある `チェックボックス`<sup>[1]</sup> をクリックして `チェック/チェック解除` を行い、必要に応じて `全選択/全解除` ボタン<sup>[2]</sup>を使用できます：
 
-![Setup_Emotes_Uncheck_Unrelated_Layers](./assets/Setup_Emotes_Uncheck_Unrelated_Layers.png)
+![Setup_Emotes_Uncheck_Unrelated_Layers](./assets/Setup_Emotes_Uncheck_Unrelated_Layers.webp)
 
 例として、削除後のアニメーションレイヤーは以下のようになります：
 
-![Setup_Emotes_Uncheck_Unrelated_Layers_Finished](./assets/Setup_Emotes_Uncheak_Unrelated_Layers_Finished.png)
+![Setup_Emotes_Uncheck_Unrelated_Layers_Finished](./assets/Setup_Emotes_Uncheak_Unrelated_Layers_Finished.webp)
 
 ###### 2. アニメーションレイヤー内の表情をプレビュー
 
 `Layers` 欄でアニメーションレイヤー<sup>[1]</sup> を選択し、右側の `Animation Clips` 欄でアニメーションをクリックする<sup>[2]</sup> と、シーンでアニメーションをプレビューできます<sup>[3]</sup>（もう一度クリックするとプレビューを停止します）：
 
-![Setup_Emotes_Preview_Animation](./assets/Setup_Emotes_Preview_Animation.png)
+![Setup_Emotes_Preview_Animation](./assets/Setup_Emotes_Preview_Animation.webp)
 
 > :warning: **注意**
 >
@@ -282,11 +282,11 @@ Unity のトップメニューから `Tools > LuiStudio > LED Mask > Setup Anima
 
 Animation ウィンドウに移動し、**`収録モード` を有効にする<sup>[1]</sup>**。タイムライン上の `LED_Mask : ..._Emote Index`<sup>[2]</sup> はマスクのデザインインデックスで、他の属性は Avatar の表情アニメーションの属性です。デザインインデックスの値（0～15）<sup>[3]</sup> を変更して、マスクのデザインを変更します、もしデフォルト値を使用したい場合（詳細は [注意事項 - (2)](#7-注意事項) を参照）、インデックスプロパティを直接削除してください。：
 
-![Setup_Emotes_Change_Emote_Index](./assets/Setup_Emotes_Change_Emote_Index.png)
+![Setup_Emotes_Change_Emote_Index](./assets/Setup_Emotes_Change_Emote_Index.webp)
 
 調整後の例：
 
-![Setup_Emotes_Change_Emote_Index_Finished](./assets/Setup_Emotes_Change_Emote_Index_Finished.png)
+![Setup_Emotes_Change_Emote_Index_Finished](./assets/Setup_Emotes_Change_Emote_Index_Finished.webp)
 
 **干渉の解消**
 
@@ -300,17 +300,17 @@ Animation ウィンドウに移動し、**`収録モード` を有効にする<s
 
   例：
 
-  ![Setup_Emotes_Change_Mask_Transform_Example](./assets/Setup_Emotes_Change_Mask_Transform_Example.png)
+  ![Setup_Emotes_Change_Mask_Transform_Example](./assets/Setup_Emotes_Change_Mask_Transform_Example.webp)
 
   **この場合、マスクの形状を編集することをお勧めします：**
 
   Animation ウィンドウで **`収録モード` が有効のまま**<sup>[1]</sup>、LED マスクの適切な部位（ここでは左頬）<sup>[2]</sup> のボーンを選択し、`移動`、`回転`、および `スケール` ツールを使用して調整します<sup>[3]</sup>：
 
-  ![Setup_Emotes_Change_Mask_Transform](./assets/Setup_Emotes_Change_Mask_Transform.png)
+  ![Setup_Emotes_Change_Mask_Transform](./assets/Setup_Emotes_Change_Mask_Transform.webp)
 
   調整後の例：
 
-  ![Setup_Emotes_Change_Mask_Transform_Finished](./assets/Setup_Emotes_Change_Mask_Transform_Finished.png)
+  ![Setup_Emotes_Change_Mask_Transform_Finished](./assets/Setup_Emotes_Change_Mask_Transform_Finished.webp)
 
   <sup>にゃにゃし、かわいいですね</sup>
 
@@ -318,7 +318,7 @@ Animation ウィンドウに移動し、**`収録モード` を有効にする<s
 
   例：
 
-  ![Setup_Emotes_Emanata_Example](./assets/Setup_Emotes_Emanata_Example.png)
+  ![Setup_Emotes_Emanata_Example](./assets/Setup_Emotes_Emanata_Example.webp)
 
   **この場合、漫画表現またはマスクの形状を調整することをお勧めします：**
 
@@ -326,18 +326,18 @@ Animation ウィンドウに移動し、**`収録モード` を有効にする<s
   
   Animation ウィンドウで **`収録モード` が有効のまま**、前述の移動手順に従い、マスクの上部縁を調整します。調整後は以下のようになります：
 
-  ![Setup_Emotes_Emanata_Mask_Transform_Finished](./assets/Setup_Emotes_Emanata_Mask_Transform_Finished.png)
+  ![Setup_Emotes_Emanata_Mask_Transform_Finished](./assets/Setup_Emotes_Emanata_Mask_Transform_Finished.webp)
 
   下部の汗はシェイプキーで隠すのが良いと考えます。
   一般的に、漫画表現は顔のメッシュ内の `シェイプキー` によって移動されるため、この手順も `シェイプキー` 形式の漫画表現を例にします。Avatar の漫画表現が独立した GameObject の場合は、前述の移動手順に従ってください。
   &#10;
   Animation ウィンドウで **`収録モード` が有効のまま**<sup>[1]</sup>、Hierarchy 内で表情のシェイプキーを含む Avatar の GameObject（通常 `Body` または `Face`）<sup>[2]</sup> を見つけます。選択後、Inspector で `SkinnedMeshRenderer` コンポーネントを見つけ、その `BlendShapes`<sup>[3]</sup> を展開し、漫画表現のシェイプキーを調整します：
 
-  ![Setup_Emotes_Emanata_Blend_Shape](./assets/Setup_Emotes_Emanata_Blend_Shape.png)
+  ![Setup_Emotes_Emanata_Blend_Shape](./assets/Setup_Emotes_Emanata_Blend_Shape.webp)
 
   調整後の例：
 
-  ![Setup_Emotes_Emanata_Blend_Shape_Finished](./assets/Setup_Emotes_Emanata_Blend_Shape_Finished.png)
+  ![Setup_Emotes_Emanata_Blend_Shape_Finished](./assets/Setup_Emotes_Emanata_Blend_Shape_Finished.webp)
 
   <sup>にゃにゃし、かわいいですね</sup>
 
@@ -370,7 +370,7 @@ Animation ウィンドウに移動し、**`収録モード` を有効にする<s
   マスク表情アニメーションを編集中にマスクのデザインインデックス属性（..._Emote Index）を削除し、再追加する必要がある場合は、追加後にキーフレームのカーブを定数カーブに変更してください。具体的な手順は以下の通りです：
   マスクのデザインインデックス属性下<sup>[1]</sup> のキーフレームを選択し、キーフレームカーブのドロップダウンメニュー<sup>[2]</sup> をクリックし、`Constant`<sup>[3]</sup> を選択します：
 
-  ![Setup_Emotes_Tangents_Constant](./assets/Setup_Emotes_Tangents_Constant.png)
+  ![Setup_Emotes_Tangents_Constant](./assets/Setup_Emotes_Tangents_Constant.webp)
 
 #### インポート完了
 
@@ -394,7 +394,7 @@ LEDシェーダーのテクスチャはマスクとして使用され、ピク�
 このマニュアルが保存されているフォルダで、`LEDPatternPainter/painter.html` を探し、ブラウザで開きます。
 ツールの画面は以下のようになっています：
 
-![LED_Pattern_Generator_Introduce](./assets/LED_Pattern_Generator_Introduce.png)
+![LED_Pattern_Generator_Introduce](./assets/LED_Pattern_Generator_Introduce.webp)
 
 図中の各インターフェースの説明は以下の通りです：
 
@@ -419,13 +419,13 @@ LEDシェーダーのテクスチャはマスクとして使用され、ピク�
 
 Projectウィンドウでインポートしたパターンテクスチャを選択し、Inspectorで `Advance`<sup>[1]</sup>を展開して`Read/Write`<sup>[2]</sup>と `Mip Streaming`<sup>[3]</sup>にチェックを入れ、`Max Size`を`512`<sup>[4]</sup>に変更し、`Apply`<sup>[5]</sup>をクリックします：
 
-![Custom_Pattern_Import_Setting](./assets/Custom_Pattern_Import_Setting.png)
+![Custom_Pattern_Import_Setting](./assets/Custom_Pattern_Import_Setting.webp)
 
 #### 2. パターンの置き換え
 
 Hierarchyで `LED マスク Prefab/LED_Mask`<sup>[1]</sup>を選択し、Inspectorの一番下で `LED (Material)`<sup>[2]</sup>を展開し、`Emote Masks`<sup>[3]</sup>を展開して、置き換えたいパターンを選択したパターンに置き換えます：
 
-![Custom_Pattern_Replace](./assets/Custom_Pattern_Replace.png)
+![Custom_Pattern_Replace](./assets/Custom_Pattern_Replace.webp)
 
 置き換え後は、マスクの表情アニメーションで `Emote Masks` のマスクパターンインデックスからパターンを選択できます。
 

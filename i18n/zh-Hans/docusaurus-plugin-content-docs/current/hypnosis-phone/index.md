@@ -50,7 +50,7 @@ sidebar_label: 催眠手机
 
 将 `Hypnosis Phone.unitypackage` 拖入 Unity 的 `Project` 窗口中，点击提示窗中的 `Import`，将资源包导入到 Avatar 项目中：
 
-![Import](./Assets/Import.png)
+![Import](./Assets/Import.webp)
 
 <sub>资源包导入结束</sub>
 
@@ -67,13 +67,13 @@ sidebar_label: 催眠手机
 
 将选择的 Prefab（以右手为例） 拖入 Avatar 中，拖入后 Prefab 与 Avatar 的关系如下:
 
-![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.png)
+![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.webp)
 
 #### 2. 调整手机位置和握持手势
 
 在完成上一步后，我们可以看到场景中的手机固定到了相应的手上，如图：
 
-![Phone_Startup_Position](./Assets/Phone_Startup_Position.png)
+![Phone_Startup_Position](./Assets/Phone_Startup_Position.webp)
 
 ##### 1. （可选）复制手势动画和控制器
 
@@ -90,11 +90,11 @@ sidebar_label: 催眠手机
 >
 >如果点击 Animator 窗口中的 `On` 状态后，Inspector 不显示内容，请点击 Animator 窗口的任意空白处取消选中后重新点击 `On` 状态。
 
-![Replace_Gesture_On_Animation](./Assets/Replace_Gesture_On_Animation.png)
+![Replace_Gesture_On_Animation](./Assets/Replace_Gesture_On_Animation.webp)
 
 在 Hierarchy 中选中催眠手机 Prefab<sup>[1]</sup>，在 Inspector 中找到**第一个** `MA Merge Animator` 组件<sup>[2]</sup>，将 Project 窗口中的动画控制器（`HypnosisPhoneGesture*Controlller`）<sup>[3]</sup> 拖入这个组件的 `Animator to merge` 中替换原有的手势动画控制器<sup>[4]</sup>：
 
-![Replace_Gesture_Controller](./Assets/Replace_Gesture_Controller.png)
+![Replace_Gesture_Controller](./Assets/Replace_Gesture_Controller.webp)
 
 ##### 2. 更换 Avatar 的 Animator 动画控制器
 
@@ -106,11 +106,11 @@ sidebar_label: 催眠手机
 
 在 Hierarchy 中选中催眠手机 Prefab<sup>[1]</sup>，在 Inspector 中找到**第一个** `MA Merge Animator` 组件<sup>[2]</sup>，单击其中的 `Animator to merge` 一栏的动画控制器<sup>[3]</sup>，使 Project 窗口定位动画控制器：
 
-![Locate_Gesture_Controller](./Assets/Locate_Gesture_Controller.png)
+![Locate_Gesture_Controller](./Assets/Locate_Gesture_Controller.webp)
 
 在 Hierarchy 中选中您的 Avatar<sup>[1]</sup>，在 Inspector 中找到 `Animator` 组件<sup>[2]</sup>，在 Project 窗口中将上一步定位到的动画控制器<sup>[3]</sup>拖入 `Animator` 组件的 `Controller` 一栏中<sup>[4]</sup>：
 
-![Replace_Avatar_Animator_Controller](./Assets/Replace_Avatar_Animator_Controller.png)
+![Replace_Avatar_Animator_Controller](./Assets/Replace_Avatar_Animator_Controller.webp)
 
 ##### 3. 调整手机位置和握持手势
 
@@ -122,24 +122,24 @@ sidebar_label: 催眠手机
 >
 >如果找不到 Animation 窗口，请右键 Project 窗口标签后点击 `Add Tab -> Animation`。
 
-![Preview_Gesture_Animation](./Assets/Preview_Gesture_Animation.png)
+![Preview_Gesture_Animation](./Assets/Preview_Gesture_Animation.webp)
 
 ###### 2. 调整手机位置和握持手势
 
 在场景中，使用 `移动工具`、`旋转工具` 和 `缩放工具`<sup>[1]</sup> 对手机的位置进行调整；
 在 Animation 窗口中，保持动画的时间轴光标处于第一帧<sup>[2]</sup>，在左侧的面板中调整每个手指<sup>[3]</sup>：
 
-![Adjust_Phone_Pos_And_Gesture](./Assets/Adjust_Phone_Pos_And_Gesture.png)
+![Adjust_Phone_Pos_And_Gesture](./Assets/Adjust_Phone_Pos_And_Gesture.webp)
 
 > :warning: **注意**
 >
 >在 Animation 窗口中，将鼠标指针移动到某一个属性的数值左侧，光标变为如下图所示时，可以通过上下或左右拖动更方便地调整手指：
 
-![Adjuust_Gesture_Value_Hint](./Assets/Adjuust_Gesture_Value_Hint.png)
+![Adjuust_Gesture_Value_Hint](./Assets/Adjuust_Gesture_Value_Hint.webp)
 
 手机位置和手势的参考：
 
-![Phone_Pos_And_Gesture_Example](./Assets/Phone_Pos_And_Gesture_Example.png)
+![Phone_Pos_And_Gesture_Example](./Assets/Phone_Pos_And_Gesture_Example.webp)
 
 ###### 3. 结束动画预览
 

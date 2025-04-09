@@ -50,7 +50,7 @@ This gimmick relies on the following Unity plugins / shaders. Make sure you have
 
 Drag `Hypnosis Phone.unitypackage` into `Project` window, click the `Import` button on the dialog to import the package to your avatar project:
 
-![Import](./Assets/Import.png)
+![Import](./Assets/Import.webp)
 
 <sub>Importing Unity Package end</sub>
 
@@ -67,13 +67,13 @@ Enter the folder `Assets/LuiStudio/Hypnosis Phone`, choose the prefab determind 
 
 Drag the chosen prefab (right hand for example) into your avatar, the hierarchy should as below:
 
-![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.png)
+![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.webp)
 
 #### 2. Adjust Position and Holding Gesture
 
 As we can see in the image, the phone in the scene is fixed to the corresponding hand after completing the previous step:
 
-![Phone_Startup_Position](./Assets/Phone_Startup_Position.png)
+![Phone_Startup_Position](./Assets/Phone_Startup_Position.webp)
 
 ##### 1. (Optional) Duplicate the Gesture Animation and Controller
 
@@ -90,11 +90,11 @@ After the duplication, enter the duplicated folder and **double click** the anim
 >
 >If the Inspector window not showing any contents after clicking on the `On` state, please click on any blank area in the Animator window, and click on `On` state again.
 
-![Replace_Gesture_On_Animation](./Assets/Replace_Gesture_On_Animation.png)
+![Replace_Gesture_On_Animation](./Assets/Replace_Gesture_On_Animation.webp)
 
 Select the Hypnosis Phone prefab<sup>[1]</sup> in Hierarchy window, head to the Inspector window and find the **first** `MA Merge Animator` component<sup>[2]</sup>. Drag the animator controller(`HypnosisPhoneGesture*Controlller`)<sup>[3]</sup> from the Project window into the `Animator to merge` field in the component we found to replace the original gesture animator controller:
 
-![Replace_Gesture_Controller](./Assets/Replace_Gesture_Controller.png)
+![Replace_Gesture_Controller](./Assets/Replace_Gesture_Controller.webp)
 
 ##### 2. Asign the Gesture Animator Controller to your Avatar
 
@@ -106,11 +106,11 @@ Select the Hypnosis Phone prefab<sup>[1]</sup> in Hierarchy window, head to the 
 
 Select the Hypnosis Phone prefab<sup>[1]</sup> in Hierarchy window, find the **first** `MA Merge Animator` component<sup>[2]</sup>, click on the animator controller<sup>[3]</sup> in the `Animator to merge` field to locate the animator controller in Project window:
 
-![Locate_Gesture_Controller](./Assets/Locate_Gesture_Controller.png)
+![Locate_Gesture_Controller](./Assets/Locate_Gesture_Controller.webp)
 
 Select your avatar<sup>[1]</sup> in Hierarchy window, find the `Animator` component<sup>[2]</sup> in Inspector window. Drag the animator controller we've located<sup>[3]</sup> from Project window into the `Controller` field<sup>[4]</sup> in the `Animator` component:
 
-![Replace_Avatar_Animator_Controller](./Assets/Replace_Avatar_Animator_Controller.png)
+![Replace_Avatar_Animator_Controller](./Assets/Replace_Avatar_Animator_Controller.webp)
 
 ##### 3. Adjust Position of the Phone and Holding Gesture
 
@@ -122,24 +122,24 @@ Select `Hypnosis Phone prefab/Phone`<sup>[1]</sup> in Hierarchy window, switch t
 >
 >If you can't locate the Animation window, please right click on Project window's tab and click `Add Tab -> Animation`.
 
-![Preview_Gesture_Animation](./Assets/Preview_Gesture_Animation.png)
+![Preview_Gesture_Animation](./Assets/Preview_Gesture_Animation.webp)
 
 ###### 2. Adjust Position of the Phone and Holding Gesture
 
 Adjust the position of the phone by using `Move Tool`, `Rotate Tool` and `Scale Tool`<sup>[1]</sup> in the scene;
 To change the holding gesture, head to the Animation window, make sure the timeline cursor aiming at the first frame<sup>[2]</sup>, and adjust every finger in the left panel<sup>[3]</sup>:
 
-![Adjust_Phone_Pos_And_Gesture](./Assets/Adjust_Phone_Pos_And_Gesture.png)
+![Adjust_Phone_Pos_And_Gesture](./Assets/Adjust_Phone_Pos_And_Gesture.webp)
 
 > :warning: **Attention**
 >
 >In Animation window, move the cursor to the left side of a value, the cursor would turn into as the image below, at this moment we can adjust fingers easier by dragging vertically or horizontally:
 
-![Adjuust_Gesture_Value_Hint](./Assets/Adjuust_Gesture_Value_Hint.png)
+![Adjuust_Gesture_Value_Hint](./Assets/Adjuust_Gesture_Value_Hint.webp)
 
 The reference for the position and the gesture:
 
-![Phone_Pos_And_Gesture_Example](./Assets/Phone_Pos_And_Gesture_Example.png)
+![Phone_Pos_And_Gesture_Example](./Assets/Phone_Pos_And_Gesture_Example.webp)
 
 ###### 3. Disable Animation Preview
 
