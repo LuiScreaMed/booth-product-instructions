@@ -97,7 +97,7 @@ VRChat 的 Avatar 预览展示的是 Unity 中 Avatar 最后的状态。也就�
 
 ### 显示和隐藏拳击火箭筒
 
-开启圆盘菜单，找到并进入 `Rocket Puncher` 子菜单，子菜单中的 `Rocket Puncher` 按钮用于显示/隐藏旋转警灯。
+开启圆盘菜单，找到并进入 `Rocket Puncher` 子菜单，子菜单中的 `Rocket Puncher` 按钮用于显示/隐藏拳击火箭筒。
 
 ### 发射拳套
 
