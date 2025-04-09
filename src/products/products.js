@@ -2,7 +2,11 @@
 /**
  * @type {Object.<string, ProductItemInfo>}
  */
-let products = {
+const products = {
+    "rocket-puncher": {
+        displayName: "【MA対応】ロケットパンチャー / 拳击火箭筒 / Rocket Puncher",
+        booth: ""
+    },
     "rotating-beacon": {
         displayName: "【MA対応】回転ビーコン / 旋转警灯 / Rotating Beacon",
         // image: "rotating-beacon.webp",
