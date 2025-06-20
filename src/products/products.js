@@ -3,9 +3,17 @@
  * @type {Object.<string, ProductItemInfo>}
  */
 const products = {
+    "potato-chips-world": {
+        displayName: "【VRC World対応】ポテトチップス / 袋装薯片 / Potato Chips （World）",
+        booth: "6953717"
+    },
+    "potato-chips-avatar": {
+        displayName: "【MA対応】ポテトチップス / 袋装薯片 / Potato Chips （Avatar）",
+        booth: "6953717"
+    },
     "rocket-puncher": {
         displayName: "【MA対応】ロケットパンチャー / 拳击火箭筒 / Rocket Puncher",
-        booth: ""
+        booth: "6787466"
     },
     "rotating-beacon": {
         displayName: "【MA対応】回転ビーコン / 旋转警灯 / Rotating Beacon",
