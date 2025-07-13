@@ -3,6 +3,10 @@
  * @type {Object.<string, ProductItemInfo>}
  */
 const products = {
+    "dont-touch-me": {
+        displayName: "【MA対応】さわらないで / 莫挨老子 / Don't Touch Me",
+        booth: "7166759"
+    },
     "potato-chips-world": {
         displayName: "【VRC World対応】ポテトチップス / 袋装薯片 / Potato Chips （World）",
         booth: "6953717"
