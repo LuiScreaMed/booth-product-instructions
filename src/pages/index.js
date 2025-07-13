@@ -6,9 +6,11 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import Translate from '@docusaurus/Translate';
 import HomepageProducts from '../components/HomepageProducts';
+import { useHistory } from '@docusaurus/router';
+import { useEffect } from 'react';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -26,7 +28,34 @@ function HomepageHeader() {
 }
 
 export default function Home() {
-  const {siteConfig} = useDocusaurusContext();
+  const supportedLangs = [
+    { code: 'en', lang: 'en' },
+    { code: 'zh', lang: 'zh-Hans' },
+    { code: 'ja', lang: 'ja' }
+  ];
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const docId = params.get("i");
+    if (!docId) return;
+
+    const browserLang = navigator.language;
+    if (!browserLang) return;
+
+    let useLang = 'en';
+
+    const browserLangCode = browserLang.split("-")[0].toLowerCase();
+
+    for (const supportedLang of supportedLangs) {
+      if (!browserLangCode.includes(supportedLang.code)) continue;
+      useLang = supportedLang.lang;
+      break;
+    }
+
+    window.location.replace(`/${useLang}/docs/${encodeURIComponent(docId)}`);
+  });
+
+  const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={siteConfig.title}
