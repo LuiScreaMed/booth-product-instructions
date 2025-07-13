@@ -4,35 +4,6 @@ sidebar_label: Rotating Beacon
 
 # Rotating Beacon v1.0 Instructions {ignore}
 
-## Table of Contents {ignore}
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Installation Instructions](#installation-instructions)
-  - [Dependencies](#dependencies)
-  - [Importing Unity Package](#importing-unity-package)
-  - [Adding Rotating Beacon to Your Avatar](#adding-rotating-beacon-to-your-avatar)
-    - [1. Add the Prefab to Scene](#1-add-the-prefab-to-scene)
-    - [2. Setup the Rotating Beacon](#2-setup-the-rotating-beacon)
-      - [1. Setup for Head Only Prefab](#1-setup-for-head-only-prefab)
-        - [1. Adjust the Position for the Beacon](#1-adjust-the-position-for-the-beacon)
-      - [2. Setup for Full Prefab](#2-setup-for-full-prefab)
-        - [1. Adjust Beacon's Position On Avatar's Head](#1-adjust-beacons-position-on-avatars-head)
-        - [2. Adjust Beacon's Position On Avatar's Hand](#2-adjust-beacons-position-on-avatars-hand)
-        - [3. Adjust Hand's Contact Sender and Head's Contact Receiver](#3-adjust-hands-contact-sender-and-heads-contact-receiver)
-      - [3. Extra Setup](#3-extra-setup)
-        - [1. Change the Submenu Position in Action Menu](#1-change-the-submenu-position-in-action-menu)
-        - [2. Hide the Beacon in VRChat Avatar Preview](#2-hide-the-beacon-in-vrchat-avatar-preview)
-        - [3. Adjust the Sound Clip and Volume When the Beacon is On](#3-adjust-the-sound-clip-and-volume-when-the-beacon-is-on)
-- [How to Use](#how-to-use)
-  - [Show/Hide the Rotating Beacon](#showhide-the-rotating-beacon)
-  - [Move the Beacon between Head and Hand (For Full Prefab Only)](#move-the-beacon-between-head-and-hand-for-full-prefab-only)
-  - [Turn on/off the Rotating Beacon](#turn-onoff-the-rotating-beacon)
-
-<!-- /code_chunk_output -->
-
 ## Installation Instructions
 
 ### Dependencies

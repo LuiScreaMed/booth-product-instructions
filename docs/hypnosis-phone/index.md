@@ -4,34 +4,6 @@ sidebar_label: Hypnosis Phone
 
 # Hypnosis Phone v1.0 Instructions {ignore}
 
-## Table of Contents {ignore}
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Installation Instructions](#installation-instructions)
-  - [Dependencies](#dependencies)
-  - [Importing Unity Package](#importing-unity-package)
-  - [Installing Hypnosis Phone](#installing-hypnosis-phone)
-    - [1. Add Prefab to Scene](#1-add-prefab-to-scene)
-    - [2. Adjust Position and Holding Gesture](#2-adjust-position-and-holding-gesture)
-      - [1. (Optional) Duplicate the Gesture Animation and Controller](#1-optional-duplicate-the-gesture-animation-and-controller)
-      - [2. Asign the Gesture Animator Controller to your Avatar](#2-asign-the-gesture-animator-controller-to-your-avatar)
-      - [3. Adjust Position of the Phone and Holding Gesture](#3-adjust-position-of-the-phone-and-holding-gesture)
-        - [1. Enable Animation Preview](#1-enable-animation-preview)
-        - [2. Adjust Position of the Phone and Holding Gesture](#2-adjust-position-of-the-phone-and-holding-gesture)
-        - [3. Disable Animation Preview](#3-disable-animation-preview)
-      - [4. (Optional) Recover the Animator Controller for your Avatar](#4-optional-recover-the-animator-controller-for-your-avatar)
-    - [Well Done](#well-done)
-- [How to Use](#how-to-use)
-- [Miscellaneous](#miscellaneous)
-  - [Change the Toggle Position in Action Menu](#change-the-toggle-position-in-action-menu)
-  - [Only Allow Yourself to Interact with the Phone](#only-allow-yourself-to-interact-with-the-phone)
-  - [Hide the Phone in VRChat Avatar Preview](#hide-the-phone-in-vrchat-avatar-preview)
-
-<!-- /code_chunk_output -->
-
 ## Installation Instructions
 
 ### Dependencies

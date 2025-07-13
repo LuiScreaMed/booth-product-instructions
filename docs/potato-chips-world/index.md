@@ -4,58 +4,6 @@ sidebar_label: Potato Chips (World Edition)
 
 # Potato Chips (World Edition) v1.0 Instructions {ignore}
 
-## Table of Contents {ignore}
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Installation Instructions](#installation-instructions)
-  - [Dependencies](#dependencies)
-  - [Adding Potato Chips to the Scene](#adding-potato-chips-to-the-scene)
-  - [Feature Introduction](#feature-introduction)
-  - [Movement](#movement)
-  - [Opening](#opening)
-  - [Eating](#eating)
-  - [Pouring](#pouring)
-- [Configuration Guide](#configuration-guide)
-  - [1. Potato Chips](#1-potato-chips)
-    - [1. Potato Chips Udon Script](#1-potato-chips-udon-script)
-      - [Is Unpacked](#is-unpacked)
-      - [Easy Unpack Mode](#easy-unpack-mode)
-      - [Easy Unpack Mode Use Text](#easy-unpack-mode-use-text)
-      - [Enable Pouring](#enable-pouring)
-      - [Pour Angle](#pour-angle)
-      - [Potato Chips Bag](#potato-chips-bag)
-      - [Use Gravity](#use-gravity)
-      - [Is Kinematic](#is-kinematic)
-  - [2. Potato Chips Bag](#2-potato-chips-bag)
-    - [1. Potato Chips Bag Udon Script](#1-potato-chips-bag-udon-script)
-      - [Potato Chips](#potato-chips)
-      - [Unpack Controller](#unpack-controller)
-  - [4. Unpack](#4-unpack)
-    - [1. Unpack Controller Udon Script](#1-unpack-controller-udon-script)
-      - [Unpack Transform VR](#unpack-transform-vr)
-      - [Unpack Transform PC](#unpack-transform-pc)
-      - [Potato Chips Bag](#potato-chips-bag-1)
-  - [5. VR and Child Objects](#5-vr-and-child-objects)
-    - [Unpack_Grab_1 and Unpack_Grab_2](#unpack_grab_1-and-unpack_grab_2)
-      - [1. Unpack Grab Udon Script](#1-unpack-grab-udon-script)
-        - [Unpack Controller](#unpack-controller-1)
-        - [Drag Distance](#drag-distance)
-  - [6. PC and Child Objects](#6-pc-and-child-objects)
-    - [1. Unpack PCUI Display Udon Script](#1-unpack-pcui-display-udon-script)
-      - [Ui Canvas](#ui-canvas)
-      - [Show Distance](#show-distance)
-  - [10. Chips](#10-chips)
-    - [Chip_1 etc.](#chip_1-etc)
-      - [1. Chip Udon Script](#1-chip-udon-script)
-        - [Mesh Transform](#mesh-transform)
-        - [Audio Source](#audio-source)
-        - [Reset Duration](#reset-duration)
-
-<!-- /code_chunk_output -->
-
 ## Installation Instructions
 
 ### Dependencies

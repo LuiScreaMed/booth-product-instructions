@@ -4,29 +4,6 @@ sidebar_label: Rocket Puncher
 
 # Rocket Puncher v1.0 Instructions {ignore}
 
-## Table of Contents {ignore}
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Installation Instructions](#installation-instructions)
-  - [Dependencies](#dependencies)
-  - [Importing Unity Package](#importing-unity-package)
-  - [Adding Rocket Puncher to Your Avatar](#adding-rocket-puncher-to-your-avatar)
-    - [1. Add the Prefab to Scene](#1-add-the-prefab-to-scene)
-    - [2. Setup the Rocket Puncher](#2-setup-the-rocket-puncher)
-      - [1. Adjust the Position for the Rocket Puncher](#1-adjust-the-position-for-the-rocket-puncher)
-      - [3. Extra Setup](#3-extra-setup)
-        - [1. Change the Submenu Location in Action Menu (Optional)](#1-change-the-submenu-location-in-action-menu-optional)
-        - [2. Hide the Rocket Puncher in VRChat Avatar Preview (Optional)](#2-hide-the-rocket-puncher-in-vrchat-avatar-preview-optional)
-- [How to Use](#how-to-use)
-  - [Show/Hide the Rocket Puncher](#showhide-the-rocket-puncher)
-  - [Pop out(Fire) the Boxing Glove](#pop-outfire-the-boxing-glove)
-  - [Change the Standby Mode of the Rocket Puncher](#change-the-standby-mode-of-the-rocket-puncher)
-
-<!-- /code_chunk_output -->
-
 ## Installation Instructions
 
 ### Dependencies

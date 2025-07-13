@@ -8,58 +8,6 @@ sidebar_label: ポテトチップス（ワールドバージョン）
 >
 >こちらの説明書は ChatGPT によって生成されました。翻訳には誤りが含まれる可能性があります。誤りがある場合はご容赦ください。
 
-## 目次 {ignore}
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [インポート手順](#インポート手順)
-  - [インポート前の準備](#インポート前の準備)
-  - [ポテトチップスをシーンに追加](#ポテトチップスをシーンに追加)
-- [機能説明](#機能説明)
-  - [移動](#移動)
-  - [開封](#開封)
-  - [食べる](#食べる)
-  - [だす](#だす)
-- [設定説明](#設定説明)
-  - [1. Potato Chips](#1-potato-chips)
-    - [1. Potato Chips Udon スクリプト](#1-potato-chips-udon-スクリプト)
-      - [Is Unpacked](#is-unpacked)
-      - [Easy Unpack Mode](#easy-unpack-mode)
-      - [Easy Unpack Mode Use Text](#easy-unpack-mode-use-text)
-      - [Enable Pouring](#enable-pouring)
-      - [Pour Angle](#pour-angle)
-      - [Potato Chips Bag](#potato-chips-bag)
-      - [Use Gravity](#use-gravity)
-      - [Is Kinematic](#is-kinematic)
-  - [2. Potato Chips Bag](#2-potato-chips-bag)
-    - [1. Potato Chips Bag Udon スクリプト](#1-potato-chips-bag-udon-スクリプト)
-      - [Potato Chips](#potato-chips)
-      - [Unpack Controller](#unpack-controller)
-  - [4. Unpack](#4-unpack)
-    - [1. Unpack Controller Udon スクリプト](#1-unpack-controller-udon-スクリプト)
-      - [Unpack Transform VR](#unpack-transform-vr)
-      - [Unpcak Transform PC](#unpcak-transform-pc)
-      - [Potato Chips Bag](#potato-chips-bag-1)
-  - [5. VR 及び子オブジェクト](#5-vr-及び子オブジェクト)
-    - [Unpack_Grab_1 と Unpack_Grab_2](#unpack_grab_1-と-unpack_grab_2)
-      - [1. Unpack Grab Udon スクリプト](#1-unpack-grab-udon-スクリプト)
-        - [Unpack Controller](#unpack-controller-1)
-        - [Drag Distance](#drag-distance)
-  - [6. PC 及び子オブジェクト](#6-pc-及び子オブジェクト)
-    - [1. Unpack PCUI Display Udon スクリプト](#1-unpack-pcui-display-udon-スクリプト)
-      - [Ui Canvas](#ui-canvas)
-      - [Show Distance](#show-distance)
-  - [10. Chips](#10-chips)
-    - [Chip_1 等](#chip_1-等)
-      - [1. Chip Udon スクリプト](#1-chip-udon-スクリプト)
-        - [Mesh Transform](#mesh-transform)
-        - [Audio Source](#audio-source)
-        - [Reset Duration](#reset-duration)
-
-<!-- /code_chunk_output -->
-
 ## インポート手順
 
 ### インポート前の準備

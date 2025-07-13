@@ -4,46 +4,6 @@ sidebar_label: Feather Duster
 
 # Feather Duster v1.0 Instructions {ignore}
 
-## Table of Contents {ignore}
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Installation Instructions](#installation-instructions)
-  - [Dependencies](#dependencies)
-  - [Importing Unity Package](#importing-unity-package)
-  - [Installing the Normal Edition](#installing-the-normal-edition)
-    - [1. Add Prefab to Scene](#1-add-prefab-to-scene)
-    - [2. Reposition the Feather Duster](#2-reposition-the-feather-duster)
-      - [1. Reveal the Feather Duster Model](#1-reveal-the-feather-duster-model)
-      - [2. Reposition](#2-reposition)
-      - [3. Hide the Feather Duster Model](#3-hide-the-feather-duster-model)
-    - [Well Done](#well-done)
-  - [Installing the Weaponizable (Can be held in reverse) Edition](#installing-the-weaponizable-can-be-held-in-reverse-edition)
-    - [1. Add Prefab to Scene](#1-add-prefab-to-scene-1)
-    - [2. Reposition the Duster on Right Hand (Normal State)](#2-reposition-the-duster-on-right-hand-normal-state)
-    - [3. Reposition the Duster on Left Hand (Weaponize State / Hold in Reverse State)](#3-reposition-the-duster-on-left-hand-weaponize-state--hold-in-reverse-state)
-      - [1. Reveal the Feather Duster Model](#1-reveal-the-feather-duster-model-1)
-      - [2. Deactivate the Animator on Your Avatar](#2-deactivate-the-animator-on-your-avatar)
-      - [3. Switch the Duster to Left Hand](#3-switch-the-duster-to-left-hand)
-      - [4. Reposition](#4-reposition)
-      - [5. Disable the Animation Preview](#5-disable-the-animation-preview)
-      - [6. Reactivate the Animator on Your Avatar](#6-reactivate-the-animator-on-your-avatar)
-      - [7. Hide the Feather Duster Model](#7-hide-the-feather-duster-model)
-    - [Well Done!](#well-done-1)
-- [How to Use](#how-to-use)
-  - [Usage of the Normal Edition](#usage-of-the-normal-edition)
-  - [Usage of the Weaponizable (Can be held in reverse) Edition](#usage-of-the-weaponizable-can-be-held-in-reverse-edition)
-- [Miscellaneous](#miscellaneous)
-  - [Rescaling the Feather Duster](#rescaling-the-feather-duster)
-    - [1. Reveal the Feather Duster Model](#1-reveal-the-feather-duster-model-2)
-    - [2. Rescale](#2-rescale)
-    - [3. Hide the Feather Duster Model](#3-hide-the-feather-duster-model-1)
-  - [Change the duster switch position in action menu](#change-the-duster-switch-position-in-action-menu)
-
-<!-- /code_chunk_output -->
-
 ## Installation Instructions
 
 ### Dependencies

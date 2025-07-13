@@ -4,52 +4,6 @@ sidebar_label: LED Mask
 
 # LED Mask v1.0 Instructions {ignore}
 
-## Table of Contents {ignore}
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Installation Instructions](#installation-instructions)
-  - [Dependencies](#dependencies)
-  - [Importing Unity Package](#importing-unity-package)
-  - [Installation for Compatible Avatars](#installation-for-compatible-avatars)
-    - [1. Import DLC Package](#1-import-dlc-package)
-    - [2. Add Prefab to Scene](#2-add-prefab-to-scene)
-    - [3. Testing](#3-testing)
-    - [Well Done](#well-done)
-  - [Installation for Incompatible Avatars](#installation-for-incompatible-avatars)
-    - [1. Add Prefab to Scene](#1-add-prefab-to-scene)
-    - [2. Adjust the Shape of the Mask](#2-adjust-the-shape-of-the-mask)
-      - [1. Adjust the Middle of the Mask](#1-adjust-the-middle-of-the-mask)
-      - [2. Adjust the Left Side of the Mask](#2-adjust-the-left-side-of-the-mask)
-      - [3. Adjust the Right Side of the Mask](#3-adjust-the-right-side-of-the-mask)
-      - [4. (Optional) Adjust the Pattern Size](#4-optional-adjust-the-pattern-size)
-    - [3. Customize Mask Emote](#3-customize-mask-emote)
-      - [1. (Optional) LED Pattern Reference](#1-optional-led-pattern-reference)
-      - [2. Initialize the Mask Emote Setup Tool](#2-initialize-the-mask-emote-setup-tool)
-      - [3. Customize Emote with Setup Tool](#3-customize-emote-with-setup-tool)
-        - [1. Uncheck Unnecessary Layers](#1-uncheck-unnecessary-layers)
-        - [2. Preview Animations from Layers](#2-preview-animations-from-layers)
-        - [3. Modify Mask Emote](#3-modify-mask-emote)
-        - [4. Customize the Rest of Mask Emotes](#4-customize-the-rest-of-mask-emotes)
-        - [5. Apply Mask Emotes](#5-apply-mask-emotes)
-        - [6. Testing](#6-testing)
-        - [7. Notices](#7-notices)
-    - [Well Done](#well-done-1)
-- [Customize Emote Patterns](#customize-emote-patterns)
-  - [1. Use the LED Pattern Painter](#1-use-the-led-pattern-painter)
-    - [1. LED Pattern Painter Introduction](#1-led-pattern-painter-introduction)
-    - [2. Draw and Save Pattern](#2-draw-and-save-pattern)
-  - [2. Apply the Pattern](#2-apply-the-pattern)
-    - [1. Import Settings](#1-import-settings)
-    - [2. Replace Patterns](#2-replace-patterns)
-- [How to Use](#how-to-use)
-- [Miscellaneous](#miscellaneous)
-  - [Change the Submenu Position in Action Menu](#change-the-submenu-position-in-action-menu)
-
-<!-- /code_chunk_output -->
-
 ## Installation Instructions
 
 ### Dependencies

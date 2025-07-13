@@ -4,32 +4,7 @@ sidebar_label: Potato Chips (Avatar Edition)
 
 # Potato Chips (Avatar Edition) v1.0 Instructions {ignore}
 
-## Table of Contents {ignore}
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Installation Instructions](#installation-instructions)
-  - [Dependencies](#dependencies)
-  - [Importing Unity Package](#importing-unity-package)
-  - [Adding Potato Chips to Your Avatar](#adding-potato-chips-to-your-avatar)
-    - [1. Add the Prefab to Scene](#1-add-the-prefab-to-scene)
-    - [2. Setup the Potato Chips](#2-setup-the-potato-chips)
-      - [1. Adjust the Position of the Chips Bag](#1-adjust-the-position-of-the-chips-bag)
-      - [2. Extra Setup](#2-extra-setup)
-        - [1. Change the Submenu Location in Action Menu (Optional)](#1-change-the-submenu-location-in-action-menu-optional)
-        - [2. Hide the Potato Chips in VRChat Avatar Preview (Optional)](#2-hide-the-potato-chips-in-vrchat-avatar-preview-optional)
-- [How to Use](#how-to-use)
-  - [Show/Hide the Rocket Puncher](#showhide-the-rocket-puncher)
-  - [Acquire and Consume Chips](#acquire-and-consume-chips)
-  - [Pour Out Chips](#pour-out-chips)
-
-<!-- /code_chunk_output -->
-
 ## Installation Instructions
-
-> asdasdsadas
 
 ### Dependencies
 

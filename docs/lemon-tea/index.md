@@ -4,35 +4,6 @@ sidebar_label: Lemon Tea
 
 # Lemon Tea v1.0 Instructions {ignore}
 
-## Table of Contents {ignore}
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Installation Instructions](#installation-instructions)
-  - [Dependencies](#dependencies)
-  - [Importing Unity Package](#importing-unity-package)
-  - [Installing Lemon Tea](#installing-lemon-tea)
-    - [1. Add Prefab to Scene](#1-add-prefab-to-scene)
-    - [2. Reposition](#2-reposition)
-      - [1. Asign the Animator Controller for your Avatar](#1-asign-the-animator-controller-for-your-avatar)
-      - [2. Enable Animation Preview](#2-enable-animation-preview)
-      - [3. Reposition the Lemon Tea](#3-reposition-the-lemon-tea)
-      - [4. Adjust the Gesture Holding Lemon Tea](#4-adjust-the-gesture-holding-lemon-tea)
-      - [5. Adjust the Gesture Squeezing Lemon Tea](#5-adjust-the-gesture-squeezing-lemon-tea)
-      - [6. Disable Preview and Revert Animator Controller](#6-disable-preview-and-revert-animator-controller)
-      - [7. (Optional) Hide the Lemon Tea](#7-optional-hide-the-lemon-tea)
-      - [8. Reposition the Mouth Contact Receiver](#8-reposition-the-mouth-contact-receiver)
-    - [Well Done](#well-done)
-- [How to Use](#how-to-use)
-  - [Basic Usage](#basic-usage)
-  - [Squeezable Edition Usage](#squeezable-edition-usage)
-- [Miscellaneous](#miscellaneous)
-  - [Change the Switch Position in Action Menu](#change-the-switch-position-in-action-menu)
-
-<!-- /code_chunk_output -->
-
 ## Installation Instructions
 
 ### Dependencies

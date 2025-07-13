@@ -4,26 +4,6 @@ sidebar_label: Mr.Tushi
 
 # Mr.Tushi v1.0 Instructions {ignore}
 
-## Table of Contents {ignore}
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Installation Instructions](#installation-instructions)
-  - [Dependencies](#dependencies)
-  - [Importing Unity Package](#importing-unity-package)
-  - [Installing Mr.Tushi](#installing-mrtushi)
-    - [1. Add Prefab to Scene](#1-add-prefab-to-scene)
-    - [2. Adjust Position](#2-adjust-position)
-    - [Well Done](#well-done)
-- [How to Use](#how-to-use)
-- [Miscellaneous](#miscellaneous)
-  - [Change the Submenu Position in Action Menu](#change-the-submenu-position-in-action-menu)
-  - [Hide Mr.Tushi in VRChat Avatar Preview](#hide-mrtushi-in-vrchat-avatar-preview)
-
-<!-- /code_chunk_output -->
-
 ## Installation Instructions
 
 ### Dependencies

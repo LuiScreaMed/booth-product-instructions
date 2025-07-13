@@ -4,58 +4,6 @@ sidebar_label: 袋装薯片(World 版本)
 
 # 袋装薯片(World 版本) v1.0 使用说明 {ignore}
 
-## 目录 {ignore}
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [导入教程](#导入教程)
-  - [导入前的准备](#导入前的准备)
-  - [将袋装薯片添加到场景中](#将袋装薯片添加到场景中)
-- [功能说明](#功能说明)
-  - [移动](#移动)
-  - [开袋](#开袋)
-  - [食用](#食用)
-  - [倾倒](#倾倒)
-- [配置说明](#配置说明)
-  - [1. Potato Chips](#1-potato-chips)
-    - [1. Potato Chips Udon 脚本](#1-potato-chips-udon-脚本)
-      - [Is Unpacked](#is-unpacked)
-      - [Easy Unpack Mode](#easy-unpack-mode)
-      - [Easy Unpack Mode Use Text](#easy-unpack-mode-use-text)
-      - [Enable Pouring](#enable-pouring)
-      - [Pour Angle](#pour-angle)
-      - [Potato Chips Bag](#potato-chips-bag)
-      - [Use Gravity](#use-gravity)
-      - [Is Kinematic](#is-kinematic)
-  - [2. Potato Chips Bag](#2-potato-chips-bag)
-    - [1. Potato Chips Bag Udon 脚本](#1-potato-chips-bag-udon-脚本)
-      - [Potato Chips](#potato-chips)
-      - [Unpack Controller](#unpack-controller)
-  - [4. Unpack](#4-unpack)
-    - [1. Unpack Controller Udon 脚本](#1-unpack-controller-udon-脚本)
-      - [Unpack Transform VR](#unpack-transform-vr)
-      - [Unpack Transform PC](#unpack-transform-pc)
-      - [Potato Chips Bag](#potato-chips-bag-1)
-  - [5. VR 及其子对象](#5-vr-及其子对象)
-    - [Unpack_Grab_1 和 Unpack_Grab_2](#unpack_grab_1-和-unpack_grab_2)
-      - [1. Unpack Grab Udon 脚本](#1-unpack-grab-udon-脚本)
-        - [Unpack Controller](#unpack-controller-1)
-        - [Drag Distance](#drag-distance)
-  - [6. PC 及其子对象](#6-pc-及其子对象)
-    - [1. Unpack PCUI Display Udon 脚本](#1-unpack-pcui-display-udon-脚本)
-      - [Ui Canvas](#ui-canvas)
-      - [Show Distance](#show-distance)
-  - [10. Chips](#10-chips)
-    - [Chip_1 等](#chip_1-等)
-      - [1. Chip Udon 脚本](#1-chip-udon-脚本)
-        - [Mesh Transform](#mesh-transform)
-        - [Audio Source](#audio-source)
-        - [Reset Duration](#reset-duration)
-
-<!-- /code_chunk_output -->
-
 ## 导入教程
 
 ### 导入前的准备
