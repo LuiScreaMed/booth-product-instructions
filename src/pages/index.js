@@ -9,7 +9,7 @@ import HomepageProducts from '../components/HomepageProducts';
 import { useEffect } from 'react';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -51,7 +51,13 @@ export default function Home() {
       break;
     }
 
-    window.location.replace(`/${useLang}/docs/${encodeURIComponent(docId)}`);
+    const path = encodeURIComponent(docId);
+
+    if (path === "index") {
+      window.location.replace(`/${useLang}`);
+    } else {
+      window.location.replace(`/${useLang}/docs/${path}`);
+    }
   });
 
   const { siteConfig } = useDocusaurusContext();
