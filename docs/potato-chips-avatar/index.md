@@ -17,7 +17,7 @@ sidebar_label: Potato Chips (Avatar Edition)
     - [1. Add the Prefab to Scene](#1-add-the-prefab-to-scene)
     - [2. Setup the Potato Chips](#2-setup-the-potato-chips)
       - [1. Adjust the Position of the Chips Bag](#1-adjust-the-position-of-the-chips-bag)
-      - [3. Extra Setup](#3-extra-setup)
+      - [2. Extra Setup](#2-extra-setup)
         - [1. Change the Submenu Location in Action Menu (Optional)](#1-change-the-submenu-location-in-action-menu-optional)
         - [2. Hide the Potato Chips in VRChat Avatar Preview (Optional)](#2-hide-the-potato-chips-in-vrchat-avatar-preview-optional)
 - [How to Use](#how-to-use)
@@ -28,6 +28,8 @@ sidebar_label: Potato Chips (Avatar Edition)
 <!-- /code_chunk_output -->
 
 ## Installation Instructions
+
+> asdasdsadas
 
 ### Dependencies
 
@@ -74,7 +76,7 @@ If you want to place it to your `right hand`, move it to your right hand, make s
 
 ![Switch_Hand](./Assets/Switch_Hand.webp)
 
-##### 3. Extra Setup
+##### 2. Extra Setup
 
 ###### 1. Change the Submenu Location in Action Menu (Optional)
 
