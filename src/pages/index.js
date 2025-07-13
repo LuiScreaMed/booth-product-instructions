@@ -6,11 +6,10 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import Translate from '@docusaurus/Translate';
 import HomepageProducts from '../components/HomepageProducts';
-import { useHistory } from '@docusaurus/router';
 import { useEffect } from 'react';
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
+  const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
