@@ -27,7 +27,7 @@ sidebar_label: 莫挨老子
 
 该扩展依赖以下 Unity 插件，请在导入前确保已经安装：
 
-- Modular Avatar (1.11.0或以上): https://modular-avatar.nadena.dev/
+- Modular Avatar (1.12.0或以上): https://modular-avatar.nadena.dev/
 
 ---
 
