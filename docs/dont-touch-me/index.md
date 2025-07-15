@@ -2,7 +2,7 @@
 sidebar_label: Don't Touch Me
 ---
 
-# Don't Touch Me v1.0 Instructions {ignore}
+# Don't Touch Me v1.0.2 Instructions {ignore}
 
 ## Gimmick Overview
 
@@ -161,9 +161,43 @@ For details, see [Emote Notes](#1-emote-notes).
 
 ---
 
-## How to Use
+## Testing
 
-You've done the installation, here's how to use it in VRChat.
+After installing “Don't Touch Me,” you can test its functionality by entering Play Mode.
+
+First, you’ll need the `Gesture Manager`, which can be installed via the `VRChat Creator Companion`.
+
+Once `Gesture Manager` is installed, click `Tools/Gesture Manager Emulator` in the Unity menu:
+
+![Add_Gesture_Manager_Emulator](./Assets/Add_Gesture_Manager_Emulator.webp)
+
+Clicking this will add a GameObject named `GestureManager`<sup>[1]</sup> to the scene.
+Select it, go to the Inspector, and click `Enter Play-Mode`<sup>[2]</sup> on the `Gesture Manager` component to enter Play Mode:
+
+![Enter_Play_Mode_With_Gesture_Manager](./Assets/Enter_Play_Mode_With_Gesture_Manager.webp)
+
+After entering Play Mode, you will see a GameObject named `[EditorOnly] DTM Testing Collider` in the Avatar’s hierarchy.
+This object is used to test whether the gimmick is functioning correctly.
+
+Switch to the Scene view, select `[EditorOnly] DTM Testing Collider`<sup>[1]</sup>, and use the `Move Tool`<sup>[2]</sup> to bring it closer to or farther from the Avatar.
+Use it along with the `Gesture Manager`’s Action Menu to test the dodging and emote functionality of the gimmick:
+
+![Test_With_Testing_Collider](./Assets/Test_With_Testing_Collider.webp)
+
+If the Avatar's head dodges when the `Dodging Toggle` is enabled and stays still when it's disabled,
+and if emotes play or don't play according to the `Emote Toggle`, then the gimmick is working correctly.
+
+:::note
+
+The `[EditorOnly] DTM Testing Collider` GameObject is only added during Play Mode and will not be included when uploading the Avatar.
+
+:::
+
+<sub>Testing end</sub>
+
+---
+
+## How to Use
 
 ### Enable and Disable Dodging
 

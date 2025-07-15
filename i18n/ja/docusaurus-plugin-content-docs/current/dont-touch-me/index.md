@@ -2,7 +2,7 @@
 sidebar_label: さわらないで
 ---
 
-# さわらないで v1.0 使用説明書 {ignore}
+# さわらないで v1.0.2 使用説明書 {ignore}
 
 :::warning
 
@@ -162,9 +162,39 @@ BlendShape を含む Skinned Mesh Renderer がアタッチされた GameObject �
 
 ---
 
-## 使用方法
+## テスト
 
-「さわらないで」のインポートが完了しました。次に VRChat での使用方法を説明します。
+「モーアイラオズ（Don't Touch Me）」を導入した後は、Play Mode に入ることで動作確認を行うことができます。
+
+まずは `Gesture Manager` が必要です。これは `VRChat Creator Companion` からインストールできます。
+
+`Gesture Manager` をインストールしたら、Unity ウィンドウの `Tools/Gesture Manager Emulator` をクリックします：
+
+![Add_Gesture_Manager_Emulator](./Assets/Add_Gesture_Manager_Emulator.webp)
+
+クリックすると、シーン内に `GestureManager`<sup>[1]</sup> という名前の GameObject が追加されます。これを選択して Inspector を開き、`Gesture Manager` コンポーネント内の `Enter Play-Mode` ボタン<sup>[2]</sup> をクリックして Play Mode に入ります：
+
+![Enter_Play_Mode_With_Gesture_Manager](./Assets/Enter_Play_Mode_With_Gesture_Manager.webp)
+
+Play Mode に入ると、アバターの子階層内に `[EditorOnly] DTM Testing Collider` という GameObject が出現します。これを使ってギミックの動作を確認します。
+
+Scene ビューに切り替えて `[EditorOnly] DTM Testing Collider`<sup>[1]</sup> を選択し、シーン内で `移動ツール`<sup>[2]</sup> を使ってこのオブジェクトを近づけたり離したりしながら、`Gesture Manager` のアクションメニューを用いて、ギミックの回避機能や表情機能をテストできます：
+
+![Test_With_Testing_Collider](./Assets/Test_With_Testing_Collider.webp)
+
+もし `回避機能スイッチ` のオン／オフによってアバターの頭部が適切に回避／非回避し、`表情スイッチ` のオン／オフによって表情が再生／停止するなら、このギミックは正常に動作しています。
+
+:::note
+
+`[EditorOnly] DTM Testing Collider` GameObject は Play Mode 中にのみ追加され、アバターをアップロードする際には含まれません。
+
+:::
+
+<sub>テスト終了</sub>
+
+---
+
+## 使用方法
 
 ### 回避機能の有効化・無効化
 

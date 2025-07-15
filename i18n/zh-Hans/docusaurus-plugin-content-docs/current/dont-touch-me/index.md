@@ -2,7 +2,7 @@
 sidebar_label: 莫挨老子
 ---
 
-# 莫挨老子 v1.0 使用说明 {ignore}
+# 莫挨老子 v1.0.2 使用说明 {ignore}
 
 ## 扩展简介
 
@@ -158,9 +158,39 @@ sidebar_label: 莫挨老子
 
 ---
 
-## 使用方法
+## 测试
 
-您已经安装了“莫挨老子”，接下来我将讲解如何在 VRChat 中使用这个扩展。
+在安装了“莫挨老子”后，可以通过进入 Play Mode 对其进行测试。
+
+首先我们需要 `Gesture Manager`，在 `Vrchat Creator Companion` 中可以安装。
+
+确保安装了 `Gesture Manager` 后，点击 Unity 窗口中的 `Tools/Gesture Manager Emulator`：
+
+![Add_Gesture_Manager_Emulator](./Assets/Add_Gesture_Manager_Emulator.webp)
+
+点击后，场景中会新增一个名为 `GestureManager`<sup>[1]</sup> 的游戏对象，选中它，转到 Inspector，点击 `Gesture Manager` 组件中的 `Enter Play-Mode`<sup>[2]</sup> 进入 Play Mode：
+
+![Enter_Play_Mode_With_Gesture_Manager](./Assets/Enter_Play_Mode_With_Gesture_Manager.webp)
+
+在进入 Play Mode 后，在 Avatar 的子层级中可以看到一个名为 `[EditorOnly] DTM Testing Collider` 的游戏对象，我们使用这个对象来测试扩展是否正常运行。
+
+切换到 Scene 窗口，选中 `[EditorOnly] DTM Testing Collider`<sup>[1]</sup>，在场景中使用 `移动工具`<sup>[2]</sup>，将其靠近/远离，结合 `Gesture Manager` 的圆盘菜单，对该扩展的躲避功能、表情功能进行测试：
+
+![Test_With_Testing_Collider](./Assets/Test_With_Testing_Collider.webp)
+
+如果在 `躲避功能开关` 开启/关闭时，Avatar 的头能够正常躲避/不躲避，并且根据 `表情开关` 能够播放/不播放表情时，则表示该扩展正常运行。
+
+:::note
+
+`[EditorOnly] DTM Testing Collider` 游戏对象只会在 Play Mode 时添加，在上传 Avatar 时不会添加。
+
+:::
+
+<sub>测试结束</sub>
+
+---
+
+## 使用方法
 
 ### 启用和禁用躲避功能
 
