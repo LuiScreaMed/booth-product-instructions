@@ -33,7 +33,7 @@ sidebar_label: さわらないで
 
 このギミックは、以下の Unity プラグインに依存しています。 インポートする前に、次のプラグインがインストールされていることを確認してください：
 
-- Modular Avatar (1.12.0以上): https://modular-avatar.nadena.dev/
+- Modular Avatar (1.13.0以上): https://modular-avatar.nadena.dev/
 
 ---
 

@@ -27,7 +27,7 @@ This gimmick works by inserting a head proxy with a PhysBone into the Avatar’s
 
 This gimmick relies on the following Unity plugin. Make sure you have installed it before installing this gimmick.
 
-- Modular Avatar (1.12.0 or higher): https://modular-avatar.nadena.dev/
+- Modular Avatar (1.13.0 or higher): https://modular-avatar.nadena.dev/
 
 ---
 
