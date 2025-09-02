@@ -2,7 +2,32 @@
 sidebar_label: Search Light
 ---
 
-# Search Light v1.0 Instructions {ignore}
+# Search Light v1.1 Instructions {ignore}
+
+## Table of Contents {ignore}
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [Installation Instructions](#installation-instructions)
+  - [Dependencies](#dependencies)
+  - [Importing Unity Package](#importing-unity-package)
+  - [Installing Search Light](#installing-search-light)
+    - [1. Add Prefab to Scene](#1-add-prefab-to-scene)
+    - [2. Reposition](#2-reposition)
+      - [1. Roughly Move Search Lights](#1-roughly-move-search-lights)
+      - [2. Adjust Search Lights for Both Eyes](#2-adjust-search-lights-for-both-eyes)
+        - [1. Adjust for Left Eye](#1-adjust-for-left-eye)
+        - [2. Adjust for Right Eye](#2-adjust-for-right-eye)
+      - [3. Hide the Position Indicator (Optional)](#3-hide-the-position-indicator-optional)
+    - [Well Done](#well-done)
+- [How to Use](#how-to-use)
+- [Miscellaneous](#miscellaneous)
+    - [Set the Size and Length for Light Pillar](#set-the-size-and-length-for-light-pillar)
+    - [Change the Switch Position in Action Menu](#change-the-switch-position-in-action-menu)
+
+<!-- /code_chunk_output -->
 
 ## Installation Instructions
 
@@ -21,7 +46,7 @@ This gimmick relies on the following Unity plugins / shaders. Make sure you have
 
 Drag `Search Light.unitypackage` into `Project` window, click the `Import` button on the dialog to import the package to your avatar project:
 
-![Import](./assets/Import.webp)
+![Import](./Assets/Import.png){width=50%}
 
 <sub>Importing Unity Package end</sub>
 
@@ -33,7 +58,7 @@ Drag `Search Light.unitypackage` into `Project` window, click the `Import` butto
 
 > :warning: **Attention**
 >
->Due to the limitation of Modular Avatar, a exception would be thrown if the target is empty in `MA Bone Proxy` component. Though most of avatars contain eye bones, i remained prefab with target asigning head bone instead of eye bones to prevent error.
+> Due to the limitation of Modular Avatar, a exception would be thrown if the target is empty in `MA Bone Proxy` component. Though most of avatars contain eye bones, i remained prefab with target asigning head bone instead of eye bones to prevent error.
 
 Check your avatar to make sure if it contains eye bones to add the currect prefab as below:
 
@@ -42,7 +67,7 @@ Check your avatar to make sure if it contains eye bones to add the currect prefa
 
 Drag the satisfied prefab from `Assets/LuiStudio/Search Light` to your avatar. Hierarchy should be like:
 
-![Prefab](./assets/Prefab.webp)
+![Prefab](./Assets/Prefab.png)
 
 #### 2. Reposition
 
@@ -52,41 +77,35 @@ There's a position indicator model for better experience, the model will be auto
 
 Select `Armature_Search_Light`<sup>[1]</sup> under the added prefab, use the `Move Tool` and `Rotate Tool`<sup>[2]</sup> and move the Search Light in front of avatar's eyes:
 
-![Adjust_Position](./assets/Adjust_Position.webp)
+![Adjust_Position](./Assets/Adjust_Position.png)
 
 It should look like this after the movement:
 
-![Adjust_Position_Finished](./assets/Adjust_Position_Finished.webp)
+![Adjust_Position_Finished](./Assets/Adjust_Position_Finished.png)
 
 ##### 2. Adjust Search Lights for Both Eyes
 
 We need to align the search lights to both eyes after the roughly move. In this instructions, we'll adjust the search light for left eye, then we make the search light for right eye symmetrical based on the coordinates of the left eye.
 
-###### 1. Adjust for Left Eye
+###### 1. Adjust for a Single Eye (Left Eye Example)
 
-Select `Search_Light_L`<sup>[1]</sup> under `Armature_Search_Light`, use `Move Tool` and `Rotate Tool` to align the search light to the front of left eye:
+In the Hierarchy, select `Search_Light_L` under `Armature_Search_Light`<sup>[1]</sup>, and use Unity's `Move` and `Rotate`<sup>[2]</sup> tools to align the light beam to the front of the left eye<sup>[3]</sup>:
 
-![Adjust_Position_L](./assets/Adjust_Position_L.webp)
+![Adjust_Position_L](./assets/Adjust_Position_L.png)
 
-###### 2. Adjust for Right Eye
+After adjustment, the light beam for the other eye will automatically mirror the position of the adjusted eye.
 
-Select `Search_Light_L`<sup>[1]</sup>, head to Inspector, right click on Position under Transform, and click on `Copy`<sup>[2]</sup>:
+###### 2. Cancel Symmetry (Optional)
 
-![Copy_Position_L](./assets/Copy_Position_L.webp)
+In the Hierarchy, select the prefab, go to the Inspector, find and remove the `Search Light Symmetry Tool` component.
 
-Select `Search_Light_R`<sup>[1]</sup>, head to Inspector, right click on Position under Transform, and click on `Paste`<sup>[2]</sup>:
+##### 3. Remove Position Indicator Model (Optional)
 
-![Paste_Position_R](./assets/Paste_Position_R.webp)
+In older versions of VRCSDK, the position indicator model (the blue light pillar) may not be automatically removed. In this case, you need to remove it manually.
 
-Make the X axis value opposite in Position:
+Select `Position (Auto_Remove_After_Upload)` and uncheck the active box in the Inspector:
 
-![Position_R_X_Opposite](./assets/Position_R_X_Opposite.webp)
-
-##### 3. Hide the Position Indicator (Optional)
-
-Select `Position (Auto_Remove_After_Upload)`, uncheck the active check box in Inspector:
-
-![Hide_Position_Indicator](./assets/Hide_Position_Indicator.webp)
+![Hide_Position_Indicator](./assets/Hide_Position_Indicator.png)
 
 #### Well Done
 
@@ -119,5 +138,21 @@ The switch is installed to the root menu by default, that's not friendly to avat
 - Select `Menu/Search Light` under the prefab in Hierarchy.
 - Head to the Inspector, click on the `Select Menu` inside the `MA Menu Installer` component.
 - Select the submenu where you want to put in.
+
+### What if the light beams for both eyes are not automatically symmetrical?
+
+If the beams are not symmetrical, or if the symmetry component reports an error, you need to manually mirror the light beams. Assuming you have already adjusted the beam for the left eye, follow these steps to make the right eye beam symmetrical to the left eye:
+
+Select `Search_Light_L`<sup>[1]</sup>, head to Inspector, right click on Position under Transform, and click on `Copy`<sup>[2]</sup>:
+
+![Copy_Position_L](./assets/Copy_Position_L.png)
+
+Select `Search_Light_R`<sup>[1]</sup>, head to Inspector, right click on Position under Transform, and click on `Paste`<sup>[2]</sup>:
+
+![Paste_Position_R](./assets/Paste_Position_R.png)
+
+Make the X axis value opposite in Position:
+
+![Position_R_X_Opposite](./assets/Position_R_X_Opposite.png)
 
 <sub>Miscellaneous end</sub>

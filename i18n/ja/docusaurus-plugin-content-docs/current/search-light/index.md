@@ -2,11 +2,36 @@
 sidebar_label: サーチライト
 ---
 
-# サーチライト v1.0 使用説明書 {ignore}
+# サーチライト v1.1 使用説明書 {ignore}
 
->:warning: **注意**
+>:warning: 注意
 >
 >こちらの説明書は ChatGPT によって生成されました。翻訳には誤りが含まれる可能性があります。誤りがある場合はご容赦ください。
+
+## 目次 {ignore}
+
+<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
+
+<!-- code_chunk_output -->
+
+- [インポートチュートリアル](#インポートチュートリアル)
+  - [インポート前の準備](#インポート前の準備)
+  - [アセットパッケージのインポート](#アセットパッケージのインポート)
+  - [サーチライトのインポート](#サーチライトのインポート)
+    - [1. Prefab のインポート](#1-prefab-のインポート)
+    - [2. 位置の調整](#2-位置の調整)
+      - [1. 全体の位置を調整](#1-全体の位置を調整)
+      - [2. 両目の位置を調整](#2-両目の位置を調整)
+        - [1. 左目の位置を調整](#1-左目の位置を調整)
+        - [2. 右目の位置を調整](#2-右目の位置を調整)
+      - [3. 位置指示モデルを非表示にする（オプション）](#3-位置指示モデルを非表示にするオプション)
+    - [インポート完了](#インポート完了)
+- [使用方法](#使用方法)
+- [その他](#その他)
+    - [光線のサイズと長さの変更](#光線のサイズと長さの変更)
+    - [メニュー内でのスイッチの位置を変更](#メニュー内でのスイッチの位置を変更)
+
+<!-- /code_chunk_output -->
 
 ## インポートチュートリアル
 
@@ -25,7 +50,7 @@ sidebar_label: サーチライト
 
 `Search Light.unitypackage` を Unity の `Project` ウィンドウにドラッグし、プロンプトが表示されたら `Import` をクリックして、アセットパッケージをAvatarプロジェクトにインポートします。
 
-![Import](./assets/Import.webp)
+![Import](./Assets/Import.png){width=50%}
 
 <sub>アセットパッケージのインポート完了</sub>
 
@@ -46,7 +71,7 @@ sidebar_label: サーチライト
 
 `Assets/LuiStudio/Search Light` の対応する Prefab を Avatar にドラッグし、ドラッグ後の Prefab と Avatar の関係は以下のようになります（ Search Light (eyes) を例にしています）：
 
-![Prefab](./assets/Prefab.webp)
+![Prefab](./Assets/Prefab.png)
 
 #### 2. 位置の調整
 
@@ -56,41 +81,35 @@ Prefab には位置を指示するモデルが含まれています。このモ�
 
 Hierarchy 内で Prefab の `Armature_Search_Light`<sup>[1]</sup> を選択し、Unity の `移動、回転` ツール<sup>[2]</sup>を使用して、サーチライトの全体の位置を調整します：
 
-![Adjust_Position](./assets/Adjust_Position.webp)
+![Adjust_Position](./Assets/Adjust_Position.png)
 
 目の正面に調整したら、以下のようになります：
 
-![Adjust_Position_Finished](./assets/Adjust_Position_Finished.webp)
+![Adjust_Position_Finished](./Assets/Adjust_Position_Finished.png)
 
 ##### 2. 両目の位置を調整
 
-全体の位置を大まかに調整した後、左右のサーチライトを目の正面に向けます。この説明では、まず左目の位置を調整し、その後左目の座標に基づいて右目のサーチライトを対称に配置します。
+全体の位置を大まかに調整した後、左右のサーチライトを目の正面に向けます。
 
-###### 1. 左目の位置を調整
+###### 1. 目の位置を調整（左目の場合）
 
 Hierarchy 内で `Armature_Search_Light` 内の `Search_Light_L`<sup>[1]</sup> を選択し、Unity の `移動、回転` ツール<sup>[2]</sup>を使用して光線を左目の正面に向けます<sup>[3]</sup>：
 
-![Adjust_Position_L](./assets/Adjust_Position_L.webp)
+![Adjust_Position_L](./assets/Adjust_Position_L.png)
 
-###### 2. 右目の位置を調整
+調整後、もう一方の目の光線は現在調整した目の光線と自動的に対称になります。
 
-`Search_Light_L`<sup>[1]</sup> を選択した状態を保持し、`Inspector` で Transform の Position を右クリックして `コピー`<sup>[2]</sup> を選択します：
+###### 2. 対称を解除する（オプション）
 
-![Copy_Position_L](./assets/Copy_Position_L.webp)
-
-次に、`Search_Light_R`<sup>[1]</sup> を選択し、`Inspector` で Transform の Position を右クリックして `貼り付け`<sup>[2]</sup> を選択します：
-
-![Paste_Position_R](./assets/Paste_Position_R.webp)
-
-Position の X軸 の値を正の数なら負に、負の数なら正に反転させます：
-
-![Position_R_X_Opposite](./assets/Position_R_X_Opposite.webp)
+Hierarchy で Prefab を選択し、Inspector に移動して `Search Light Symmetry Tool` コンポーネントを見つけて削除します。
 
 ##### 3. 位置指示モデルを非表示にする（オプション）
 
-`Position (Auto_Remove_After_Upload)` を選択し、`Inspector` でそのチェックを外します：
+古いバージョンの VRCSDK では、位置指示用のモデル（青い光柱）が自動で削除されない場合があります。その場合は手動で非表示にしてください。
 
-![Hide_Position_Indicator](./assets/Hide_Position_Indicator.webp)
+`Position (Auto_Remove_After_Upload)` を選択し、Inspector でチェックを外します：
+
+![Hide_Position_Indicator](./assets/Hide_Position_Indicator.png)
 
 #### インポート完了
 
@@ -116,12 +135,28 @@ Position の X軸 の値を正の数なら負に、負の数なら正に反転�
 
 各光線には始点と終点の2つのボーンがあります。これらのスケールや位置を変更して、光線のサイズと長さを調整できます。
 
-### メニュー内でのスイッチの位置を変更
+#### メニュー内でのスイッチの位置を変更
 
 サーチライトのスイッチはデフォルトでメニューの最初の層にありますが、多機能な Avatar ではこれが不便な場合があります。Modular Avatar を使用してスイッチの位置を変更できます。
 
 - Prefab の `Menu/Search Light` を選択します。
 - `Inspector` で、`MA Menu Installer` コンポーネント内の`Select Menu` ボタンをクリックします。
 - スイッチを配置したいサブメニューを選択します。
+
+### 左右の目の光線が自動で対称にならない場合
+
+自動で対称にならない、または対称コンポーネントでエラーが発生する場合は、光線を手動でミラーリングする必要があります。左目の光線を先に調整した場合、右目の光線を左目と対称にするには以下の手順を行います：
+
+`Search_Light_L`<sup>[1]</sup> を選択した状態を保持し、`Inspector` で Transform の Position を右クリックして `コピー`<sup>[2]</sup> を選択します：
+
+![Copy_Position_L](./assets/Copy_Position_L.png)
+
+次に、`Search_Light_R`<sup>[1]</sup> を選択し、`Inspector` で Transform の Position を右クリックして `貼り付け`<sup>[2]</sup> を選択します：
+
+![Paste_Position_R](./assets/Paste_Position_R.png)
+
+Position の X軸 の値を正の数なら負に、負の数なら正に反転させます：
+
+![Position_R_X_Opposite](./assets/Position_R_X_Opposite.png)
 
 <sub>その他完了</sub>
