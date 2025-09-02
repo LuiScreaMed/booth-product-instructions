@@ -4,31 +4,6 @@ sidebar_label: Search Light
 
 # Search Light v1.1 Instructions {ignore}
 
-## Table of Contents {ignore}
-
-<!-- @import "[TOC]" {cmd="toc" depthFrom=1 depthTo=6 orderedList=false} -->
-
-<!-- code_chunk_output -->
-
-- [Installation Instructions](#installation-instructions)
-  - [Dependencies](#dependencies)
-  - [Importing Unity Package](#importing-unity-package)
-  - [Installing Search Light](#installing-search-light)
-    - [1. Add Prefab to Scene](#1-add-prefab-to-scene)
-    - [2. Reposition](#2-reposition)
-      - [1. Roughly Move Search Lights](#1-roughly-move-search-lights)
-      - [2. Adjust Search Lights for Both Eyes](#2-adjust-search-lights-for-both-eyes)
-        - [1. Adjust for Left Eye](#1-adjust-for-left-eye)
-        - [2. Adjust for Right Eye](#2-adjust-for-right-eye)
-      - [3. Hide the Position Indicator (Optional)](#3-hide-the-position-indicator-optional)
-    - [Well Done](#well-done)
-- [How to Use](#how-to-use)
-- [Miscellaneous](#miscellaneous)
-    - [Set the Size and Length for Light Pillar](#set-the-size-and-length-for-light-pillar)
-    - [Change the Switch Position in Action Menu](#change-the-switch-position-in-action-menu)
-
-<!-- /code_chunk_output -->
-
 ## Installation Instructions
 
 ### Dependencies
