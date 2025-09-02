@@ -62,10 +62,7 @@ You have done the installation. Head to [How to Use](#how-to-use) and try it in 
 
 You've done the installation, it's time to try it out in VRChat.
 
-- Turn on the action menu, locate the toggle called `Hypnosis Phone`, when toggles on, the phone will appear.
-- Use the hand other than the holding hand and tap on the `Start` button on the screen to start the hipnosis animation.
-- Use the hand other than the holding hand again and tap on the middle of the screen to stop the hipnosis animation.
-Turn on the action menu, locate and enter the `Mr.Tushi` submenu, the toggles in the submenu are for showing/hiding specific models.
+Turn on the action menu, locate the `Mr.Tushi` submenu, the toggles inside the submenu is to show/hide corresponding models.
 
 <sub>How to Use end</sub>
 
