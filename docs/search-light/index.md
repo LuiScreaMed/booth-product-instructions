@@ -46,7 +46,7 @@ This gimmick relies on the following Unity plugins / shaders. Make sure you have
 
 Drag `Search Light.unitypackage` into `Project` window, click the `Import` button on the dialog to import the package to your avatar project:
 
-![Import](./Assets/Import.png){width=50%}
+![Import](./Assets/Import.webp)
 
 <sub>Importing Unity Package end</sub>
 
@@ -67,7 +67,7 @@ Check your avatar to make sure if it contains eye bones to add the currect prefa
 
 Drag the satisfied prefab from `Assets/LuiStudio/Search Light` to your avatar. Hierarchy should be like:
 
-![Prefab](./Assets/Prefab.png)
+![Prefab](./Assets/Prefab.webp)
 
 #### 2. Reposition
 
@@ -77,11 +77,11 @@ There's a position indicator model for better experience, the model will be auto
 
 Select `Armature_Search_Light`<sup>[1]</sup> under the added prefab, use the `Move Tool` and `Rotate Tool`<sup>[2]</sup> and move the Search Light in front of avatar's eyes:
 
-![Adjust_Position](./Assets/Adjust_Position.png)
+![Adjust_Position](./Assets/Adjust_Position.webp)
 
 It should look like this after the movement:
 
-![Adjust_Position_Finished](./Assets/Adjust_Position_Finished.png)
+![Adjust_Position_Finished](./Assets/Adjust_Position_Finished.webp)
 
 ##### 2. Adjust Search Lights for Both Eyes
 
@@ -91,7 +91,7 @@ We need to align the search lights to both eyes after the roughly move. In this 
 
 In the Hierarchy, select `Search_Light_L` under `Armature_Search_Light`<sup>[1]</sup>, and use Unity's `Move` and `Rotate`<sup>[2]</sup> tools to align the light beam to the front of the left eye<sup>[3]</sup>:
 
-![Adjust_Position_L](./assets/Adjust_Position_L.png)
+![Adjust_Position_L](./assets/Adjust_Position_L.webp)
 
 After adjustment, the light beam for the other eye will automatically mirror the position of the adjusted eye.
 
@@ -105,7 +105,7 @@ In older versions of VRCSDK, the position indicator model (the blue light pillar
 
 Select `Position (Auto_Remove_After_Upload)` and uncheck the active box in the Inspector:
 
-![Hide_Position_Indicator](./assets/Hide_Position_Indicator.png)
+![Hide_Position_Indicator](./assets/Hide_Position_Indicator.webp)
 
 #### Well Done
 
@@ -145,14 +145,14 @@ If the beams are not symmetrical, or if the symmetry component reports an error,
 
 Select `Search_Light_L`<sup>[1]</sup>, head to Inspector, right click on Position under Transform, and click on `Copy`<sup>[2]</sup>:
 
-![Copy_Position_L](./assets/Copy_Position_L.png)
+![Copy_Position_L](./assets/Copy_Position_L.webp)
 
 Select `Search_Light_R`<sup>[1]</sup>, head to Inspector, right click on Position under Transform, and click on `Paste`<sup>[2]</sup>:
 
-![Paste_Position_R](./assets/Paste_Position_R.png)
+![Paste_Position_R](./assets/Paste_Position_R.webp)
 
 Make the X axis value opposite in Position:
 
-![Position_R_X_Opposite](./assets/Position_R_X_Opposite.png)
+![Position_R_X_Opposite](./assets/Position_R_X_Opposite.webp)
 
 <sub>Miscellaneous end</sub>
