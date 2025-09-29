@@ -15,7 +15,7 @@
   padding: 0 var(--ifm-alert-padding-horizontal);
 }
 
-.admonitionChangelog ol, .admonitionChangelog ol {
+.admonitionChangelog ol, .admonitionChangelog ul {
   list-style: none;
   padding: 0;
   margin: 0;
