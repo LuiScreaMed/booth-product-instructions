@@ -1,7 +1,10 @@
-
 /**
  * 商品信息
- * @typedef {{displayName: string, name: string?, booth: string}} ProductItemInfo
+ * @typedef {Object} ProductItemInfo
+ * @prop {string} displayName
+ * @prop {string | undefined} name
+ * @prop {string} booth
+ * @prop {string[] | undefined} versions
  */
 
 /**

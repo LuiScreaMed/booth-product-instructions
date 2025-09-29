@@ -45,7 +45,7 @@ export default function DocSidebarItemLink({
           onClick: onItemClick ? () => onItemClick(item) : undefined,
         })}
         {...props}>
-        {docId && <ProductSideBarItemImage docid={docId} />}
+        {docId && !docId.includes("/versions/") && <ProductSideBarItemImage docid={docId} />}
         {label}
         {!isInternalLink && <IconExternalLink />}
       </Link>

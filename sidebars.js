@@ -32,8 +32,21 @@ const sidebars = {
   //   },
   // ]
   tutorialSidebar: [
-    ...Object.keys(products).map((value) => {
-      return `${value}/index`;
+    ...Object.keys(products).map((name) => {
+      const product = products[name];
+      if (product.versions !== undefined) {
+        return {
+            type: "category",
+            label: name,
+            link: {
+              type: "doc",
+              id: `${name}/index`
+            },
+            items: [...product.versions.map((version) => `${name}/versions/${version}/index`)]
+          }
+      } else {
+        return `${name}/index`;
+      }
     })
   ]
 };

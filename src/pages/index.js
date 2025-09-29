@@ -51,7 +51,7 @@ export default function Home() {
       break;
     }
 
-    const path = encodeURIComponent(docId);
+    const path = decodeURIComponent(docId);
 
     if (path === "index") {
       window.location.replace(`/${useLang}`);
