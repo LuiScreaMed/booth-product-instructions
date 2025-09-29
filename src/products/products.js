@@ -5,7 +5,8 @@
 const products = {
     "dont-touch-me": {
         displayName: "【MA対応】さわらないで / 莫挨老子 / Don't Touch Me",
-        booth: "7166759"
+        booth: "7166759",
+        versions: ["v1.0", "v1.1"]
     },
     "potato-chips-world": {
         displayName: "【VRC World対応】ポテトチップス / 袋装薯片 / Potato Chips （World）",
