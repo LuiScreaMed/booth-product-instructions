@@ -57,6 +57,10 @@ const config = {
           // Remove this to remove the "edit this page" links.
           beforeDefaultRemarkPlugins: [remarkWarningParse, remarkIgnoreText, remarkImageParse],
           remarkPlugins: [],
+          admonitions: {
+            keywords: ["changelog"],
+            extendDefaults: true
+          }
         },
         blog: false,
         theme: {
