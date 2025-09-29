@@ -8,6 +8,8 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-color: var(--admonition-changelog-background);
+  color: var(--ifm-color-content-secondary);
 }
 
 @media screen and (max-width: 996px) {
