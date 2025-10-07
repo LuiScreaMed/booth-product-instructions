@@ -1,0 +1,280 @@
+---
+sidebar_label: v1.2.*
+---
+
+# 莫挨老子 v1.2.0 使用说明 {ignore}
+
+## 扩展简介
+
+该扩展使用 [Non-Destructive Modular Framework](https://github.com/bdunderscore/ndmf) 和 [Modular Avatar](https://github.com/bdunderscore/modular-avatar) **非破坏性**地实现了使 Avatar 头部在其他玩家的双手靠近时进行躲闪，并在躲闪时播放通过工具定义的表情的功能。
+
+该扩展具体通过在 Avatar 的头骨中插入一个带有 PhysBone 的头骨代理，从而实现其他玩家的手部靠近时躲闪的功能。
+
+### 注意事项
+
+- 该扩展只在 VRCSDK3，Unity 2022.3.22f1 环境下进行过测试。
+- 该扩展只支持人型（Humanoid）并且存在头骨的 Avatar。
+- 由于该扩展需要修改 Avatar 的骨骼层级，可能会与其他扩展冲突（比如可拆卸的头的扩展等等）。
+
+<sub>扩展简介结束</sub>
+
+---
+
+## 导入教程
+
+### 导入前的准备
+
+该扩展依赖以下 Unity 插件，请在导入前确保已经安装：
+
+- Modular Avatar (1.13.0或以上): https://modular-avatar.nadena.dev/
+
+---
+
+### 资源包导入
+
+将 `Don't Touch Me.unitypackage` 拖入 Unity 的 `Project` 窗口中，点击提示窗中的 `Import`，将资源包导入到 Avatar 项目中：
+
+![Import](./Assets/Import.webp)
+
+---
+
+### 安装扩展
+
+#### 1. 添加 Prefab
+
+将 `Assets/LuiStudio/Don't Touch Me/Dont't Touch Me.prefab` 从 Project 窗口中拖拽到 Hierarchy 中您的 Avatar 下：
+
+![Prefab_In_Avatar](./Assets/Prefab_In_Avatar.webp)
+
+#### 2. 配置扩展
+
+##### 1. 调整头部碰撞的位置和大小
+
+在添加并选中 Prefab 后，在场景的 坐标(0, 1.5, 0) 处会出现一个白色球形线框：
+
+![Head_Collider_Indicator](./Assets/Head_Collider_Indicator.webp)
+
+:::warning
+
+如果没有出现白色球形线框，请确保当前窗口是场景窗口，并且已在场景窗口右上角开启了 Gismos。
+
+当您的 Avatar 不存在 `VRC Avatar Descriptor` 组件、不存在 `Animator` 组件或者 `Animator` 组件中没有人型 Avatar 时，头部碰撞会在坐标 `(0, 1.5, 0)` 处。但由于 Avatar 不符合要求，将无法编辑头部碰撞。
+
+:::
+
+在 Hierarchy 中选中 `Don't Touch Me`<sup>[1]</sup>，在 Inspector 中找到 `Don't Touch Me Setup Tool` 组件<sup>[2]</sup>，点击 `头部碰撞` 下的 `重置`<sup>[3]</sup> 按钮，可以快速将头部碰撞定位到 Avatar 的头部<sup>[4]</sup>：
+
+![Reset_Head_Collider](./Assets/Reset_Head_Collider.webp)
+
+点击 `头部碰撞` 下的 `编辑` 按钮<sup>[1]</sup>编辑头部碰撞：
+
+![Edit_Head_Collider](./Assets/Edit_Head_Collider.webp)
+
+在点击 `编辑` 后，白色球形线框中间会出现一个变换工具。通过 `移动` 和 `缩放` 工具<sup>[1]</sup> 调整其位置和大小：
+
+![Edit_Head_Collider_1](./Assets/Edit_Head_Collider_1.webp)
+
+调整完成后，选择任意游戏对象，或者点击 Inspector 中 `DTM Head Transformer` 组件的 `应用`<sup>[1]</sup> 结束调整：
+
+![Edit_Head_Collider_Finish](./Assets/Edit_Head_Collider_Finish.webp)
+
+##### 2. 启用更平滑的躲闪（可选）
+
+更平滑的躲闪指的是在扩展生成 PhysBone 组件时，是否使用 Stiffness 实现更平滑的头部移动。
+
+在 `Don't Touch Me Setup Tool` 组件中，勾选 `更平滑的躲闪`<sup>[1]</sup> 以启用该功能：
+
+![Smoothing_Toggle](./Assets/Smoothing_Toggle.webp)
+
+:::warning
+
+启用更平滑的躲闪后会导致头部在移动时（特别是移动方向变换时）偶尔遭受惯性影响而旋转（特别是PC平台）。
+
+:::
+
+##### 3. 添加躲闪表情（可选）
+
+躲闪表情指的是在进行躲闪的时候播放的表情，表情是通过 `形态键` 动画实现的。我们可以添加多个表情，并且选择让他们在每次躲闪时 `按顺序播放`、`随机播放` 或者 `锁定其中一个播放`。
+
+###### 1. 表情注意事项
+
+根据表情的数量和[自定义的菜单项模式](#4-自定义菜单项可选)，菜单和同步参数占用会在 1 bit 到 19 bits 之间浮动，具体的同步参数占用[请看这里](#4-自定义菜单项可选)。
+
+设定的表情列表中，缺少形态键的表情会被清除。
+
+###### 2. 添加表情
+
+在 `Don't Touch Me Setup Tool` 组件中，点击表情列表右下角的 `+`<sup>[1]</sup> 添加一个新表情：
+
+![Add_Emote](./Assets/Add_Emote.webp)
+
+###### 3. 添加表情的形态键
+
+在添加的表情的 BlendShape 列表的右下角点击 `+`<sup>[1]</sup> 添加一个新的表情 BlendShape：
+
+![Add_Blendshape](./Assets/Add_Blendshape.webp)
+
+<span id="Add_Blendshape_Finish"></span>
+
+添加了新的表情 BlendShape 后，列表如下（图中的标号在下文解释）：
+
+![Add_Blendshape_Finish](./Assets/Add_BlendShape_Finish.webp)
+
+在新添加的条目中：
+
+- `网格`<sup>[1]</sup> 是需要播放的 BlendShape 所在的 `带蒙皮网格渲染器`；
+- `形态键`<sup>[2]</sup> 是需要播放的 BlendShape 名称；
+- `权重`<sup>[3]</sup> 是该 BlendShape 播放时的权重。
+
+将带有 BlendShape 的带蒙皮的网格渲染器所在的游戏对象拖入 `网格`<sup>[1]</sup> 中，在 `形态键`<sup>[2]</sup> 处选择需要播放的形态键，并调整 `权重`<sup>[3]</sup>。
+
+在勾选 `预览`<sup>[4]</sup> 或者调整权重时，Unity 会进入动画模式，可以实时看到当前表情的效果：
+
+![Emote_Preview](./Assets/Emote_Preview.webp)
+
+取消勾选 `预览`<sup>[4]</sup> 或者选择其他游戏对象可以取消表情的预览状态。
+
+##### 4. 自定义菜单项（可选）
+
+在表情列表下面的 `自定义菜单项` 中，可以配置菜单项的名称和模式。可配置的项目数量与表情数量和菜单项模式有关。`自定义菜单项` 中可以实时查看同步参数占用<sup>[1]</sup>：
+
+![Parameter_Usage](./Assets/Parameter_Usage.webp)
+
+以下是每个菜单项配置的说明：
+
+:::note
+
+如果您在组件中找不到对应的自定义菜单项，则代表您的表情数量低于配置标准或者将 `启用表情模式` 设置为了 `总是禁用`。不显示的菜单项将不会参与 Avatar 构建。
+
+:::
+
+###### 主标题
+
+- `显示名称` - 在圆盘菜单中显示的主开关或子菜单入口的名称。
+
+###### 启用表情
+
+- `显示名称` - 在圆盘菜单中显示的用于启用/禁用躲避表情的开关的名称。
+- `模式` - 这个菜单项的模式，各个模式的详情如下：
+
+    |模式|说明|
+    |-|-|
+    |默认|在构建时添加该开关，并且占用 1bit 的同步参数；<br></br>当有 2 个自定义表情时，额外占用 1 bit 的表情参数（总共占用 2 bits）；<br></br>当有大于 2 个自定义表情时，额外占用 8 bits 的表情参数（总共占用 9 bits）|
+    |总是启用|在构建时忽略该开关，该功能永远 `启用`，并且不占用同步参数；<br></br>当有 2 个自定义表情时，占用 1 bit 的表情参数；<br></br>当有大于 2 个自定义表情时，占用 8 bits 的表情参数|
+    |总是禁用|在构建时忽略该开关，该功能永远 `禁用`，并且不占用同步参数；<br></br>[随机表情](#随机表情) 和 [锁定表情](#锁定表情) 功能都将禁用|
+
+###### 随机表情
+
+- `显示名称` - 在圆盘菜单中显示的用于启用/禁用随机躲避表情的开关的名称。
+- `模式` - 这个菜单项的模式，各个模式的详情如下：
+
+    |模式|说明|
+    |-|-|
+    |默认|在构建时添加该开关，并且占用 1 bit 的同步参数|
+    |总是启用|在构建时忽略该开关，该功能永远 `启用`，并且不占用同步参数|
+    |总是禁用|在构建时忽略该开关，该功能永远 `禁用`，并且不占用同步参数|
+
+###### 锁定表情
+
+- `显示名称` - 在圆盘菜单中显示的用于选择表情以锁定表情的子菜单入口的名称。
+- `模式` - 这个菜单项的模式，各个模式的详情如下：
+
+    |模式|说明|
+    |-|-|
+    |启用锁定表情功能|在构建时添加一个用于选择锁定表情的子菜单入口，并且占用 8 bits 的参数|
+    |禁用锁定表情功能|在构建时忽略该功能，不占用同步参数|
+
+##### 5. 配置排除项（可选）
+
+Don't Touch Me 默认会将原本头骨中（包括使用Bone Proxy添加的）的所有对象移入代理头骨中，使头骨下的对象一起移动。
+
+排除项用于忽略指定对象的移动。
+
+:::warning
+
+排除项只对头骨的第一层子项有效。
+
+:::
+
+在 `Don't Touch Me Setup Tool` 组件中找到 `排除项`<sup>[1]</sup>，在排除项数组<sup>[2]</sup>中添加您想要用于排除的对象：
+
+![Exclusions](./Assets/Exclusions.webp)
+
+##### 6. 其他配置
+
+###### 1. 修改子菜单或者开关在圆盘菜单中的位置（可选）
+
+该扩展的子菜单入口默认在根菜单下，这对拥有许多功能的 Avatar 来说很不友好。我们可以通过修改 `MA Menu Installer` 组件修改子菜单的位置：
+
+- 在 Hierarchy 中选中 `Don't Touch Me`
+- 在 Inspector 中，找到 `MA Menu Installer` 组件，点击其中的 `Select Menu` 按钮
+- 选择想要将子菜单或者开关放入的菜单
+
+:::note
+
+当没有添加表情时，扩展会将原本的子菜单替换为开关，具体内容可以通过 [表情注意事项](#1-表情注意事项) 了解。
+
+:::
+
+<sub>导入教程结束</sub>
+
+---
+
+## 测试
+
+在安装了“莫挨老子”后，可以通过进入 Play Mode 对其进行测试。
+
+首先我们需要 `Gesture Manager`，在 `Vrchat Creator Companion` 中可以安装。
+
+确保安装了 `Gesture Manager` 后，点击 Unity 窗口中的 `Tools/Gesture Manager Emulator`：
+
+![Add_Gesture_Manager_Emulator](./Assets/Add_Gesture_Manager_Emulator.webp)
+
+点击后，场景中会新增一个名为 `GestureManager`<sup>[1]</sup> 的游戏对象，选中它，转到 Inspector，点击 `Gesture Manager` 组件中的 `Enter Play-Mode`<sup>[2]</sup> 进入 Play Mode：
+
+![Enter_Play_Mode_With_Gesture_Manager](./Assets/Enter_Play_Mode_With_Gesture_Manager.webp)
+
+在进入 Play Mode 后，在 Avatar 的子层级中可以看到一个名为 `[EditorOnly] DTM Testing Collider` 的游戏对象，我们使用这个对象来测试扩展是否正常运行。
+
+切换到 Scene 窗口，选中 `[EditorOnly] DTM Testing Collider`<sup>[1]</sup>，在场景中使用 `移动工具`<sup>[2]</sup>，将其靠近/远离，结合 `Gesture Manager` 的圆盘菜单，对该扩展的躲避功能、表情功能进行测试：
+
+![Test_With_Testing_Collider](./Assets/Test_With_Testing_Collider.webp)
+
+如果在 `躲避功能开关` 开启/关闭时，Avatar 的头能够正常躲避/不躲避，并且根据 `表情开关` 能够播放/不播放表情时，则表示该扩展正常运行。
+
+:::note
+
+`[EditorOnly] DTM Testing Collider` 游戏对象只会在 Play Mode 时添加，在上传 Avatar 时不会添加。
+
+:::
+
+<sub>测试结束</sub>
+
+---
+
+## 使用方法
+
+### 启用和禁用躲避功能
+
+|表情数量|方法|
+|-|-|
+|0|开启圆盘菜单，找到 `Don't Touch Me` 开关，通过切换该开关启用/禁用躲避功能|
+|>0|开启圆盘菜单，找到并进入 `Don't Touch Me` 子菜单，子菜单中的 `Don't Touch Me` 开关用于启用/禁用躲避功能|
+
+### 启用和禁用躲避表情（仅当有躲避表情时）
+
+开启圆盘菜单，找到并进入 `Don't Touch Me` 子菜单，子菜单中的 `Enable Emotes` 开关用于启用/禁用躲避表情的播放。
+
+### 启用和禁用随机躲避表情（仅当躲避表情数量 >2 时）
+
+默认情况下，在每次躲避时会按照列表中的顺序播放躲避表情，如果启用了随机表情，则会在列表中随机取一个表情进行播放。
+
+开启圆盘菜单，找到并进入 `Don't Touch Me` 子菜单，子菜单中的 `Random Emote` 开关用于启用/禁用随机躲避表情。
+
+### 锁定躲避表情（仅当躲避表情数量 >=2 时）
+
+锁定躲避表情后，每一次躲避都会播放指定的躲避表情。
+
+开启圆盘菜单，找到并进入 `Don't Touch Me/Lock Emote` 子菜单，子菜单中的 `Emote` 开关用于选择需要锁定的表情。
+
+<sub>使用方法结束</sub>

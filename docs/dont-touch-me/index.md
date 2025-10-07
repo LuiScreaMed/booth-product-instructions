@@ -8,6 +8,15 @@ import DocCardList from '@theme/DocCardList';
 
 :::changelog
 
+### v1.2.0
+
+1. Fixed an issue where an error occurred even when the Don't Touch Me Setup Tool component was not added to the model.
+1. Added an exclusion feature that allows specified objects to remain unaffected by the head movement during dodge.
+
+:::
+
+:::changelog
+
 ### v1.1.0
 
 1. Fixed a minor performance issue caused by the animation conditions of locked emotes.

@@ -8,6 +8,15 @@ import DocCardList from '@theme/DocCardList';
 
 :::changelog
 
+### v1.2.0
+
+- 修复了模型中没有添加 Don't Touch Me Setup Tool 组件但是报错的问题。
+- 添加了排除功能，能让所需的对象不跟随躲避的头移动。
+
+:::
+
+:::changelog
+
 ### v1.1.0
 
 - 修复了锁定表情的动画条件导致轻微性能损失的问题。
