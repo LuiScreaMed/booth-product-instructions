@@ -8,6 +8,14 @@ import DocCardList from '@theme/DocCardList';
 
 :::changelog
 
+### v1.2.1
+
+- ボーンのスケール比率の問題により、ヘッドプロキシが大きく／小さくなりすぎる不具合を修正しました。
+
+:::
+
+:::changelog
+
 ### v1.2.0
 
 - モデルに「Don't Touch Me Setup Tool」コンポーネントが追加されていない場合にエラーが発生する問題を修正しました。

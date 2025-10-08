@@ -8,6 +8,14 @@ import DocCardList from '@theme/DocCardList';
 
 :::changelog
 
+### v1.2.1
+
+- 修复了由于骨骼比例问题导致的头骨代理变得过大/过小的问题。
+
+:::
+
+:::changelog
+
 ### v1.2.0
 
 - 修复了模型中没有添加 Don't Touch Me Setup Tool 组件但是报错的问题。

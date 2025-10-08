@@ -8,6 +8,14 @@ import DocCardList from '@theme/DocCardList';
 
 :::changelog
 
+### v1.2.1
+
+- Fixed an issue where the head bone proxy became too large or too small due to bone scale issues.
+
+:::
+
+:::changelog
+
 ### v1.2.0
 
 1. Fixed an issue where an error occurred even when the Don't Touch Me Setup Tool component was not added to the model.
