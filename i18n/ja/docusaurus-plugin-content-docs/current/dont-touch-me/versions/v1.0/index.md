@@ -45,6 +45,8 @@ sidebar_label: v1.0.*
 
 ---
 
+### さわらないでのインストール
+
 #### 1. Prefab の追加
 
 `Assets/LuiStudio/Don't Touch Me/Dont't Touch Me.prefab` を Project ウィンドウから Hierarchy 内のアバターの下にドラッグ＆ドロップしてください：
