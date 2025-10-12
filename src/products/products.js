@@ -3,6 +3,10 @@
  * @type {Object.<string, ProductItemInfo>}
  */
 const products = {
+    "rip-afk": {
+        displayName: "【MA対応 + 汎用】RIP AFK",
+        booth: "7532676"
+    },
     "dont-touch-me": {
         displayName: "【MA対応】さわらないで / 莫挨老子 / Don't Touch Me",
         booth: "7166759",
