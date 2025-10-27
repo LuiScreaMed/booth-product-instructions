@@ -6,5 +6,9 @@
   "sidebar.tutorialSidebar.category.dont-touch-me": {
     "message": "Don't Touch Me",
     "description": "The label for category dont-touch-me in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.rip-afk": {
+    "message": "RIP AFK",
+    "description": "The label for category rip-afk in sidebar tutorialSidebar"
   }
 }
