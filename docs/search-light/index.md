@@ -8,7 +8,7 @@ sidebar_label: Search Light
 
 ### Dependencies
 
-This gimmick relies on the following Unity plugins / shaders. Make sure you have installed them before you install this gimmick.
+This gimmick depends on the following packages. Make sure you have installed them before you install this gimmick.
 
 - Modular Avatar (1.9.13 or above): https://modular-avatar.nadena.dev/
 - lilToon (1.7.3 or above): https://lilxyzw.github.io/lilToon/#/

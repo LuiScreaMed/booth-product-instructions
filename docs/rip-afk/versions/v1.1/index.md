@@ -31,7 +31,7 @@ During the avatar build process, this gimmick performs the following operations:
 
 ### Dependencies
 
-This gimmick relies on the following Unity plugin. Make sure you have installed it before installing this gimmick.
+This gimmick depends on the following packages. Make sure you have installed it before installing this gimmick.
 
 - Modular Avatar (1.13.0 or higher): https://modular-avatar.nadena.dev/
 - lilToon (1.8.3 or higher): https://lilxyzw.github.io/lilToon/#/

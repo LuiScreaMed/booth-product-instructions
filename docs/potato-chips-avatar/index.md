@@ -8,7 +8,7 @@ sidebar_label: Potato Chips (Avatar Edition)
 
 ### Dependencies
 
-This gimmick relies on the following Unity plugins / shaders. Make sure you have installed them before you install this gimmick.
+This gimmick depends on the following packages. Make sure you have installed them before you install this gimmick.
 
 - Modular Avatar (1.11.0 or higher): https://modular-avatar.nadena.dev/
 - lilToon (1.8.3 or higher): https://lilxyzw.github.io/lilToon/#/

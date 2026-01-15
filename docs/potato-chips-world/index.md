@@ -8,7 +8,7 @@ sidebar_label: Potato Chips (World Edition)
 
 ### Dependencies
 
-This gimmick relies on the following Unity plugins / shaders. Make sure you have installed them before you install this gimmick.
+This gimmick depends on the following package. Make sure you have installed them before you install this gimmick.
 
 - lilToon (1.8.3 or higher): https://lilxyzw.github.io/lilToon/#/
 
