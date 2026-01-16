@@ -3,6 +3,11 @@
  * @type {Object.<string, ProductItemInfo>}
  */
 const products = {
+    "blend-shape-clamper": {
+        displayName: "【MA対応】ブレンドシェイプ制限ツール / 形态键限制器 / Blend Shape Clamper",
+        booth: "7884255",
+        versions: ["v1.0"]
+    },
     "rip-afk": {
         displayName: "【MA対応 + 汎用】RIP AFK",
         booth: "7532676",
