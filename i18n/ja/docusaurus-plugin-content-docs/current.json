@@ -10,5 +10,9 @@
   "sidebar.tutorialSidebar.category.rip-afk": {
     "message": "RIP AFK",
     "description": "The label for category rip-afk in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.blend-shape-clamper": {
+    "message": "ブレンドシェイプ制限ツール",
+    "description": "The label for category blend-shape-clamper in sidebar tutorialSidebar"
   }
 }
