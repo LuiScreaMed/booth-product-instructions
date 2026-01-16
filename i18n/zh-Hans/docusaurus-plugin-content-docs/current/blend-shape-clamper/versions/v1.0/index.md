@@ -20,7 +20,7 @@ sidebar_label: v1.0.*
 
 ### 注意事项
 
-- 该扩展只在 VRCSDK3，Unity 2022.3.22f1 环境下进行过测试。
+- 该插件只在 VRCSDK3，Unity 2022.3.22f1 环境下进行过测试。
 
 <sub>简介结束</sub>
 
@@ -30,7 +30,7 @@ sidebar_label: v1.0.*
 
 ### 依赖
 
-该扩展依赖以下 Unity 包，请在导入前确保已经安装：
+该插件依赖以下 Unity 包，请在导入前确保已经安装：
 
 - Non-Destructive Modular Framework (1.9.4或以上): https://github.com/bdunderscore/ndmf
 

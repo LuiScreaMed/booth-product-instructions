@@ -26,7 +26,7 @@ sidebar_label: v1.0.*
 
 ### 注意事項
 
-- 本拡張は VRCSDK3 および Unity 2022.3.22f1 の環境でのみ動作確認を行っています。
+- 本プラグインは VRCSDK3 および Unity 2022.3.22f1 の環境でのみ動作確認を行っています。
 
 <sub>概要ここまで</sub>
 
@@ -36,7 +36,7 @@ sidebar_label: v1.0.*
 
 ### 依存関係
 
-本拡張は以下の Unity パッケージに依存しています。インポート前にあらかじめインストールしてください。
+本プラグインは以下の Unity パッケージに依存しています。インポート前にあらかじめインストールしてください。
 
 - Non-Destructive Modular Framework（1.9.4 以上）: https://github.com/bdunderscore/ndmf
 
