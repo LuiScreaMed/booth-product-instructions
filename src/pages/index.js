@@ -33,13 +33,14 @@ export default function Home() {
     { code: 'ja', lang: 'ja' }
   ];
 
-  const [shouldShowHome, setShouldShowHome] = useState(false);
+  const [shouldShowHome, setShouldShowHome] = useState(true);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const docId = params.get("i");
     if (!docId) {
       setShouldShowHome(true);
+      console.log
       return;
     };
 
@@ -63,14 +64,14 @@ export default function Home() {
     } else {
       window.location.replace(`/${useLang}/docs/${path}`);
     }
-  });
+  }, []);
 
   const { siteConfig } = useDocusaurusContext();
   return (
     <Layout
       title={siteConfig.title}
       description="Instructions for LuiStudio's Products">
-      {shouldShowHome ?? (
+      {shouldShowHome && (
         <>
           <HomepageHeader />
           <main>
