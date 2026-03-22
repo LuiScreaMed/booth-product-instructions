@@ -38,7 +38,7 @@ sidebar_label: v1.0.*
 
 ### 安装资源包
 
-1. 前往 [我们的 VPM 资源包清单页面](https://luiscreamed.github.io/VPM-Package-Listing/)。
+1. 前往 [我们的 VPM 资源包清单页面](https://luistudio.github.io/VPM-Package-Listing/)。
 1. 点击 `Add to VCC` 按钮，将仓库加入 VCC / ALCOM。
 1. 在 VCC / ALCOM 中，前往项目的管理页安装 `Blend Shape Clamper`。
 

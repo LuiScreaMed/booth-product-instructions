@@ -38,7 +38,7 @@ This package depends on the following packages. Make sure you have installed it 
 
 ### Installing Package
 
-1. Go to [our vpm package listing page](https://luiscreamed.github.io/VPM-Package-Listing/).
+1. Go to [our vpm package listing page](https://luistudio.github.io/VPM-Package-Listing/).
 1. Click on `Add to VCC` button to add the repository into VCC/ALCOM.
 1. In VCC/ALCOM, go to the project's manage page and install `Blend Shape Clamper`.
 

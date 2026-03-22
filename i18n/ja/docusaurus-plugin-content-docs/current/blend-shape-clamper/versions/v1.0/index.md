@@ -44,7 +44,7 @@ sidebar_label: v1.0.*
 
 ### パッケージのインストール
 
-1. [VPM パッケージ一覧ページ](https://luiscreamed.github.io/VPM-Package-Listing/) にアクセスします。
+1. [VPM パッケージ一覧ページ](https://luistudio.github.io/VPM-Package-Listing/) にアクセスします。
 1. `Add to VCC` ボタンをクリックし、リポジトリを VCC / ALCOM に追加します。
 1. VCC / ALCOM のプロジェクト管理画面から `Blend Shape Clamper` をインストールします。
 
