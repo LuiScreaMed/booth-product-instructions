@@ -33,14 +33,13 @@ export default function Home() {
     { code: 'ja', lang: 'ja' }
   ];
 
-  const [shouldShowHome, setShouldShowHome] = useState(true);
+  const [shouldShowHome, setShouldShowHome] = useState(false);
 
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const docId = params.get("i");
     if (!docId) {
       setShouldShowHome(true);
-      console.log
       return;
     };
 
