@@ -11,12 +11,12 @@ const products = {
     "rip-afk": {
         displayName: "【MA対応 + 汎用】RIP AFK",
         booth: "7532676",
-        versions: ["v1.0", "v1.1"]
+        versions: ["v1.1", "v1.0"]
     },
     "dont-touch-me": {
         displayName: "【MA対応】さわらないで / 莫挨老子 / Don't Touch Me",
         booth: "7166759",
-        versions: ["v1.0", "v1.1", "v1.2"]
+        versions: ["v1.2", "v1.1", "v1.0"]
     },
     "potato-chips-world": {
         displayName: "【VRC World対応】ポテトチップス / 袋装薯片 / Potato Chips （World）",
