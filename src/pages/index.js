@@ -6,7 +6,7 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import Translate from '@docusaurus/Translate';
 import HomepageProducts from '../components/HomepageProducts';
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -33,10 +33,15 @@ export default function Home() {
     { code: 'ja', lang: 'ja' }
   ];
 
+  const [shouldShowHome, setShouldShowHome] = useState(false);
+
   useEffect(() => {
     const params = new URLSearchParams(window.location.search);
     const docId = params.get("i");
-    if (!docId) return;
+    if (!docId) {
+      setShouldShowHome(true);
+      return;
+    };
 
     const browserLang = navigator.language;
     if (!browserLang) return;
@@ -65,10 +70,14 @@ export default function Home() {
     <Layout
       title={siteConfig.title}
       description="Instructions for LuiStudio's Products">
-      <HomepageHeader />
-      <main>
-        <HomepageProducts />
-      </main>
+      {shouldShowHome ?? (
+        <>
+          <HomepageHeader />
+          <main>
+            <HomepageProducts />
+          </main>
+        </>
+      )}
     </Layout>
   );
 }
