@@ -3,6 +3,11 @@
  * @type {Object.<string, ProductItemInfo>}
  */
 const products = {
+    "force-write-defaults": {
+        displayName: "【MA対応】強制 Write Defaults / 强制 Write Defaults / Force Write Defaults",
+        booth: "8200603",
+        versions: ["v1.0"]
+    },
     "blend-shape-clamper": {
         displayName: "【MA対応】ブレンドシェイプ制限ツール / 形态键限制器 / Blend Shape Clamper",
         booth: "7884255",

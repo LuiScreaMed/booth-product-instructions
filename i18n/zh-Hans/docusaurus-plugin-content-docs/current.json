@@ -14,5 +14,9 @@
   "sidebar.tutorialSidebar.category.blend-shape-clamper": {
     "message": "形态键限制器",
     "description": "The label for category blend-shape-clamper in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.force-write-defaults": {
+    "message": "强制 Write Defaults",
+    "description": "The label for category force-write-defaults in sidebar tutorialSidebar"
   }
 }

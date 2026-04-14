@@ -14,5 +14,9 @@
   "sidebar.tutorialSidebar.category.blend-shape-clamper": {
     "message": "ブレンドシェイプ制限ツール",
     "description": "The label for category blend-shape-clamper in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.force-write-defaults": {
+    "message": "強制 Write Defaults",
+    "description": "The label for category force-write-defaults in sidebar tutorialSidebar"
   }
 }
