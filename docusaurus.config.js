@@ -125,7 +125,8 @@ const config = {
       }
     }),
     plugins: [[ require.resolve('docusaurus-lunr-search'), {
-      languages: ['en', 'ja', 'zh'] // language codes
+      languages: ['en', 'ja', 'zh'], // language codes
+      maxHits: 7
     }]],
 };
 
