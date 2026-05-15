@@ -16,7 +16,7 @@ const products = {
     "rip-afk": {
         displayName: "【MA対応 + 汎用】RIP AFK",
         booth: "7532676",
-        versions: ["v1.1", "v1.0"]
+        versions: ["v1.1", "v1.0", "2.0"]
     },
     "dont-touch-me": {
         displayName: "【MA対応】さわらないで / 莫挨老子 / Don't Touch Me",
