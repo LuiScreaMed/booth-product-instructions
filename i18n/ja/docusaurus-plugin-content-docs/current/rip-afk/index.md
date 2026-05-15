@@ -10,7 +10,7 @@ import DocCardList from '@theme/DocCardList';
 
 ### v2.0.1
 
-- Avatar をビルドおよびアップロードできなくなる問題を修正。
+- アバターをビルドおよびアップロードできなくなる問題を修正。
 
 :::
 
