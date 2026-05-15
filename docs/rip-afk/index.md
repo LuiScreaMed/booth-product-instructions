@@ -10,7 +10,7 @@ import DocCardList from '@theme/DocCardList';
 
 ### v2.0.1
 
-- Fixed an issue that could prevent the Avatar from compiling and uploading.
+- Fixed an issue that could prevent the Avatar from building and uploading.
 
 :::
 
