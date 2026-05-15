@@ -8,6 +8,14 @@ import DocCardList from '@theme/DocCardList';
 
 :::changelog
 
+### v2.0.1
+
+- Avatar をビルドおよびアップロードできなくなる問題を修正。
+
+:::
+
+:::changelog
+
 ### v2.0.0
 
 - ギミックの一部ロジックをリファクタリング。

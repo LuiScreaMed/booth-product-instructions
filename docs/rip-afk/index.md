@@ -8,6 +8,14 @@ import DocCardList from '@theme/DocCardList';
 
 :::changelog
 
+### v2.0.1
+
+- Fixed an issue that could prevent the Avatar from compiling and uploading.
+
+:::
+
+:::changelog
+
 ### v2.0.0
 
 - Refactored part of the gimmick logic.

@@ -8,6 +8,14 @@ import DocCardList from '@theme/DocCardList';
 
 :::changelog
 
+### v2.0.1
+
+- 修复了一个导致 Avatar 无法编译并上传的问题。
+
+:::
+
+:::changelog
+
 ### v2.0.0
 
 - 重构了插件的部分逻辑。
